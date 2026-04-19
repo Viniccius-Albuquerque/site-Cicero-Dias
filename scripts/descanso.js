@@ -22,10 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(nextSlide, 10000);
 
     // Interação ao clicar (toque)
-    function aoAtivarTotem(event) {
-        console.log('Totem ativado - avançar para menu principal');
-        
-        // coloca a navegação para o Frame 2 futuramente
-        // window.location.href = '/templates/menu.html';
+    function aoAtivarTotem() {
+        window.location.href = "/templates/sobreOmuseu.html";
     }
+    telaDescanso.addEventListener('click', aoAtivarTotem);
 });
