@@ -49,23 +49,26 @@ html, body {
 }
 
 .nav-menu {
-    flex: 1;
+    width: 320px;
+    min-width: 320px;
+    background: #1a1a1a;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 0;
     gap: 10px;
 }
 
 .nav-item {
     background: transparent;
     border: none;
-    text-align: center;
-    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
     font-size: 1.1rem;
     color: #ccc;
     cursor: pointer;
     font-family: inherit;
-    width: 100%;
 }
 
 .nav-item:hover {
@@ -79,22 +82,57 @@ html, body {
     font-weight: bold;
 }
 
+.nav-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtopics {
+    display: none;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+.subtopics.open {
+    display: flex;
+}
+
+.subtopic-item {
+    background: #2a2a2a;
+    border: none;
+    color: #ccc;
+    text-align: left;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    border-left: 3px solid #e9c46a;
+}
+
+.subtopic-item:hover {
+    background: #3a3a3a;
+    color: white;
+}
+
 /* ÁREA PRINCIPAL */
 .main-content {
     flex: 1;
     background: white;
+    height: 100vh;
+    overflow: hidden;
+}
 
+.content-scroll {
+    height: 100%;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-
-    height: 100%;
 }
 
 .content-body {
-    flex: 1;
     padding: 30px 50px;
-
-    overflow-y: auto;
+    flex: 1;
 }
 
 /* TÍTULOS */
@@ -102,6 +140,7 @@ html, body {
     font-size: 2.5rem;
     font-weight: bold;
     color: #1a1a1a;
+    text-align: center;
     margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 3px solid #e9c46a;
@@ -127,4 +166,16 @@ html, body {
     padding: 15px;
     font-size: 0.9rem;
     margin-top: 40px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    border-left: 5px solid #e9c46a;
+    padding-left: 15px;
 }

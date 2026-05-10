@@ -1,113 +1,177 @@
 // CONTEÚDO APENAS COM LOREM IPSUM (GRANDE QUANTIDADE PARA SCROLL)
 const topicsData = {
+
     historiaEscada: {
-        title: "História da Escada",
+        title: "Origem do Município",
         content: `
-            <h1 class="page-title">História da Escada</h1>
-            
-            <div class="lorem-block">
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-            </div>
+            <h1 class="page-title">Origem do Município</h1>
+
+            <section id="preColonial">
+                <h2>Período Pré-Colonial (1500)</h2>
+                <p>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
+                </p>
+            </section>
+
+            <section id="colonizacao">
+                <h2>Início da Colonização (Século XVI)</h2>
+                <p>
+                    Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse.
+                </p>
+            </section>
+
+            <section id="marcoLegal">
+                <h2>Marco Legal de Escada</h2>
+                <p>
+                    Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare.
+                </p>
+            </section>
+
+            <section id="evolucao">
+                <h2>Evolução Administrativa e Marco Legal</h2>
+                <p>
+                    Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur.
+                </p>
+            </section>
+
+            <section id="heranca">
+                <h2>Herança Indígena</h2>
+                <p>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
+                </p>
+            </section>
+
+            <section id="consolidacao">
+                <h2>Consolidação Institucional e Urbana</h2>
+                <p>
+                    Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse.
+                </p>
+            </section>
         `
     },
+
     ciceroDias: {
         title: "Cícero Dias",
         content: `
             <h1 class="page-title">Cícero Dias</h1>
-            
-            <div class="lorem-block">
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-            </div>
+
+            <section id="inicioVida">
+                <h2>Início de Vida e Formação</h2>
+                <p>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
+                </p>
+            </section>
+
+            <section id="modernismo">
+                <h2>Primeira Fase e Modernismo</h2>
+                <p>
+                    Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse.
+                </p>
+            </section>
+
+            <section id="internacional">
+                <h2>Carreira Internacional</h2>
+                <p>
+                    Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare.
+                </p>
+            </section>
+
+            <section id="murais">
+                <h2>Abstracionismo e Murais</h2>
+                <p>
+                    Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur.
+                </p>
+            </section>
+
+            <section id="legado">
+                <h2>Reconhecimento e Legado</h2>
+                <p>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
+                </p>
+            </section>
         `
     },
+
     baronatos: {
         title: "Baronatos",
         content: `
             <h1 class="page-title">Baronatos</h1>
-            
-            <div class="lorem-block">
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-            </div>
+
+            <section>
+                <h2>Baronatos</h2>
+                <p>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
+                </p>
+
+                <p>
+                    Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse.
+                </p>
+
+                <p>
+                    Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare.
+                </p>
+            </section>
         `
     },
+
     sobreMuseu: {
-        title: "Sobre o Museu",
+        title: "O Museu",
         content: `
-            <h1 class="page-title">Sobre o Museu</h1>
-            
-            <div class="lorem-block">
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-                <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras. Praesent erat viverra mollis integer lacinia arcu ridiculus curae. Ante quisque porta quisque accumsan elementum faucibus. Ultrices sociosqu congue scelerisque conubia ex suspendisse convallis ipsum. Torquent sodales nisi orci consectetur nisl suspendisse aliquam. Cras leo diam libero bibendum metus tempus.</p>
-                <p>Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse. Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare. Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur. Suscipit quis nisi tellus class taciti lacus.</p>
-            </div>
+            <h1 class="page-title">O Museu</h1>
+
+            <section id="diretrizes">
+                <h2>Diretrizes de Visitação</h2>
+                <p>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
+                </p>
+            </section>
+
+            <section id="acessibilidade">
+                <h2>Acessibilidade</h2>
+                <p>
+                    Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse.
+                </p>
+            </section>
+
+            <section id="horario">
+                <h2>Horário de Funcionamento</h2>
+                <p>
+                    Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare.
+                </p>
+            </section>
+
+            <section id="festividades">
+                <h2>Festividades</h2>
+                <p>
+                    Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur.
+                </p>
+            </section>
+        `
+    },
+
+    contato: {
+        title: "Contato",
+        content: `
+            <h1 class="page-title">Contato</h1>
+
+            <section>
+                <h2>Informações de Contato</h2>
+
+                <p>
+                    Endereço: Lorem ipsum dolor sit amet.
+                </p>
+
+                <p>
+                    Telefone: (00) 0000-0000
+                </p>
+
+                <p>
+                    E-mail: contato@museu.com
+                </p>
+            </section>
         `
     }
+
 };
 
 // CARREGAR TÓPICO
@@ -129,13 +193,48 @@ function setActiveNavItem(selectedButton) {
     selectedButton.classList.add('active');
 }
 
-// EVENTOS DE CLIQUE
+// ABRIR E FECHAR SUBTÓPICOS
 document.querySelectorAll('.nav-item').forEach(button => {
+
     button.addEventListener('click', () => {
+
         const topicAttr = button.getAttribute('data-topic');
+
         loadTopic(topicAttr);
+
         setActiveNavItem(button);
+
+        // fecha todos
+        document.querySelectorAll('.subtopics').forEach(sub => {
+            sub.classList.remove('open');
+        });
+
+        // abre apenas o atual
+        const subtopics = button.parentElement.querySelector('.subtopics');
+
+        if (subtopics) {
+            subtopics.classList.add('open');
+        }
     });
+});
+
+// CLIQUE NOS SUBTÓPICOS
+document.addEventListener('click', (e) => {
+
+    if (e.target.classList.contains('subtopic-item')) {
+
+        const targetId = e.target.getAttribute('data-target');
+
+        const element = document.getElementById(targetId);
+
+        if (element) {
+
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
 });
 
 // INICIAR COM "SOBRE O MUSEU"
@@ -165,3 +264,4 @@ function voltarParaDescanso() {
 
 // inicia o timer quando entra na página
 resetarTimer();
+
