@@ -9,42 +9,76 @@ const topicsData = {
             <section id="preColonial">
                 <h2>Período Pré-Colonial (1500)</h2>
                 <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
+                    O primeiro marco fundamental é o reconhecimento da terra em seu estado original, antes de qualquer influência europeia. 
+                    Nessa época, por volta de 1500, o território que hoje compreende o município era habitado pelos povos indígenas Caetés.
+                </p>
+                <p>
+                    A paisagem daquele tempo foi reconstruída para estudos atuais por meio de uma combinação de arte e tecnologia, 
+                    utilizando obras do artista Amaro de Arruda Cabral e fotografias aéreas de drone para entender como o relevo local se apresentava originalmente.
+                </p>
+
+                <div class="imagem-full-width">
+                    <img src="/images/BANNER_1_ALDEIA.jpg" alt="Representação do período pré-colonial">
+                </div>
+
+                <p>
+                    Muitos dos nomes que usamos hoje no cotidiano geográfico de Escada têm origem na língua tupi-guarani, 
+                    funcionando como verdadeiros vestígios históricos da ocupação desses povos antes da chegada dos portugueses.
+                </p>
+
+                <p>
+                    Exemplos marcantes dessa herança linguística que resistiu ao tempo são os nomes de
+                    localidades como Massauassu e Timboassu.
+                </p>
+
+                <p>
+                    Portanto, entender o Período Pré-Colonial em Escada é reconhecer que a história da cidade não
+                    começa com a construção de igrejas ou vilas, mas sim com a relação dos Caetés com a
+                    natureza local. Esse período estabelece a identidade territorial que, mais tarde, receberia os
+                    missionários franciscanos e outras nações indígenas, como os Mariquitos, Potiguares e
+                    Tabajaras, consolidando o que viria a ser o aldeamento e, finalmente, o município que
+                    conhecemos.
                 </p>
             </section>
 
-            <section id="colonizacao">
+            <section id="colonizacao" class="dark-theme">
+
+                <div class="image-oval-container">
+                    <img src="/images/colonizacao-franciscanos.jpg" alt="Início da Colonização">
+                </div>
+
                 <h2>Início da Colonização (Século XVI)</h2>
+
                 <p>
-                    Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse.
+                    A presença portuguesa na região de Escada começou a se tornar efetiva por volta do ano de
+                    1593, com a chegada da Ordem Franciscana ao território. De acordo com as pesquisas do
+                    professor Edson Silva (1995, p. 37), esse período final do século XVI foi caracterizado
+                    principalmente pela atuação missionária e pelos primeiros contatos estabelecidos entre os
+                    colonizadores europeus e os povos indígenas que já habitavam a área.
+                </p>
+                
+                <p>
+                    Logo em seguida, no ano de 1594, ocorreu um marco religioso fundamental para a identidade
+                    da futura cidade: a chegada da imagem de Nossa Senhora da Apresentação da Escada.
+                </p>
+
+                <p>
+                    Nesse mesmo contexto, a aldeia passou a ser reconhecida com o título de “Virgem
+                    Augustíssima” e foi erguido o primeiro oratório dedicado à devoção mariana, estabelecendo as
+                    bases religiosas que nortearam o desenvolvimento da localidade.
+                </p>
+
+                <p>
+                    Assim, o início da colonização em Escada não foi apenas um processo de ocupação de terras,
+                    mas sim um movimento iniciado pela fé e pelo encontro de culturas que começou a redesenhar
+                    a paisagem social do nosso município ainda no final de 1500.
                 </p>
             </section>
 
-            <section id="marcoLegal">
-                <h2>Marco Legal de Escada</h2>
+            <section id="marcoAldeamento">
+                <h2>Marcos do Aldeamento</h2>
                 <p>
-                    Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare.
-                </p>
-            </section>
-
-            <section id="evolucao">
-                <h2>Evolução Administrativa e Marco Legal</h2>
-                <p>
-                    Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur.
-                </p>
-            </section>
-
-            <section id="heranca">
-                <h2>Herança Indígena</h2>
-                <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
-                </p>
-            </section>
-
-            <section id="consolidacao">
-                <h2>Consolidação Institucional e Urbana</h2>
-                <p>
-                    Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse.
+                    ..
                 </p>
             </section>
         `
