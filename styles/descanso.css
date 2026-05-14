@@ -1,27 +1,24 @@
-/* styles/descanso.css */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+    /* Aplicando Literata como padrão */
+    font-family: 'Literata', serif;
 }
 
 body {
-    background: #1a1a1a;
+    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
-    overflow: auto;
-    padding: 0;
+    overflow: hidden;
 }
 
 .totem {
-    width: 100vw;
-    aspect-ratio: 16 / 9;
-    max-height: 100vh;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 .frame-descanso {
@@ -29,17 +26,13 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: #000;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    outline: none;
     user-select: none;
 }
 
+/* Carrossel e tratamento de imagem */
 .carrossel {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -47,141 +40,105 @@ body {
 
 .slide {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+    transition: opacity 2s ease-in-out;
+    /* Deixa as imagens em preto e branco com alto contraste igual à foto */
+    filter: grayscale(100%) brightness(0.8) contrast(1.2);
 }
 
 .slide.active {
     opacity: 1;
 }
 
-/* Overlays embaçados */
-.overlay-top {
+/* Sombra suave à direita para destacar o texto */
+.overlay-direito {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0.7), transparent);
     z-index: 2;
 }
 
-.overlay-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    z-index: 2;
-}
-
-/* Cabeçalho (sobre o overlay) */
-.topo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.conteudo {
+    position: relative;
     z-index: 3;
-    pointer-events: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15%; /*spaçamento da borda direita */
+}
+
+.bloco-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .museu-titulo {
-    font-size: 4rem;
-    font-weight: 400;
-    letter-spacing: 4px;
-    color: #ffffff;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    opacity: 0.9;
-}
-
-.frase {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    pointer-events: none;
-}
-
-.museu-frase {
-    font-size: 1.8rem;
+    font-size: 8rem; 
     font-weight: 300;
-    letter-spacing: 6px;
-    color: rgba(255, 255, 255, 0.7);
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
-    padding: 12px 30px;
-    border-radius: 0;
-    animation: subtlePulse 4s infinite ease-in-out;
+    color: #fff;
+    line-height: 0.85;
+    margin-bottom: 2.5rem;
+    letter-spacing: -2px;
 }
 
-/* Animação sutil para chamar atenção sem ser agressiva */
-@keyframes subtlePulse {
+.btn-fake {
+    border: 1.5px solid #d40000; 
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+/* Efeito de "respiro" no título */
+@keyframes softFade {
+    0% { opacity: 0.9; }
+    50% { opacity: 1; }
+    100% { opacity: 0.9; }
+}
+
+.bloco-texto {
+    animation: softFade 5s infinite ease-in-out;
+}
+
+/* Definição da animação */
+@keyframes pulsarBotao {
     0% {
-        opacity: 0.6;
-        letter-spacing: 6px;
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(212, 0, 0, 0.4);
     }
     50% {
-        opacity: 1;
-        letter-spacing: 8px;
-        color: rgba(255, 255, 255, 0.9);
+        transform: scale(1.05); /* Aumenta 5% */
+        box-shadow: 0 0 15px 2px rgba(212, 0, 0, 0.2); /* Um brilho vermelho sutil */
     }
     100% {
-        opacity: 0.6;
-        letter-spacing: 6px;
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(212, 0, 0, 0);
     }
 }
 
-/* Rodapé com frase "teste-totem" */
-.rodape {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    pointer-events: none;
-}
-
-.mini {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.btn-fake {
+    border: 1.5px solid #d40000;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
     font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
-
-/* Remove qualquer destaque de clique em todos os elementos */
-* {
-    -webkit-tap-highlight-color: transparent;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+    
+    /* Aplicação da animação */
+    animation: pulsarBotao 3s infinite ease-in-out;
+    display: inline-block;
+    transition: all 0.3s ease;
 }

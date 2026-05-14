@@ -1,29 +1,19 @@
-// scripts/descanso.js
 document.addEventListener('DOMContentLoaded', function() {
-    const telaDescanso = document.getElementById('telaDescanso');
     const slides = document.querySelectorAll('.slide');
+    const tela = document.getElementById('telaDescanso');
     let currentSlide = 0;
-    
-    if (!telaDescanso || slides.length === 0) return;
 
-    // Função para trocar de slide
+    // Troca de slides
     function nextSlide() {
-        // Remove active de todos
-        slides.forEach(slide => slide.classList.remove('active'));
-        
-        // Avança para o próximo slide
+        slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide + 1) % slides.length;
-        
-        // Ativa o novo slide
         slides[currentSlide].classList.add('active');
     }
 
-    // Inicia o carrossel (troca a cada 10 segundos)
-    setInterval(nextSlide, 10000);
+    setInterval(nextSlide, 8000); // 8 segundos por foto
 
-    // Interação ao clicar (toque)
-    function aoAtivarTotem() {
+    // Clique em qualquer lugar para avançar
+    tela.addEventListener('click', () => {
         window.location.href = "/templates/sobreOmuseu.html";
-    }
-    telaDescanso.addEventListener('click', aoAtivarTotem);
+    });
 });
