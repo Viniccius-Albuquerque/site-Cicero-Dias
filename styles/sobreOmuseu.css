@@ -30,45 +30,80 @@ html, body {
 
 /* BARRA LATERAL */
 .sidebar {
-    width: 280px;
-    background: #1a1a1a;
+    width: 320px;
+    height: 100vh;
+    background: #121212;
     color: white;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+.sidebar-footer {
+    margin-top: 40px; 
+    padding: 20px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    flex-shrink: 0; 
+}
+.sidebar-footer p {
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-footer strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.qr-code-img {
+    width: 160px; 
+    height: 160px;
+    object-fit: contain;
 }
 
 .museum-brand {
-    padding: 30px 20px;
-    border-bottom: 1px solid #333;
-    text-align: center;
+    display: none;
 }
 
-.museum-brand h2 {
-    font-size: 1.5rem;
-    color: #e9c46a;
-}
-
+/* Menu de Navegação */
 .nav-menu {
-    width: 320px;
-    min-width: 320px;
-    background: #1a1a1a;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 20px 0;
-    gap: 10px;
+    gap: 20px;
 }
 
 .nav-item {
     background: transparent;
     border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 20px;
-    font-size: 1.1rem;
-    color: #ccc;
+    color: #ffffff;
+    font-size: 1.3rem;
     cursor: pointer;
-    font-family: inherit;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .nav-item:hover {
@@ -77,22 +112,31 @@ html, body {
 }
 
 .nav-item.active {
-    background: #e9c46a;
-    color: #1a1a1a;
-    font-weight: bold;
+    font-weight: normal;
+}
+
+.nav-item.active::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #e61919; 
+    margin: 8px auto 0;
 }
 
 .nav-group {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .subtopics {
     display: none;
     flex-direction: column;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    gap: 5px;
+    width: 90%;
+    gap: 8px;
+    margin-top: 10px;
 }
 
 .subtopics.open {
@@ -102,12 +146,13 @@ html, body {
 .subtopic-item {
     background: #2a2a2a;
     border: none;
-    color: #ccc;
-    text-align: left;
-    padding: 10px 15px;
+    color: #cccccc;
+    text-align: center;
+    padding: 12px 10px;
     cursor: pointer;
     font-size: 0.95rem;
-    border-left: 3px solid #e9c46a;
+    width: 100%;
+    transition: background 0.2s;
 }
 
 .subtopic-item:hover {
@@ -128,6 +173,7 @@ html, body {
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .content-body {
@@ -270,42 +316,4 @@ section p {
     margin-bottom: 20px;
 
     text-align: justify;
-}
-
-/* ESTILOS BARONATOS */
-.baron-entry {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-}
-
-.baron-entry h3 {
-    font-size: 1.4rem;
-    color: #1a1a1a;
-    margin-bottom: 15px;
-}
-
-.baron-entry h4 {
-    font-size: 1.1rem;
-    color: #2c553c;
-    margin: 15px 0 8px 0;
-}
-
-.baron-entry p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 12px;
-    text-align: justify;
-}
-
-.section-summary {
-    margin-top: 50px;
-    padding-top: 20px;
-    border-top: 2px solid #e9c46a;
-}
-
-.section-subtitle {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 20px;
 }
