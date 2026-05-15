@@ -422,12 +422,13 @@ section.arco-bg-section {
     padding: 120px 10%;
     text-align: center;
     /* Configuração da Imagem de Fundo */
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/BANNER_4_TOPONIMOS.jpg');
+    background-image: url('../images/BANNER_4_TOPONIMOS.jpg');
     background-size: cover;
     background-position: center;
     /* Formato de Arco Gigante */
     border-radius: 500px 500px 500px 500px;
     color: #ffffff;
+    text-shadow: 4px 4px 5px #000000;
     overflow: hidden;
 }
 
