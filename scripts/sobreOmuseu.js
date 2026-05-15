@@ -44,7 +44,7 @@ const topicsData = {
             <section id="colonizacao" class="dark-theme">
 
                 <div class="image-oval-container">
-                    <img src="/images/colonizacao-franciscanos.jpg" alt="Início da Colonização">
+                    <img src="/images/BANNER_2_CHEGADA.jpg" alt="Início da Colonização">
                 </div>
 
                 <h2>Início da Colonização (Século XVI)</h2>
@@ -75,10 +75,178 @@ const topicsData = {
                 </p>
             </section>
 
-            <section id="marcoAldeamento">
+            <section id="marcosAldeamento">
                 <h2>Marcos do Aldeamento</h2>
                 <p>
-                    ..
+                    O ponto central desta etapa ocorreu no dia 3 de julho de 1685, data que marca oficialmente a
+                    fundação do Aldeamento de Escada. Este foi um momento de grande transformação social,
+                    pois o território, que antes era de ocupação predominantemente Caeté no período pré-
+                    colonial, passou a abrigar uma nova configuração étnica e social com a presença dos povos
+                    indígenas Mariquitos, Potiguares e Tabajaras.
+                </p>
+                
+                <div class="imagem-full-width">
+                    <img src="/images/BANNER_3_MARCO.jpg" alt="Marcos do Aldeamento em 1685">
+                </div>
+
+                <p>
+                    Essa reunião de diferentes povos sob a coordenação dos missionários foi o que consolidou a
+                    base populacional do antigo aldeamento.
+                </p>
+
+                <p>
+                    É importante destacar que esse marco de 1685 foi o amadurecimento de um processo que
+                    começou décadas antes. A identidade da aldeia já vinha sendo moldada desde 1594, quando a
+                    chegada da imagem de Nossa Senhora da Apresentação da Escada trouxe o título de “Virgem
+                    Augustíssima” e a construção do primeiro oratório.
+                </p>
+
+                <p>
+                    Com a fundação oficial do aldeamento em 1685, a organização religiosa e urbana deu um salto:
+                    foi erguida uma capela primitiva e iniciou-se a atuação de párocos fundamentais, como
+                    Francisco Cavalcanti de Albuquerque Lacerda, que ajudaram a estruturar a vida social e
+                    religiosa da localidade. Portanto, o marco do aldeamento representa o nascimento de uma
+                    organização institucional que permitiu a Escada evoluir, mais tarde, de povoação para
+                    freguesia, vila e, finalmente, cidade.
+                </p>
+
+            </section>
+
+            <section id="evolucaoMarco" class="arco-bg-section">
+                <h2>Evolução Administrativa e Marco Legal</h2>
+                
+                <p>
+                    O desenvolvimento administrativo de Escada é marcado por uma sequência de
+                    "marcos legais" que demonstram o crescimento da sua importância regional.
+                    Tudo começa a mudar oficialmente na segunda metade do século VXIII:
+                </p>
+
+                <div class="timeline-entry">
+                    <strong>1757 – Elevação à Povoação:</strong>
+                    <p>este é o primeiro grande passo administrativo, quando o antigo aldeamento ganha o status oficial de povoação.</p>
+                </div>
+
+                <div class="timeline-entry">
+                    <strong>1773 – Expulsão dos Indígenas:</strong>
+                    <p>Um marco político significativo e drástico nesse processo foi a expulsão dos povos originários do território.</p>
+                </div>
+
+                <div class="timeline-entry">
+                    <strong>1786 – Categoria de Freguesia:</strong>
+                    <p>
+                    Escada sobe mais um degrau administrativo ao ser elevada à categoria de
+                    freguesia, o que veio acompanhado da fundação da Paróquia de Nossa Senhora da Apresentação da
+                    Escada.
+                    </p>
+                </div>
+
+                <p><em>Com o passar dos anos no século XIX, a estrutura urbana e institucional se consolidou de forma definitiva.</em></p>
+
+                <div class="timeline-entry">
+                    <strong>1854 – De Freguesia à Vila - Elevação à Categoria de Cidade:</strong>
+                    <p>O ápice da evolução administrativa ocorreu em 1873, quando Escada é oficialmente reconhecida como cidade.</p>
+                </div>
+
+                <div class="timeline-entry">
+                    <strong>1873 – Elevação à Categoria de Cidade:</strong>
+                    <p>O ápice da evolução administrativa ocorreu em 1873, quando Escada é oficialmente reconhecida como cidade.</p>
+                </div>
+
+                <p>
+                    Para selar esse processo de consolidação urbana, institucional e religiosa, o
+                    Templo Matriz de Nossa Senhora da Apresentação da Escada foi inaugurado
+                    em 28 de junho de 1874. Esta construção tornou-se o grande símbolo da
+                    estruturação de Escada como um centro político, social e religioso na região.
+                </p>
+
+                <p>
+                    Todo esse percurso legal, que começou com a atuação dos primeiros párocos e
+                    vigários, como Francisco Cavalcanti de Albuquerque Lacerda em 1786,
+                    transformou o antigo aldeamento no próspero município que hoje celebramos.
+                </p>
+            </section>
+
+            <section id="evolucao">
+                <h2>Marco do Aldeamento</h2>
+
+                <p>
+                    A Herança Indígena por meio da Toponímia, que nada mais é do que o estudo dos nomes dos lugares.
+                </p>
+
+                <p>
+                    Você sabia que, muito antes de Escada ter esse nome ou de ser uma cidade organizada, os
+                    povos indígenas já haviam deixado uma "assinatura" eterna em nosso território? As fontes nos
+                    mostram que a herança desses povos originários permanece viva e pulsante no nosso
+                    cotidiano geográfico por meio da língua tupi-guarani. (Professor e pesquisador Dimison Cesar
+                    Vieira Gomes)
+                </p>
+
+                <p>
+                    <strong>
+                        O ALDEAMENTO DE ESCADA: UMA ANÁLISE ACERCA DOS PROCESSOS HISTÓRICOS
+                        DAS GRANDES NAÇÕES INDÍGENAS (GOMES, 2026, p. 20)
+                    </strong>
+                </p>
+
+                <p>
+                    Esses nomes de lugares que repetimos diariamente não são apenas palavras, mas funcionam
+                    como verdadeiros vestígios históricos e provas concretas da ocupação indígena que existia
+                    muito antes da chegada de qualquer colonizador europeu.
+                </p>
+
+                <div class="imagem-full-width">
+                    <img src="/images/BANNER_5_CONSTRUCAO.jpg" alt="Construção da Matriz e presença franciscana">
+                </div>
+
+                <p>
+                    Para que você possa visualizar melhor essa herança, podemos olhar para localidades famosas
+                    na nossa região, como Massauassu e Timboassu. Esses nomes, junto com diversos outros
+                    topônimos que compõem o mapa do nosso município, são exemplos diretos dessa raiz
+                    linguística que resistiu ao tempo e às transformações sociais.
+                </p>
+
+                <p>
+                    Assim, ao estudarmos a toponímia de Escada, percebemos que a origem do município não está
+                    apenas nos documentos oficiais ou nas construções de pedra e cal, mas gravada na própria
+                    forma como nomeamos o nosso chão, mantendo viva a memória dos primeiros habitantes
+                    desta terra. É a história de Escada sendo contada por meio das palavras que herdamos.
+                </p>
+
+            </section>
+
+            <section id="consolidacao">
+
+                <h2>Consolidação Institucional e Urbana</h2>
+
+                <p>
+                    A Igreja Católica desempenhou um papel central e estratégico na organização de todo o território.
+                </p>
+
+                <p>
+                    Esse movimento de consolidação começou com a construção de uma capela primitiva e contou
+                    com a liderança de figuras religiosas fundamentais, como Francisco Cavalcanti de Albuquerque
+                    Lacerda, que foi o primeiro Padre da paróquia fundada em 1786.
+                </p>
+
+                <p>
+                    Outros nomes, como João Zeferino Pires e Simão de Azevedo Campos, também foram
+                    essenciais para impulsionar o desenvolvimento tanto religioso quanto social da nossa
+                    localidade.
+                </p>
+
+                <p>
+                    Paralelamente a esse fortalecimento social e religioso, Escada subiu degraus decisivos em sua
+                    hierarquia administrativa e legal: no ano de 1854, a localidade foi elevada de freguesia para a
+                    condição de Vila e, pouco tempo depois, em 1873, conquistou oficialmente o status de
+                    cidade.
+                </p>
+
+                <p>
+                    O grande marco que simboliza o sucesso de todo esse crescimento urbano e institucional foi a
+                    inauguração do imponente Templo Matriz de Nossa Senhora da Apresentação da Escada, em
+                    28 de junho de 1874. Esta edificação não foi apenas uma obra arquitetônica, mas tornou-se o
+                    principal símbolo da consolidação da fé e do progresso, marcando definitivamente a
+                    estruturação do município como um relevante centro religioso, político e social da região.
                 </p>
             </section>
         `

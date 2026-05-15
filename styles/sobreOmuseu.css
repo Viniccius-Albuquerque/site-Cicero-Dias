@@ -243,13 +243,25 @@ html, body {
 }
 
 /* RODAPÉ */
-.footer-totem {
-    background: #1a1a1a;
-    color: #e9c46a;
+.museum-footer {
+    background-color: #f2e9e1; /* Cor de fundo bege padrão */
+    padding: 40px 20px;
     text-align: center;
-    padding: 15px;
+    color: #333;
+    font-family: 'Istok Web', sans-serif; /* Fonte padrão do corpo */
     font-size: 0.9rem;
-    margin-top: 40px;
+    line-height: 1.6;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Linha fina que aparece no topo da imagem */
+    margin-bottom: 20px;
+}
+
+.museum-footer p {
+    margin: 5px 0;
 }
 
 section {
@@ -363,6 +375,7 @@ section p {
     margin-left: -5%;        
     margin-top: 40px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .imagem-full-width img {
@@ -399,4 +412,42 @@ section.dark-theme p {
     height: auto;
     border-radius: 250px; 
     object-fit: cover;
+}
+
+/* Seção com Imagem de Fundo Expansiva e Arco */
+section.arco-bg-section {
+    position: relative;
+    width: calc(100% + 10%);
+    margin-left: -5%;
+    padding: 120px 10%;
+    text-align: center;
+    /* Configuração da Imagem de Fundo */
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/BANNER_4_TOPONIMOS.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Formato de Arco Gigante */
+    border-radius: 500px 500px 500px 500px;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+section.arco-bg-section h2, 
+section.arco-bg-section h3 {
+    color: #ffffff;
+    font-family: 'Istok Web', sans-serif;
+    margin-top: 30px;
+}
+
+section.arco-bg-section p, 
+.timeline-entry {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.timeline-entry strong {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
 }
