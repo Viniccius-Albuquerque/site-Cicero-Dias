@@ -631,7 +631,7 @@ function resetarTimer() {
 }
 
 function voltarParaDescanso() {
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
 }
 
 // eventos que contam como atividade
