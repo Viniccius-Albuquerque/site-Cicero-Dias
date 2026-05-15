@@ -14,6 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Clique em qualquer lugar para avançar
     tela.addEventListener('click', () => {
-        window.location.href = "/templates/sobreOmuseu.html";
+        window.location.href = "templates/sobreOmuseu.html";
     });
 });
