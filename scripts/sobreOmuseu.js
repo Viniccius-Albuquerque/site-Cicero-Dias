@@ -18,7 +18,7 @@ const topicsData = {
                 </p>
 
                 <div class="imagem-full-width">
-                    <img src="/images/BANNER_1_ALDEIA.jpg" alt="Representação do período pré-colonial">
+                    <img src="../images/BANNER_1_ALDEIA.jpg" alt="Representação do período pré-colonial">
                 </div>
 
                 <p>
@@ -44,7 +44,7 @@ const topicsData = {
             <section id="colonizacao" class="dark-theme">
 
                 <div class="image-oval-container">
-                    <img src="/images/BANNER_2_CHEGADA.jpg" alt="Início da Colonização">
+                    <img src="../images/BANNER_2_CHEGADA.jpg" alt="Início da Colonização">
                 </div>
 
                 <h2>Início da Colonização (Século XVI)</h2>
@@ -86,7 +86,7 @@ const topicsData = {
                 </p>
                 
                 <div class="imagem-full-width">
-                    <img src="/images/BANNER_3_MARCO.jpg" alt="Marcos do Aldeamento em 1685">
+                    <img src="../images/BANNER_3_MARCO.jpg" alt="Marcos do Aldeamento em 1685">
                 </div>
 
                 <p>
@@ -195,7 +195,7 @@ const topicsData = {
                 </p>
 
                 <div class="imagem-full-width">
-                    <img src="/images/BANNER_5_CONSTRUCAO.jpg" alt="Construção da Matriz e presença franciscana">
+                    <img src="../images/BANNER_5_CONSTRUCAO.jpg" alt="Construção da Matriz e presença franciscana">
                 </div>
 
                 <p>
