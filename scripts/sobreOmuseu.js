@@ -708,15 +708,26 @@ function loadTopic(topicId) {
     contentBody.innerHTML = topic.content;
     
     // CORREÇÃO: Aplica a cor escura na tela inteira se for o tópico de baronatos
+    const footer = document.querySelector('.museum-footer');
+
     if (topicId === 'baronatos') {
+
         contentBody.style.backgroundColor = '#151617';
         contentBody.style.color = '#ede7e1';
+
+        footer.style.backgroundColor = '#151617';
+        footer.style.color = '#ede7e1';
+
     } else {
-        // Se for QUALQUER outro tópico, volta para a cor padrão do seu totem
-        // (Altere '#fff8f0' abaixo se a sua cor padrão for outra, como branco #ffffff)
-        contentBody.style.backgroundColor = '#fff8f0'; 
-        contentBody.style.color = '#333333'; 
+
+        contentBody.style.backgroundColor = '#fff8f0';
+        contentBody.style.color = '#333333';
+
+        footer.style.backgroundColor = '#fff8f0';
+        footer.style.color = '#333333';
     }
+
+    footer.classList.toggle('dark-footer', topicId === 'baronatos');
     
     // SELEÇÃO DO CONTAINER DE SCROLL
     const container = document.querySelector('.content-scroll');
