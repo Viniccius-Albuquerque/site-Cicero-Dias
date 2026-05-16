@@ -316,7 +316,6 @@ baronatos: {
 
 
                 <button class="quadro-moldura btn-baronato" data-baronato="domPedro2">
-
                 <div class="moldura-dourada">
 
                     <img src="../images/baronatos/imagens-com-molduras/1dom pedro II.png"
