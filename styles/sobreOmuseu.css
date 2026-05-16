@@ -486,9 +486,39 @@ section.arco-bg-section p,
     padding: 20px;
 }
 
+/* O container ocupa toda a área de conteúdo, deixando a sidebar visível */
+#popoutBaronato {
+    position: fixed; /* Mantenha fixed para flutuar sobre o app */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 300px; /* IMPORTANTE: Garanta que isso bate com o tamanho da sua sidebar */
+    background-color: #fff8f0; 
+    
+    /* Aumente o z-index drasticamente para vencer qualquer outra div */
+    z-index: 99999 !important; 
+    
+    /* Se o display anterior quebrou, use esta transição limpa para o teste: */
+    display: none; 
+    flex-direction: column;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#popoutBaronato.active {
+    display: flex !important;
+}
+
 /* Quando o modal estiver ativo */
 .popout-overlay.active {
     display: flex;
+}
+
+.popout-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 /* A caixa branca com as informações | MUDAR PARA PREENCHER AS TELAS */
@@ -511,11 +541,43 @@ section.arco-bg-section p,
 
 /* Botão de fechar */
 .close-popout {
-    position: absolute;
-    top: 15px; right: 20px;
-    font-size: 30px;
+    background: #8b4513;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: 'Stok Web', sans-serif;
+    font-weight: bold;
     cursor: pointer;
-    color: #333;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.close-popout:hover {
+    background: #a0522d;
+}
+
+#popoutBody {
+    flex: 1;
+    overflow-y: auto;
+    padding: 40px;
+}
+
+.popout-flex-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.popout-media img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.popout-text {
+    flex: 1;
 }
 
 /* Estilo para remover bordas do botão de imagem */

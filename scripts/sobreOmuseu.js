@@ -297,209 +297,205 @@ const topicsData = {
 
 
 
-baronatos: {
-    title: "Baronatos",
+    baronatos: {
+        title: "Baronatos",
 
-    content: `
+        content: `
 
-        <h1 class="page-title">Baronatos</h1>
+            <h1 class="page-title">Baronatos</h1>
 
 
-        <section class="section-expanded">
+            <section class="section-expanded">
 
-            <article class="baron-entry">
-                <h3>
+                <article class="baron-entry">
+                    <h3>
+                        
+                    O Poder e Tradição de Escada
+
+                    </h3>
+
+
+                    <button class="quadro-moldura btn-baronato" data-baronato="domPedro2">
+                    <div class="moldura-dourada">
+
+                        <img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png"
+
+                        alt="1dom pedro II"
+
+                        width="300">
+                    </div>
+
+                </button>
+
+
+
+                <button class="quadro-moldura btn-baronato" data-baronato="suassuna">
+                    <div class="moldura-dourada">
+                        <img src="../images/baronatos/imagens-com-molduras/2barão de suassuna.png"
+                        alt="Barão de Suassuna"
+                        width="300">
+                    </div>
                     
-                O Poder e Tradição de Escada
-
-                </h3>
+                </button>
 
 
-                <button class="quadro-moldura btn-baronato" data-baronato="domPedro2">
+                <button class="quadro-moldura btn-baronato" data-baronato="baronesa">
+
+                    <div class="moldura-dourada">
+
+                        <img src="../images/baronatos/imagens-com-molduras/3baronesa de suassuna.png"
+
+                        alt="baronesa de suassuna"
+
+                        width="300">
+                    </div>
+                </button>
+
+
+                <button class="quadro-moldura btn-baronato" data-baronato="pirangy">
+
                 <div class="moldura-dourada">
 
-                    <img src="../images/baronatos/imagens-com-molduras/1dom pedro II.png"
+                        <img src="../images/baronatos/imagens-com-molduras/4barão de pirangy.png"
 
-                    alt="1dom pedro II"
+                        alt="pirangy"
 
-                    width="300">
-                </div>
+                        width="300">
+                    </div>
+                </button>
 
-            </button>
+                <button class="quadro-moldura btn-baronato" data-baronato="baronesaDePirangy">
 
-
-
-            <button class="quadro-moldura btn-baronato" data-baronato="suassuna">
                 <div class="moldura-dourada">
-                    <img src="../images/baronatos/imagens-com-molduras/2barão de suassuna.png"
-                    alt="Barão de Suassuna"
-                    width="300">
-                </div>
+
+                        <img src="../images/baronatos/imagens-com-molduras/5baronesa de pirangy.png"
+
+                        alt="pirangy"
+
+                        width="300">
+                    </div>
+
+                </button>
+
+
+                <button class="quadro-moldura btn-baronato" data-baronato="baraoDeESCADA">
+
+                <div class="moldura-dourada">
+
+                        <img src="../images/baronatos/imagens-com-molduras/6barão de escada.png"
+
+                        alt="baraoDeESCADA"
+
+                        width="300">
+                    </div>
+
+                </button>
+
+                <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeESCADA">
+
+                <div class="moldura-dourada">
+
+                        <img src="../images/baronatos/imagens-com-molduras/7baronesa de escada.png"
+
+                        alt="baronesaDeESCADA"
+
+                        width="300">
+                    </div>
+
+                </button>
+
+                <button class="quadro-moldura btn-baronato" data-baronato="jundia">
+
+                <div class="moldura-dourada">
+
+                        <img src="../images/baronatos/imagens-com-molduras/8barão de jundiá.png"
+
+                        alt="jundia"
+
+                        width="300">
+                    </div>
+
+                </button>
+
+                <button class="quadro-moldura btn-baronato" data-baronato="baronesaDejundia">
+
+                <div class="moldura-dourada">
+
+                        <img src="../images/baronatos/imagens-com-molduras/9baronesa de jundiá.png"
+
+                        alt="baronesa-de-jundia"
+
+                        width="300">
+                    </div>
+
+                </button>
+
+                <button class="quadro-moldura btn-baronato" data-baronato="baraoDeFrexeiras">
+
+                <div class="moldura-dourada">
+
+                        <img src="../images/baronatos/imagens-com-molduras/10barão de frexeiras.png"
+
+                        alt="baraoDeFrexeiras"
+
+                        width="300">
+                    </div>
+
+                </button>
+
+                <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeFrexeiras">
+
+                <div class="moldura-dourada">
+
+                        <img src="../images/baronatos/imagens-com-molduras/11baronesa de frexeiras.png"
+
+                        alt="baronesaDeFrexeiras"
+
+                        width="300">
+                    </div>
+
+                </button>
+
+                <button class="quadro-moldura btn-baronato" data-baronato="baraoDeUtinga">
+
+                <div class="moldura-dourada">
+
+                        <img src="../images/baronatos/imagens-com-molduras/12barão de utinga.png"
+
+                        alt="baraoDeUtinga"
+
+                        width="300">
+                    </div>
+
+                </button>
+
+                <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeUtinga">
+
+                <div class="moldura-dourada">
+
+                        <img src="../images/baronatos/imagens-com-molduras/13baronesa de utinga.png"
+
+                        alt="baronesaDeUtinga"
+
+                        width="300">
+                    </div>
+
+                </button>
+
+
+        
+
                 
-            </button>
 
+                
 
-             <button class="quadro-moldura btn-baronato" data-baronato="baronesa">
 
-                <div class="moldura-dourada">
 
-                    <img src="../images/baronatos/imagens-com-molduras/3baronesa de suassuna.png"
+                </article>
 
-                    alt="baronesa de suassuna"
-
-                    width="300">
-                </div>
-            </button>
-
-
-            <button class="quadro-moldura btn-baronato" data-baronato="pirangy">
-
-            <div class="moldura-dourada">
-
-                    <img src="../images/baronatos/imagens-com-molduras/4barão de pirangy.png"
-
-                    alt="pirangy"
-
-                    width="300">
-                </div>
-            </button>
-
-            <button class="quadro-moldura btn-baronato" data-baronato="baronesaDePirangy">
-
-            <div class="moldura-dourada">
-
-                    <img src="../images/baronatos/imagens-com-molduras/5baronesa de pirangy.png"
-
-                    alt="pirangy"
-
-                    width="300">
-                </div>
-
-            </button>
-
-
-              <button class="quadro-moldura btn-baronato" data-baronato="baraoDeESCADA">
-
-            <div class="moldura-dourada">
-
-                    <img src="../images/baronatos/imagens-com-molduras/6barão de escada.png"
-
-                    alt="baraoDeESCADA"
-
-                    width="300">
-                </div>
-
-            </button>
-
-             <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeESCADA">
-
-            <div class="moldura-dourada">
-
-                    <img src="../images/baronatos/imagens-com-molduras/7baronesa de escada.png"
-
-                    alt="baronesaDeESCADA"
-
-                    width="300">
-                </div>
-
-            </button>
-
-             <button class="quadro-moldura btn-baronato" data-baronato="jundia">
-
-            <div class="moldura-dourada">
-
-                    <img src="../images/baronatos/imagens-com-molduras/8barão de jundiá.png"
-
-                    alt="jundia"
-
-                    width="300">
-                </div>
-
-            </button>
-
-            <button class="quadro-moldura btn-baronato" data-baronato="baronesaDejundia">
-
-            <div class="moldura-dourada">
-
-                    <img src="../images/baronatos/imagens-com-molduras/9baronesa de jundiá.png"
-
-                    alt="baronesa-de-jundia"
-
-                    width="300">
-                </div>
-
-            </button>
-
-             <button class="quadro-moldura btn-baronato" data-baronato="baraoDeFrexeiras">
-
-            <div class="moldura-dourada">
-
-                    <img src="../images/baronatos/imagens-com-molduras/10barão de frexeiras.png"
-
-                    alt="baraoDeFrexeiras"
-
-                    width="300">
-                </div>
-
-            </button>
-
-             <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeFrexeiras">
-
-            <div class="moldura-dourada">
-
-                    <img src="../images/baronatos/imagens-com-molduras/11baronesa de frexeiras.png"
-
-                    alt="baronesaDeFrexeiras"
-
-                    width="300">
-                </div>
-
-            </button>
-
-            <button class="quadro-moldura btn-baronato" data-baronato="baraoDeUtinga">
-
-            <div class="moldura-dourada">
-
-                    <img src="../images/baronatos/imagens-com-molduras/12barão de utinga.png"
-
-                    alt="baraoDeUtinga"
-
-                    width="300">
-                </div>
-
-            </button>
-
-            <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeUtinga">
-
-            <div class="moldura-dourada">
-
-                    <img src="../images/baronatos/imagens-com-molduras/13baronesa de utinga.png"
-
-                    alt="baronesaDeUtinga"
-
-                    width="300">
-                </div>
-
-            </button>
-
-
-    
-
-            
-
-            
-
-
-
-            </article>
-
-        </section>
-    `
-},
-
-
-
-
+            </section>
+        `
+    },
 
     sobreMuseu: {
         title: "O Museu",
@@ -771,13 +767,6 @@ document.querySelectorAll('.nav-item').forEach(button => {
                 button.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }, 200);
         }
-
-        // 3. Lógica de Alternância (Toggle):
-        // Se NÃO estava aberto antes, agora nós abrimos.
-        // Se JÁ estava aberto, ele permanece fechado (pois removemos de todos no passo anterior).
-        if (subtopics && !isAlreadyOpen) {
-            subtopics.classList.add('open');
-        }
     });
 });
 
@@ -827,57 +816,192 @@ function voltarParaDescanso() {
 });
 
 // 1. Defina os textos de cada barão aqui
+// BANCO DE DADOS DOS BARÕES (POPOUTS)
 const detalhesBaronatos = {
-
-
     domPedro2: {
-
         title: "Henrique Marques de Holanda Cavalcanti",
-            content:
-                `<img src="../images/baronatos/imagens-sem-molduras/1dom pedro II.png"
-                width="300"> `,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
 
-Poder e Modernização: * Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.
+    suassuna: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
 
-Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.
+    baronesa: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
 
-Legado em Escada: Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.
+    pirangy: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
 
-O Lado Sombrio da Riqueza: Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição,
- manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    baronesaDePirangy: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
 
+    baraoDeESCADA: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
+
+    baronesaDeESCADA: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
+
+    jundia: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
+
+    baronesaDejundia: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
+
+    baraoDeFrexeiras: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
+
+    baronesaDeFrexeiras: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
+
+    baraoDeUtinga: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+    },
+
+    baronesaDeUtinga: {
+        title: "Henrique Marques de Holanda Cavalcanti",
+        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
+        <strong>Poder e Modernização:</strong><br>
+        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
+        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
+        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
+        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
     }
-
 };
 
-// 2. Lógica para abrir o popout ao clicar na imagem
+// LÓGICA PARA ABRIR E FECHAR O PAINEL DE CONTEÚDO (DELEGAÇÃO DE EVENTOS)
 document.addEventListener('click', (e) => {
     // Verifica se clicou no botão do barão ou dentro dele
     const btn = e.target.closest('.btn-baronato');
     
     if (btn) {
-        const id = btn.getAttribute('data-baronato'); // Pega o "escada"
+        const id = btn.getAttribute('data-baronato'); 
         const info = detalhesBaronatos[id];
 
         if (info) {
             const body = document.getElementById('popoutBody');
+            
+            // Injeta o conteúdo estruturado
             body.innerHTML = `
-                <h2 style="color: #8b4513; margin-bottom: 15px;">${info.title}</h2>
-                <div style="font-size: 1.1rem; line-height: 1.6; color: #333;">
-                    ${info.bio}
+                <div class="popout-flex-container">
+                    <div class="popout-media">
+                        ${info.content}
+                    </div>
+                    <div class="popout-text">
+                        <h1 style="color: #8b4513; margin-top: 0; margin-bottom: 20px; font-family: 'Stok Web', sans-serif; font-weight: bold; font-size: 2.2rem;">${info.title}</h1>
+                        <div style="font-size: 1.15rem; line-height: 1.7; color: #333; font-family: 'Stok Web', sans-serif; font-weight: normal;">
+                            ${info.bio}
+                        </div>
+                    </div>
                 </div>
             `;
+            
+            // Exibe o painel por cima do conteúdo atual
             document.getElementById('popoutBaronato').classList.add('active');
+            
+            // Reseta o scroll do painel para o topo toda vez que abrir um novo barão
+            body.scrollTop = 0;
         }
     }
 
-    // 3. Lógica para fechar o popout
-    if (e.target.classList.contains('close-popout') || e.target.classList.contains('popout-overlay')) {
+    // Lógica para fechar o painel ao clicar no botão "Voltar"
+    if (e.target.classList.contains('close-popout')) {
         document.getElementById('popoutBaronato').classList.remove('active');
     }
 });
 
 // inicia o timer quando entra na página
 resetarTimer();
-
