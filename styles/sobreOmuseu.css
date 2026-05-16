@@ -452,3 +452,89 @@ section.arco-bg-section p,
     color: #ffffff;
     text-align: center;
 }
+
+/* Remove a borda e o fundo cinza que o navegador ou o código antigo estava pondo */
+.btn-baronato {
+    border: none !important;
+    background: none !important;
+    outline: none !important;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+}
+
+.btn-baronato img {
+    width: 100%;
+    max-width: 280px; /* Ajuste o tamanho do quadro aqui */
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+.btn-baronato p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+}
+
+/* Grid para organizar os quadros */
+.baronatos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Fundo escuro atrás do popout */
+.popout-overlay {
+    display: none; /* Começa escondido */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Quando o modal estiver ativo */
+.popout-overlay.active {
+    display: flex;
+}
+
+/* A caixa branca com as informações */
+.popout-content {
+    background: #fff;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 12px;
+    position: relative;
+    border: none; /* Tira borda padrão */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Botão de fechar */
+.close-popout {
+    position: absolute;
+    top: 15px; right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Estilo para remover bordas do botão de imagem */
+.btn-baronato {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+}
