@@ -492,24 +492,27 @@ section.arco-bg-section p,
 
 /* O container ocupa toda a área de conteúdo, deixando a sidebar visível */
 #popoutBaronato {
-    position: fixed; /* Mantenha fixed para flutuar sobre o app */
+    position: fixed;
+
     top: 0;
-    right: 0;
-    bottom: 0;
-    left: 300px; /* IMPORTANTE: Garanta que isso bate com o tamanho da sua sidebar */
-    background-color: #fff8f0; 
-    
-    /* Aumente o z-index drasticamente para vencer qualquer outra div */
-    z-index: 99999 !important; 
-    
-    /* Se o display anterior quebrou, use esta transição limpa para o teste: */
-    display: none; 
-    flex-direction: column;
-    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+    left: 320px;
+
+    width: calc(100% - 320px);
+    height: 100vh;
+
+    background: #E9CFA7;
+
+    z-index: 99999;
+
+    display: none;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
+/* quando abrir */
 #popoutBaronato.active {
-    display: flex !important;
+    display: block;
 }
 
 /* Quando o modal estiver ativo */
@@ -517,71 +520,81 @@ section.arco-bg-section p,
     display: flex;
 }
 
-.popout-header {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 40px;
-    background-color: rgba(0, 0, 0, 0.02);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
-/* A caixa branca com as informações | MUDAR PARA PREENCHER AS TELAS */
-.popout-content {
-    background: #fff;
-    padding: 30px;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 12px;
-    position: relative;
-    border: none; /* Tira borda padrão */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    animation: zoomIn 0.3s ease;
-}
-
-@keyframes zoomIn {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
 /* Botão de fechar */
 .close-popout {
-    background: #8b4513;
-    color: #fff;
+    position: absolute;
+
+    top: 25px;
+    right: 35px;
+
+    background: transparent;
     border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-family: 'Stok Web', sans-serif;
+
+    color: #000;
+
+    font-size: 2.2rem;
     font-weight: bold;
+
     cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.2s;
+
+    z-index: 100000;
+
+    line-height: 1;
+
+    transition: transform 0.2s ease;
 }
 
 .close-popout:hover {
-    background: #a0522d;
+    transform: scale(1.15);
 }
 
 #popoutBody {
     flex: 1;
     overflow-y: auto;
-    padding: 40px;
+
+    padding: 50px 70px;
 }
 
-.popout-flex-container {
+#popoutBody::-webkit-scrollbar {
+    width: 10px;
+}
+
+#popoutBody::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.25);
+    border-radius: 20px;
+}
+
+.popout-media-centered {
+    width: 100%;
+
     display: flex;
-    gap: 40px;
-    align-items: flex-start;
+    justify-content: center;
+
+    margin-bottom: 40px;
 }
 
-.popout-media img {
-    max-width: 300px;
+.popout-media-centered img {
+    width: 100%;
+    max-width: 500px;
+
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+    display: block;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 10px 25px rgba(0,0,0,0.25));
 }
 
-.popout-text {
-    flex: 1;
+.popout-content-vatican {
+    width: 100%;
+    max-width: 1000px;
+
+    position: relative;
+
+    margin: 0 auto;
+
+    padding: 60px 60px 40px;
 }
 
 /* Estilo para remover bordas do botão de imagem */
@@ -629,4 +642,49 @@ section.arco-bg-section p,
     gap: 30px !important; /* Espaçamento elegante entre as fotos */
     padding: 20px 0;
     width: 100%;
+}
+
+.popout-content-vatican {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popout-title-gold {
+    font-size: 3rem;
+    text-align: center;
+
+    color: #4d2e16;
+
+    margin-bottom: 30px;
+}
+
+
+.popout-bio-text {
+    font-size: 1.2rem;
+    line-height: 2;
+
+    color: #2d2118;
+
+    text-align: justify;
+}
+
+
+.popout-bio-text strong {
+    color: #3d2413;
+    font-weight: 700;
+}
+
+#popoutBaronato::-webkit-scrollbar {
+    width: 10px;
+}
+
+#popoutBaronato::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.25);
+    border-radius: 20px;
 }

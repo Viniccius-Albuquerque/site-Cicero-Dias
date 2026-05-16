@@ -978,7 +978,6 @@ document.addEventListener('click', (e) => {
                             ${info.bio}
                         </div>
                     </div>
-                    <button class="close-popout">OK | Voltar</button>
                 </div>
             `;
             
