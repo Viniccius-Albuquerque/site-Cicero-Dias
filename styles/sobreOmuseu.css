@@ -455,12 +455,14 @@ section.arco-bg-section p,
 
 /* Remove a borda e o fundo cinza que o navegador ou o código antigo estava pondo */
 .btn-baronato {
-    border: none !important;
-    background: none !important;
-    outline: none !important;
+    background: none;
+    border: none;
     cursor: pointer;
-    text-align: center;
+    width: 100%;                           /* Faz o botão ocupar o espaço da coluna da grid */
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-baronato img {
@@ -479,11 +481,13 @@ section.arco-bg-section p,
 }
 
 /* Grid para organizar os quadros */
-.baronatos-grid {
+.grid-baronatos {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 20px;
+    grid-template-columns: repeat(3, 1fr); /* Cria exatamente 3 colunas iguais */
+    gap: 20px;                             /* Espaçamento de 20px entre os botões */
+    padding: 20px;                         /* Espaçamento interno do container */
+    max-width: 100%;                       /* Garante que não passe da tela */
+    box-sizing: border-box;
 }
 
 /* O container ocupa toda a área de conteúdo, deixando a sidebar visível */
@@ -582,9 +586,47 @@ section.arco-bg-section p,
 
 /* Estilo para remover bordas do botão de imagem */
 .btn-baronato {
-    background: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
     border: none;
-    padding: 0;
     cursor: pointer;
-    outline: none;
+}
+
+.modulo-baronatos {
+    background-color: #151617 !important;
+    color: #ede7e1 !important;
+    padding: 40px;
+    min-height: 100vh; /* Garante que preencha o fundo até embaixo */
+    box-sizing: border-box;
+}
+
+.modulo-baronatos p, 
+.modulo-baronatos strong, 
+.modulo-baronatos span {
+    color: #ede7e1 !important;
+}
+
+.modulo-baronatos h1, 
+.modulo-baronatos h2 {
+    color: #ede7e1 !important;
+    font-family: 'Stok Web', sans-serif;
+    font-weight: bold;
+}
+
+#contentBody[style*="background-color: rgb(21, 22, 23)"] h2,
+#contentBody[style*="background-color: rgb(21, 22, 23)"] span,
+#contentBody[style*="background-color: rgb(21, 22, 23)"] strong {
+    color: #ede7e1 !important;
+}
+
+#contentBody[style*="background-color: rgb(21, 22, 23)"] .baronatos-grid,
+.baronatos-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important; /* Espaçamento elegante entre as fotos */
+    padding: 20px 0;
+    width: 100%;
 }

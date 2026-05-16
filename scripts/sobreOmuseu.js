@@ -301,199 +301,177 @@ const topicsData = {
         title: "Baronatos",
 
         content: `
+            <h1 class="page-title" style="color: #ede7e1 !important;">Baronatos</h1>
+            
+            <div class="grid-baronatos">
 
-            <h1 class="page-title">Baronatos</h1>
+                        <button class="quadro-moldura btn-baronato" data-baronato="domPedro2">
+                            <div class="moldura-dourada">
 
+                                <img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png"
 
-            <section class="section-expanded">
+                                alt="1dom pedro II"
 
-                <article class="baron-entry">
-                    <h3>
-                        
-                    O Poder e Tradição de Escada
+                                width="300">
+                            </div>
 
-                    </h3>
+                        </button>
 
 
-                    <button class="quadro-moldura btn-baronato" data-baronato="domPedro2">
-                    <div class="moldura-dourada">
 
-                        <img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png"
+                        <button class="quadro-moldura btn-baronato" data-baronato="suassuna">
+                            <div class="moldura-dourada">
+                                <img src="../images/baronatos/imagens-com-molduras/2barão de suassuna.png"
+                                alt="Barão de Suassuna"
+                                width="300">
+                            </div>
+                            
+                        </button>
 
-                        alt="1dom pedro II"
 
-                        width="300">
-                    </div>
+                        <button class="quadro-moldura btn-baronato" data-baronato="baronesa">
 
-                </button>
+                            <div class="moldura-dourada">
 
+                                <img src="../images/baronatos/imagens-com-molduras/3baronesa de suassuna.png"
 
+                                alt="baronesa de suassuna"
 
-                <button class="quadro-moldura btn-baronato" data-baronato="suassuna">
-                    <div class="moldura-dourada">
-                        <img src="../images/baronatos/imagens-com-molduras/2barão de suassuna.png"
-                        alt="Barão de Suassuna"
-                        width="300">
-                    </div>
-                    
-                </button>
+                                width="300">
+                            </div>
+                        </button>
 
 
-                <button class="quadro-moldura btn-baronato" data-baronato="baronesa">
+                        <button class="quadro-moldura btn-baronato" data-baronato="pirangy">
 
-                    <div class="moldura-dourada">
+                        <div class="moldura-dourada">
 
-                        <img src="../images/baronatos/imagens-com-molduras/3baronesa de suassuna.png"
+                                <img src="../images/baronatos/imagens-com-molduras/4barão de pirangy.png"
 
-                        alt="baronesa de suassuna"
+                                alt="pirangy"
 
-                        width="300">
-                    </div>
-                </button>
+                                width="300">
+                            </div>
+                        </button>
 
+                        <button class="quadro-moldura btn-baronato" data-baronato="baronesaDePirangy">
 
-                <button class="quadro-moldura btn-baronato" data-baronato="pirangy">
+                        <div class="moldura-dourada">
 
-                <div class="moldura-dourada">
+                                <img src="../images/baronatos/imagens-com-molduras/5baronesa de pirangy.png"
 
-                        <img src="../images/baronatos/imagens-com-molduras/4barão de pirangy.png"
+                                alt="pirangy"
 
-                        alt="pirangy"
+                                width="300">
+                            </div>
 
-                        width="300">
-                    </div>
-                </button>
+                        </button>
 
-                <button class="quadro-moldura btn-baronato" data-baronato="baronesaDePirangy">
 
-                <div class="moldura-dourada">
+                        <button class="quadro-moldura btn-baronato" data-baronato="baraoDeESCADA">
 
-                        <img src="../images/baronatos/imagens-com-molduras/5baronesa de pirangy.png"
+                        <div class="moldura-dourada">
 
-                        alt="pirangy"
+                                <img src="../images/baronatos/imagens-com-molduras/6barão de escada.png"
 
-                        width="300">
-                    </div>
+                                alt="baraoDeESCADA"
 
-                </button>
+                                width="300">
+                            </div>
 
+                        </button>
 
-                <button class="quadro-moldura btn-baronato" data-baronato="baraoDeESCADA">
+                        <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeESCADA">
 
-                <div class="moldura-dourada">
+                        <div class="moldura-dourada">
 
-                        <img src="../images/baronatos/imagens-com-molduras/6barão de escada.png"
+                                <img src="../images/baronatos/imagens-com-molduras/7baronesa de escada.png"
 
-                        alt="baraoDeESCADA"
+                                alt="baronesaDeESCADA"
 
-                        width="300">
-                    </div>
+                                width="300">
+                            </div>
 
-                </button>
+                        </button>
 
-                <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeESCADA">
+                        <button class="quadro-moldura btn-baronato" data-baronato="jundia">
 
-                <div class="moldura-dourada">
+                        <div class="moldura-dourada">
 
-                        <img src="../images/baronatos/imagens-com-molduras/7baronesa de escada.png"
+                                <img src="../images/baronatos/imagens-com-molduras/8barão de jundiá.png"
 
-                        alt="baronesaDeESCADA"
+                                alt="jundia"
 
-                        width="300">
-                    </div>
+                                width="300">
+                            </div>
 
-                </button>
+                        </button>
 
-                <button class="quadro-moldura btn-baronato" data-baronato="jundia">
+                        <button class="quadro-moldura btn-baronato" data-baronato="baronesaDejundia">
 
-                <div class="moldura-dourada">
+                        <div class="moldura-dourada">
 
-                        <img src="../images/baronatos/imagens-com-molduras/8barão de jundiá.png"
+                                <img src="../images/baronatos/imagens-com-molduras/9baronesa de jundiá.png"
 
-                        alt="jundia"
+                                alt="baronesa-de-jundia"
 
-                        width="300">
-                    </div>
+                                width="300">
+                            </div>
 
-                </button>
+                        </button>
 
-                <button class="quadro-moldura btn-baronato" data-baronato="baronesaDejundia">
+                        <button class="quadro-moldura btn-baronato" data-baronato="baraoDeFrexeiras">
 
-                <div class="moldura-dourada">
+                        <div class="moldura-dourada">
 
-                        <img src="../images/baronatos/imagens-com-molduras/9baronesa de jundiá.png"
+                                <img src="../images/baronatos/imagens-com-molduras/10barão de frexeiras.png"
 
-                        alt="baronesa-de-jundia"
+                                alt="baraoDeFrexeiras"
 
-                        width="300">
-                    </div>
+                                width="300">
+                            </div>
 
-                </button>
+                        </button>
 
-                <button class="quadro-moldura btn-baronato" data-baronato="baraoDeFrexeiras">
+                        <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeFrexeiras">
 
-                <div class="moldura-dourada">
+                        <div class="moldura-dourada">
 
-                        <img src="../images/baronatos/imagens-com-molduras/10barão de frexeiras.png"
+                                <img src="../images/baronatos/imagens-com-molduras/11baronesa de frexeiras.png"
 
-                        alt="baraoDeFrexeiras"
+                                alt="baronesaDeFrexeiras"
 
-                        width="300">
-                    </div>
+                                width="300">
+                            </div>
 
-                </button>
+                        </button>
 
-                <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeFrexeiras">
+                        <button class="quadro-moldura btn-baronato" data-baronato="baraoDeUtinga">
 
-                <div class="moldura-dourada">
+                        <div class="moldura-dourada">
 
-                        <img src="../images/baronatos/imagens-com-molduras/11baronesa de frexeiras.png"
+                                <img src="../images/baronatos/imagens-com-molduras/12barão de utinga.png"
 
-                        alt="baronesaDeFrexeiras"
+                                alt="baraoDeUtinga"
 
-                        width="300">
-                    </div>
+                                width="300">
+                            </div>
 
-                </button>
+                        </button>
 
-                <button class="quadro-moldura btn-baronato" data-baronato="baraoDeUtinga">
+                        <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeUtinga">
 
-                <div class="moldura-dourada">
+                        <div class="moldura-dourada">
 
-                        <img src="../images/baronatos/imagens-com-molduras/12barão de utinga.png"
+                                <img src="../images/baronatos/imagens-com-molduras/13baronesa de utinga.png"
 
-                        alt="baraoDeUtinga"
+                                alt="baronesaDeUtinga"
 
-                        width="300">
-                    </div>
+                                width="300">
+                            </div>
 
-                </button>
-
-                <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeUtinga">
-
-                <div class="moldura-dourada">
-
-                        <img src="../images/baronatos/imagens-com-molduras/13baronesa de utinga.png"
-
-                        alt="baronesaDeUtinga"
-
-                        width="300">
-                    </div>
-
-                </button>
-
-
-        
-
-                
-
-                
-
-
-
-                </article>
-
-            </section>
+                        </button>
+            </div>
         `
     },
 
@@ -724,7 +702,21 @@ function loadTopic(topicId) {
     if (!topicsData[topicId]) return;
     
     const topic = topicsData[topicId];
-    document.getElementById('contentBody').innerHTML = topic.content;
+    const contentBody = document.getElementById('contentBody');
+    
+    // Injeta o conteúdo na tela
+    contentBody.innerHTML = topic.content;
+    
+    // CORREÇÃO: Aplica a cor escura na tela inteira se for o tópico de baronatos
+    if (topicId === 'baronatos') {
+        contentBody.style.backgroundColor = '#151617';
+        contentBody.style.color = '#ede7e1';
+    } else {
+        // Se for QUALQUER outro tópico, volta para a cor padrão do seu totem
+        // (Altere '#fff8f0' abaixo se a sua cor padrão for outra, como branco #ffffff)
+        contentBody.style.backgroundColor = '#fff8f0'; 
+        contentBody.style.color = '#333333'; 
+    }
     
     // SELEÇÃO DO CONTAINER DE SCROLL
     const container = document.querySelector('.content-scroll');
@@ -976,16 +968,17 @@ document.addEventListener('click', (e) => {
             
             // Injeta o conteúdo estruturado
             body.innerHTML = `
-                <div class="popout-flex-container">
-                    <div class="popout-media">
+                <div class="popout-content-vatican">
+                    <div class="popout-media-centered">
                         ${info.content}
                     </div>
-                    <div class="popout-text">
-                        <h1 style="color: #8b4513; margin-top: 0; margin-bottom: 20px; font-family: 'Stok Web', sans-serif; font-weight: bold; font-size: 2.2rem;">${info.title}</h1>
-                        <div style="font-size: 1.15rem; line-height: 1.7; color: #333; font-family: 'Stok Web', sans-serif; font-weight: normal;">
+                    <div class="popout-text-vertical">
+                        <h1 class="popout-title-gold">${info.title}</h1>
+                        <div class="popout-bio-text">
                             ${info.bio}
                         </div>
                     </div>
+                    <button class="close-popout">OK | Voltar</button>
                 </div>
             `;
             
