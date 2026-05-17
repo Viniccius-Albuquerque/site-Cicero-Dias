@@ -228,8 +228,26 @@ html, body {
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 40px;
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
 }
 
+.page-title::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    width: 5px;
+    height: 32px;
+
+    background: #e53935;
+
+    border-radius: 20px;
+}
 /* LOREM IPSUM DOLOR */
 .lorem-block {
     margin-bottom: 40px;
@@ -691,4 +709,44 @@ section.arco-bg-section p,
 
 .museum-footer.dark-footer .footer-divider {
     background-color: rgba(255,255,255,0.15);
+}
+
+/* CONTATO */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    padding-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.contact-title h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #111;
+}
+
+.contact-icon {
+    color: #e53935;
+    font-size: 1.7rem;
+    width: 28px;
+    text-align: center;
+}
+
+.contact-item p {
+    margin-left: 42px;
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 0;
 }

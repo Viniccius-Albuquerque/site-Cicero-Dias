@@ -673,24 +673,63 @@ const topicsData = {
         content: `
             <h1 class="page-title">Contato</h1>
 
-            <section>
-                <h2>Informações de Contato</h2>
+            <section class="contact-section">
 
-                <p>
-                    Endereço: R. da Matriz, 97 - Centro, Escada - PE, 55500-000
-                </p>
+                <div class="contact-item">
+                    <div class="contact-title">
+                        <i class="fa-regular fa-envelope contact-icon"></i>
+                        <h2>E-mail</h2>
+                    </div>
 
-                <p>
-                    Telefone: (00) 0000-0000
-                </p>
+                    <p>
+                        cicerodias_museu2011@yahoo.com
+                    </p>
+                </div>
 
-                <p>
-                    E-mail: cicerodias_museu2011@yahoo.com
-                </p>
+                <div class="contact-item">
+                    <div class="contact-title">
+                        <i class="fa-brands fa-whatsapp contact-icon"></i>
+                        <h2>Whatsapp</h2>
+                    </div>
 
-                <p>
-                    Instagram: @museucicerodiaspe
-                </p>
+                    <p>
+                        (81) 9.9944-7733
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-title">
+                        <i class="fa-brands fa-instagram contact-icon"></i>
+                        <h2>Instagram</h2>
+                    </div>
+
+                    <p>
+                        museucicerodiaspe
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-title">
+                        <i class="fa-brands fa-youtube contact-icon"></i>
+                        <h2>Youtube</h2>
+                    </div>
+
+                    <p>
+                        Canal Cícero Dias
+                    </p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-title">
+                        <i class="fa-solid fa-location-dot contact-icon"></i>
+                        <h2>Endereço</h2>
+                    </div>
+
+                    <p>
+                        R. da Matriz, 97 - Centro, Escada - PE, 55500-000
+                    </p>
+                </div>
+
             </section>
         `
     }
