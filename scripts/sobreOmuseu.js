@@ -257,10 +257,152 @@ const topicsData = {
         content: `
             <h1 class="page-title">Cícero Dias</h1>
 
+            <div class="cicero-hero">
+
+                <!-- CARROSSEL -->
+                <div class="cicero-slider">
+
+                    <button class="slider-btn prev">
+                        ←
+                    </button>
+
+                    <div class="slider-track">
+
+                        <div class="slide active">
+                            <img src="../images/cicero/1.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/cicero/2.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/cicero/3.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/cicero/4.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/cicero/5.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/cicero/6.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <button class="slider-btn next">
+                        →
+                    </button>
+
+                </div>
+
+                <!-- BOLINHAS -->
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <!-- INFO -->
+                <div class="cicero-info-bar">
+
+                    <div class="cicero-info-left">
+                        <div class="mini-icon"></div>
+
+                        <div>
+                            <strong>PORTO DE ITAPARICA</strong>
+                            <p>Óleo sobre tela, 1928</p>
+                        </div>
+                    </div>
+
+                    <div class="cicero-divider"></div>
+
+                    <div class="cicero-info-text">
+                        As paisagens, figuras e naturezas mortas de Cícero Dias
+                        revelam um olhar sensível e poético sobre o Brasil,
+                        suas cores e sua cultura.
+                    </div>
+
+                    <a href="#" class="btn-ver-acervo" data-target="acervoCompleto">
+                        Ver Acervo
+                    </a>
+
+                </div>
+
+                <!-- LINHA DO TEMPO -->
+                <div class="cicero-timeline">
+
+                    <h2>Linha do Tempo</h2>
+
+                    <p class="timeline-description">
+                        A trajetória artística de Cícero Dias é marcada pelo modernismo, 
+                        pela poesia visual e pela fusão entre memória, imaginação e vanguarda. 
+                        Sua obra construiu uma conexão singular entre o imaginário nordestino e 
+                        os movimentos da arte internacional do século XX.
+                    </p>
+
+                    <div class="timeline-line">
+
+                        <div class="timeline-item">
+                            <span class="year">1907</span>
+                            <div class="point"></div>
+                            <p>Nasceu em Jundiaí Escada - PE</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year">1928</span>
+                            <div class="point"></div>
+                            <p>Iniciou estudos no Rio de Janeiro</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year">1937</span>
+                            <div class="point"></div>
+                            <p>
+                                Participou da Exposição
+                                de Arte da Bienal 
+                                no Recife
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year">1948</span>
+                            <div class="point"></div>
+                            <p>Representou o Brasil na Bienal de Veneza</p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year">2003</span>
+                            <div class="point"></div>
+                            <p>Faleceu em Paris, França</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
             <section id="inicioVida">
                 <h2>Início de Vida e Formação</h2>
                 <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
+                    Tudo começou no dia 5 de março de 1907, no Engenho Jundiá, em Pernambuco, 
+                    onde Cícero nasceu e, desde muito pequeno, já demonstrava um talento natural 
+                    para a pintura. Em busca de formação, ele se mudou para o Rio de Janeiro e, 
+                    em 1925, entrou para o curso de Arquitetura da Escola de Belas Artes. No entanto, 
+                    sua paixão pela arte falou mais alto: em 1928, ele tomou a decisão corajosa de 
+                    abandonar definitivamente a faculdade para se entregar totalmente à pintura. 
+                    Foi nesse mesmo ano que sua carreira deu um salto, com sua primeira exposição 
+                    individual no Rio de Janeiro, onde foi apadrinhado por grandes nomes; Di 
+                    Cavalcanti o chamou de "o novo valor da pintura brasileira", Ismael Nery 
+                    pintou seu retrato e o poeta Murilo Mendes escreveu versos em sua homenagem.
                 </p>
             </section>
 
@@ -290,6 +432,44 @@ const topicsData = {
                 <p>
                     Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
                 </p>
+            </section>
+
+            <section id="acervoCompleto">
+
+                <h2>Acervo</h2>
+
+                <p>
+                    Conheça algumas obras e registros do acervo de Cícero Dias.
+                </p>
+
+                <div class="galeria-acervo">
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/1.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/2.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/3.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/4.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/5.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/6.jpg" alt="">
+                    </div>
+
+                </div>
+
             </section>
         `
     },
@@ -745,6 +925,10 @@ function loadTopic(topicId) {
     
     // Injeta o conteúdo na tela
     contentBody.innerHTML = topic.content;
+
+    if (topicId === 'ciceroDias') {
+        initSlider();
+    }
     
     // CORREÇÃO: Aplica a cor escura na tela inteira se for o tópico de baronatos
     const footer = document.querySelector('.museum-footer');
@@ -1047,3 +1231,76 @@ document.addEventListener('click', (e) => {
 
 // inicia o timer quando entra na página
 resetarTimer();
+
+let currentSlide = 0;
+
+function initSlider() {
+
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+
+    if (!slides.length) return;
+
+    function updateSlider(index) {
+
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+    }
+
+    const nextBtn = document.querySelector('.slider-btn.next');
+    const prevBtn = document.querySelector('.slider-btn.prev');
+
+    nextBtn?.addEventListener('click', () => {
+
+        currentSlide++;
+
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+
+        updateSlider(currentSlide);
+    });
+
+    prevBtn?.addEventListener('click', () => {
+
+        currentSlide--;
+
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+
+        updateSlider(currentSlide);
+    });
+}
+
+// BOTÃO VER ACERVO
+document.addEventListener('click', (e) => {
+
+    const btnAcervo = e.target.closest('.btn-ver-acervo');
+
+    if (btnAcervo) {
+        e.preventDefault();
+
+        const targetId = btnAcervo.getAttribute('data-target');
+
+        const element = document.getElementById(targetId);
+        const container = document.querySelector('.content-scroll');
+
+        if (element && container) {
+
+            container.scrollTo({
+                top: element.offsetTop,
+                behavior: 'smooth'
+            });
+
+        }
+    }
+});

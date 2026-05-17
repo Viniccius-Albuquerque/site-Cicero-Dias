@@ -759,3 +759,284 @@ section.arco-bg-section p,
     line-height: 1.45;
     gap: 8px;
 }
+
+/* HERO CICERO */
+.cicero-hero {
+    margin-bottom: 70px;
+}
+
+/* SLIDER */
+.cicero-slider {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.slider-track {
+    width: 100%;
+    height: 320px;
+
+    position: relative;
+
+    overflow: hidden;
+    border-radius: 24px;
+
+    background: #000;
+}
+
+.slide {
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.slider-btn {
+    position: absolute;
+
+    z-index: 10;
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: white;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+.slider-btn.prev {
+    left: 20px;
+}
+
+.slider-btn.next {
+    right: 20px;
+}
+
+/* DOTS */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #111;
+    opacity: 0.4;
+}
+
+.dot.active {
+    opacity: 1;
+    background: #d92c2c;
+}
+
+/* INFO BAR */
+.cicero-info-bar {
+    margin-top: 35px;
+
+    border-top: 1px solid #d6a7a7;
+    padding-top: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cicero-info-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    min-width: 240px;
+}
+
+.mini-icon {
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #d92c2c;
+}
+
+.cicero-divider {
+    width: 1px;
+    height: 70px;
+
+    background: #d6a7a7;
+}
+
+.cicero-info-text {
+    flex: 1;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.btn-acervo {
+    padding: 12px 26px;
+
+    border: 1px solid #d92c2c;
+
+    background: transparent;
+
+    color: #d92c2c;
+
+    cursor: pointer;
+}
+
+/* TIMELINE */
+.cicero-timeline {
+    margin-top: 70px;
+}
+
+.timeline-description {
+    max-width: 1000px;
+}
+
+.timeline-line {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+
+.timeline-line::before {
+    content: "";
+
+    position: absolute;
+
+    top: 36px;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #d92c2c;
+}
+
+.timeline-item {
+    width: 180px;
+
+    position: relative;
+}
+
+.year {
+    font-weight: bold;
+    color: #d92c2c;
+}
+
+.point {
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: #d92c2c;
+
+    margin: 18px 0;
+}
+
+/* ACERVO */
+.galeria-acervo {
+    margin-top: 40px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.obra-card {
+    width: 100%;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background: #ddd;
+}
+
+.obra-card img {
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.btn-ver-acervo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 30px;
+
+    background: rgba(255,255,255,0.92);
+
+    color: #4a4a4a;
+
+    border: 2px solid #9f2d2d;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border 0.25s ease,
+        color 0.25s ease;
+}
+
+.btn-ver-acervo:hover {
+    background: #9f2d2d;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+.btn-ver-acervo::after {
+    content: " ↗";
+
+    margin-left: 6px;
+
+    font-size: 0.95rem;
+}
