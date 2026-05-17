@@ -404,33 +404,257 @@ const topicsData = {
                     Cavalcanti o chamou de "o novo valor da pintura brasileira", Ismael Nery 
                     pintou seu retrato e o poeta Murilo Mendes escreveu versos em sua homenagem.
                 </p>
+
+                <div class="duas-imagens-grid">
+
+                    <img 
+                        src="../images/cicero/imagem1.jpg" 
+                        alt="Imagem 1"
+                    >
+
+                    <img 
+                        src="../images/cicero/imagem2.jpg" 
+                        alt="Imagem 2"
+                    >
+
+                </div>
+
+                <p>
+                    Nesse período, Cícero mergulhou de cabeça no Movimento Antropofágico, 
+                    convivendo com a elite intelectual do país, como Mário de Andrade e Tarsila do 
+                    Amaral. Entre 1926 e 1929, ele criou uma de suas obras mais famosas, o 
+                    gigantesco painel "Eu Vi o Mundo... Ele Começava no Recife", que media 
+                    15 metros de largura e causou grande impacto na época. Em 1937, convidado 
+                    por Di Cavalcanti, Cícero mudou-se para Paris, onde sua formação ganhou um 
+                    novo fôlego ao entrar em contato com a vanguarda europeia. Lá, ele se 
+                    tornou amigo de gênios como Pablo Picasso — que o descreveu como um 
+                    "grande poeta e grande pintor" — e o poeta Paul Éluard.
+                </p>
+
+                <p>
+                    Mesmo vivendo décadas na Europa, Cícero nunca esqueceu suas raízes. 
+                    Ao longo dos anos, ele transitou entre o figurativismo e o abstracionismo, 
+                    participando de exposições históricas e recebendo honrarias como a "Ordem 
+                    Nacional do Mérito da França" em 1998. Já no fim da vida, em 2000, ele deixou um 
+                    presente eterno para sua terra natal ao desenhar o piso da Praça Marco Zero, no 
+                    Recife, inspirado em sua obra clássica. Cícero Dias faleceu em Paris, no dia 28 de 
+                    janeiro de 2003, aos 95 anos, e foi sepultado no famoso Cemitério de Montparnasse, 
+                    deixando um legado que une perfeitamente o regionalismo brasileiro ao modernismo 
+                    internacional.
+                </p>
             </section>
 
             <section id="modernismo">
                 <h2>Primeira Fase e Modernismo</h2>
                 <p>
-                    Nunc augue donec dictumst varius quisque consectetur elit fames. Metus condimentum orci habitant integer torquent erat convallis suspendisse.
+                    Tudo começa com a ruptura definitiva de Cícero com o ensino tradicional: em 1928, 
+                    ele abandonou a Escola de Belas Artes e o curso de Arquitetura no Rio de Janeiro 
+                    para se entregar totalmente à pintura. Esse movimento de liberdade marcou sua 
+                    entrada triunfal no cenário artístico, simbolizada por sua primeira exposição 
+                    individual naquele mesmo ano, na sede da Policlínica. Foi um evento histórico 
+                    onde ele foi recebido como uma estrela pela elite intelectual; Di Cavalcanti o 
+                    proclamou o "novo valor da pintura brasileira", Ismael Nery pintou seu retrato e o 
+                    poeta Murilo Mendes lhe dedicou um poema. Esse momento marcou o surgimento do 
+                    Movimento Antropofágico, e Cícero estava no centro de tudo, convivendo e colaborando 
+                    com nomes como Oswald de Andrade, Tarsila do Amaral, Anita Malfatti e Mário de Andrade.
                 </p>
+
+                <div class="imagem-destaque">
+
+                    <img 
+                        src="../images/cicero/imagem-modernismo.jpg" 
+                        alt="Primeira fase e modernismo"
+                    >
+
+                </div>
+
+                <p>
+                    Nesta fase inicial, a obra de Cícero Dias era profundamente marcada por uma mistura de 
+                    sonho, memória regional e ousadia moderna. Entre 1926 e 1929, ele trabalhou em sua 
+                    obra-prima desse período: o monumental painel "Eu Vi o Mundo... Ele Começava no 
+                    Recife". Com impressionantes 15 metros de largura, a obra foi pintada em uma casa 
+                    no bairro de Santa Tereza, no Rio de Janeiro, e causou um enorme impacto e reações 
+                    intensas quando foi exibida no Salão de 1931. O painel era tão relevante que gerou 
+                    discussões profundas entre os intelectuais da época, incluindo uma famosa carta de 
+                    Mário de Andrade para Tarsila do Amaral comentando as cenas da pintura.
+                </p>
+
+                <p>
+                    A rede de amizades de Cícero durante o auge do Modernismo era vastíssima e reforçava 
+                    sua formação intelectual e artística. Ele mantinha proximidade com grandes escritores 
+                    e pensadores, como Manuel Bandeira, Gilberto Freyre, Rachel de Queiroz e o poeta 
+                    francês Blaise Cendrars. Em 1929, sua conexão com suas raízes pernambucanas foi 
+                    reafirmada com uma exposição em Escada, que contou com uma conferência de Mário de 
+                    Andrade. Sua projeção já era tamanha que, em 1930, ele integrou a primeira coleção 
+                    representativa de pinturas brasileiras exibida no Roerich Museum, em Nova York.
+                </p>
+
+                <p>
+                    Essa "Primeira Fase" brasileira, rica em lirismo e cores que remetiam à sua infância 
+                    no engenho, serviu de base sólida para sua transição internacional. Em 1937, 
+                    impulsionado por uma carta de Di Cavalcanti que o incentivava a expandir seus 
+                    horizontes em Paris, Cícero partiu para a Europa. Ali, ele encerraria esse ciclo 
+                    inicial para começar sua jornada na vanguarda mundial, mas sempre levando consigo 
+                    a alma do Recife que ele "viu começar o mundo".
+                </p>
+
+                <div class="duas-imagens-grid">
+
+                    <img 
+                        src="../images/cicero/imagem1.jpg" 
+                        alt="Imagem 1"
+                    >
+
+                    <img 
+                        src="../images/cicero/imagem2.jpg" 
+                        alt="Imagem 2"
+                    >
+
+                </div>
             </section>
 
             <section id="internacional">
                 <h2>Carreira Internacional</h2>
                 <p>
-                    Dui gravida leo fames maximus cubilia vestibulum vulputate. Scelerisque mi vivamus faucibus suspendisse adipiscing ex sodales ornare.
+                    Tudo começou com um convite decisivo: em 1937, incentivado por uma carta de Di 
+                    Cavalcanti, Cícero mudou-se para Paris. Já em 1938, realizou sua primeira exposição 
+                    individual na capital francesa, na Galerie Jeanne Castel, onde foi aclamado como um 
+                    mestre de paleta rica e "selvagem esplendidamente civilizado". Foi nessa época que 
+                    ele formou uma amizade profunda com Pablo Picasso, que chegou a declarar que Cícero 
+                    era "um grande poeta, um grande pintor". Mesmo durante os tempos difíceis da 
+                    Segunda Guerra Mundial, ele se manteve integrado à vanguarda intelectual, trocando 
+                    correspondências com amigos como Picasso e o poeta Paul Éluard enquanto estava em 
+                    Lisboa ou Vichy.
                 </p>
+
+                <p>
+                    A partir do final da década de 1940, a carreira de Cícero tomou um rumo definitivo 
+                    rumo ao abstracionismo. Em 1948, participou da exposição "Tendências da Arte Abstrata" 
+                    na Galerie Denise René, em Paris, e suas obras murais foram destaque na prestigiosa 
+                    revista francesa Art d’Aujourd’hui, figurando ao lado de mestres como Kandinsky e 
+                    Le Corbusier. Ele se tornou uma figura central no cenário artístico europeu, 
+                    integrando o "Groupe Espace" em 1951 e participando da exposição itinerante "Klar 
+                    Form" por diversos países nórdicos, junto a gigantes como Alexander Calder e 
+                    Fernand Léger. Sua projeção internacional o levou a expor na Bienal de Veneza em 
+                    1950 e em importantes museus, como o MoMA em Nova York e o Centre Pompidou em Paris.
+                </p>
+
+                <p>
+                    O ápice do reconhecimento na sua "segunda pátria" veio em 1998, quando Cícero 
+                    recebeu das mãos do governo francês a "Ordem Nacional do Mérito". Após uma vida 
+                    dedicada a unir a essência brasileira à modernidade global, Cícero Dias faleceu em 
+                    Paris no dia 28 de janeiro de 2003, aos 95 anos, sendo sepultado no histórico 
+                    Cemitério de Montparnasse. Como prova de seu impacto duradouro na cultura francesa, 
+                    em 2006, a prefeitura de Paris instalou uma placa comemorativa na fachada do 
+                    prédio onde ele viveu, na Rue de Longchamp. Cícero partiu como um artista universal, 
+                    mas que, como diziam suas obras, sempre via o mundo começar no seu querido Recife.
+                </p>
+
+                <div class="imagem-destaque2">
+
+                    <img 
+                        src="../images/cicero/imagem-modernismo.jpg" 
+                        alt="Primeira fase e modernismo"
+                    >
+
+                </div>
+
+                <div class="duas-imagens-grid2">
+
+                    <img 
+                        src="../images/cicero/imagem1.jpg" 
+                        alt="Imagem 1"
+                    >
+
+                    <img 
+                        src="../images/cicero/imagem2.jpg" 
+                        alt="Imagem 2"
+                    >
+
+                </div>
             </section>
 
             <section id="murais">
                 <h2>Abstracionismo e Murais</h2>
                 <p>
-                    Ut ante consectetur integer cras odio, habitant amet vulputate. Efficitur himenaeos praesent sed tempor quis fringilla nascetur.
+                    A transição de Cícero para o abstracionismo consolidou-se 
+                    no final da década de 1940, em Paris. Em 1948, ele participou 
+                    da histórica exposição "Tendances de l’Art Abstrait" na Galerie 
+                    Denise René, um marco para a arte não-figurativa. No ano seguinte, 
+                    seu nome foi incluído no livro L’Art Abstrait, ses origines, ses 
+                    premiers maîtres, de Michel Seuphor, figurando ao lado dos 
+                    grandes mestres do gênero. A linguagem abstrata de Cícero era 
+                    descrita como um jogo preciso de geometria — com retas, curvas, 
+                    elipses e triângulos — que, embora lírica, buscava atingir o "coração 
+                    mesmo do concreto". Esse novo fôlego artístico também foi levado ao Brasil, 
+                    onde Cícero participou da mostra inaugural do Museu de Arte Moderna de 
+                    São Paulo em 1949, intitulada "Do Figurativismo ao Abstracionismo".
+                </p>
+
+                <p>
+                    No campo dos murais, Cícero Dias foi um verdadeiro visionário. Em 1948, ele 
+                    executou as primeiras pinturas murais abstratas da América Latina para o 
+                    Edifício da Secretaria da Fazenda de Pernambuco, no Recife. Essas obras tiveram 
+                    tamanha repercussão internacional que foram destaque no primeiro número da 
+                    prestigiosa revista francesa Art d’Aujourd’hui em 1949, aparecendo junto a 
+                    trabalhos de Kandinsky e Le Corbusier. Sua dedicação à integração da arte 
+                    com a arquitetura levou-o a fundar, em 1951, o "Groupe Espace", que reunia 
+                    artistas e arquitetos decididos a trabalhar na síntese das artes plásticas 
+                    dentro do espaço arquitetônico.
+                </p>
+
+                <p>
+                    Essa maestria em grandes formatos acompanhou Cícero até o fim de sua carreira. 
+                    Em 1983, ele instalou painéis sobre a vida de Frei Caneca na Casa da Cultura, 
+                    no Recife. Anos depois, em 1991, ele presenteou a cidade de São Paulo com um 
+                    imenso mural de 3 por 20 metros na Estação Brigadeiro do Metrô, na Avenida 
+                    Paulista. Por fim, no ano 2000, ele realizou uma de suas intervenções urbanas 
+                    mais icônicas: o desenho do piso da Praça Marco Zero, no Recife Antigo, 
+                    inspirado em sua obra clássica, selando definitivamente sua marca no solo 
+                    e na memória de sua terra natal. Cícero Dias provou que a abstração e o 
+                    muralismo não eram apenas formas de arte, mas pontes que conectavam a 
+                    geometria universal ao cotidiano das pessoas.
                 </p>
             </section>
 
             <section id="legado">
                 <h2>Reconhecimento e Legado</h2>
                 <p>
-                    Lorem ipsum odor amet, consectetuer adipiscing elit. Himenaeos cubilia duis consequat rhoncus vel consectetur facilisis cras.
+                    O talento de Cícero Dias foi reconhecido pelas maiores instituições do mundo 
+                    e o legado permanente que ele deixou tanto no Brasil quanto na Europa. 
+                    O reconhecimento de Cícero como uma figura de importância global 
+                    consolidou-se em 1998, quando ele recebeu do governo francês a prestigiada 
+                    comenda "Ordem Nacional do Mérito". Esse prestígio internacional é visível 
+                    também na presença de suas obras em exposições e acervos dos museus mais 
+                    importantes do planeta, como o Centre Pompidou, em Paris, e o Museum of 
+                    Modern Art (MoMA), em Nova York. Em Paris, cidade que adotou como lar, sua 
+                    memória é preservada com uma placa comemorativa instalada em 2006 pela 
+                    prefeitura na fachada do imóvel onde ele viveu, na Rue de Longchamp.
+                </p>
+
+                <p>
+                    O legado de Cícero Dias é marcado por sua capacidade única de integrar a 
+                    arte ao espaço público e à arquitetura. Ele foi o responsável pelas primeiras 
+                    pinturas murais abstratas da América Latina, executadas em 1948 para o Edifício 
+                    da Secretaria da Fazenda de Pernambuco, no Recife. Além disso, sua visão de 
+                    síntese entre as artes plásticas e o espaço arquitetônico o levou a fundar 
+                    o "Groupe Espace" em 1951. Em São Paulo, ele deixou um presente monumental 
+                    para a população: um mural de 3 por 20 metros na Estação Brigadeiro do Metrô, 
+                    inaugurado em 1991. Já no Recife, seu legado mais icônico e visitado é o 
+                    desenho do piso da Praça Marco Zero, realizado no ano 2000 e inspirado em 
+                    sua obra histórica "Eu Vi o Mundo... Ele Começava no Recife".
+                </p>
+
+                <p>
+                    A importância histórica do artista é reafirmada por homenagens oficiais, 
+                    como a instituição do "Ano Cícero Dias" pelo Governo de Pernambuco em 2007. 
+                    Suas obras continuam a ser celebradas em grandes mostras, como a exposição de 
+                    abertura do "Ano do Brasil na França" em 2005, focada em sua fase modernista 
+                    brasileira. Cícero faleceu aos 95 anos em 2003 e foi sepultado no Cemitério 
+                    de Montparnasse, em Paris, descansando entre os grandes intelectuais do mundo. 
+                    Ele permanece vivo como um mestre que, embora tenha conquistado as vanguardas 
+                    universais e recebido elogios de gênios como Picasso, nunca deixou de carregar 
+                    consigo a alma e as cores de Pernambuco.
                 </p>
             </section>
 
@@ -439,7 +663,10 @@ const topicsData = {
                 <h2>Acervo</h2>
 
                 <p>
-                    Conheça algumas obras e registros do acervo de Cícero Dias.
+                    O Espaço Cultural Museu Cícero Dias reúne um acervo composto por 21 réplicas de 
+                    obras do artista, proporcionando ao público uma imersão em sua trajetória 
+                    criativa e em seu universo marcado pelo modernismo, pela poesia visual e pela 
+                    identidade cultural brasileira.
                 </p>
 
                 <div class="galeria-acervo">
@@ -466,6 +693,66 @@ const topicsData = {
 
                     <div class="obra-card">
                         <img src="../images/cicero/acervo/6.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/7.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/8.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/9.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/10.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/11.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/12.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/13.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/14.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/15.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/16.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/17.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/18.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/19.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/20.jpg" alt="">
+                    </div>
+
+                    <div class="obra-card">
+                        <img src="../images/cicero/acervo/21.jpg" alt="">
                     </div>
 
                 </div>

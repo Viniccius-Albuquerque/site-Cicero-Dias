@@ -10,4 +10,7 @@
 # ORIGEM DO MUNICIPIO - falta
 # BARONATOS - falta
 # CICERO DIAS - falta
+- fotos
+- titulo do acervo desing
+
 # CONTATO - OK
