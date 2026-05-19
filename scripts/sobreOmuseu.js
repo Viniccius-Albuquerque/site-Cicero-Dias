@@ -1336,7 +1336,7 @@ function voltarParaDescanso() {
 const detalhesBaronatos = {
     domPedro2: {
         title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/1dom pedro II sem molduras.png" alt="Henrique Marques">`,
         bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
         <strong>Poder e Modernização:</strong><br>
         • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
@@ -1347,7 +1347,7 @@ const detalhesBaronatos = {
 
     suassuna: {
         title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/2barão de suassuna sem molduras.png" alt="Henrique Marques">`,
         bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
         <strong>Poder e Modernização:</strong><br>
         • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
