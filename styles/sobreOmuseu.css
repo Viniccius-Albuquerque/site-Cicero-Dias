@@ -1112,3 +1112,51 @@ section.arco-bg-section p,
 
     display: block;
 }
+
+/* Container principal que junta a foto e o título */
+.split-container-colonizacao {
+    display: flex;
+    align-items: flex-end; /* ALTERADO: Alinha a base da imagem e do texto por baixo */
+    background-color: #1a1a1a; 
+    padding: 40px;
+    gap: 50px; 
+    min-height: 80vh; 
+    box-sizing: border-box;
+}
+
+/* Caixa da Imagem */
+.colonizacao-media {
+    flex: 0 0 auto; /* Impede que a imagem esmague ou estique bizarramente */
+}
+
+.colonizacao-media img {
+    max-height: 600px; /* Controla a altura máxima para manter o formato vertical */
+    width: auto;
+    display: block;
+    border-radius: 4px; /* Opcional: deixa as bordas levemente arredondadas */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5); /* Sombra para destacar do fundo preto */
+}
+
+/* Caixa de Texto */
+.colonizacao-text {
+    flex: 1; /* Ocupa o restante do espaço da direita */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Garante centralização vertical extra */
+}
+
+/* Estilização do Título */
+.colonizacao-text h2 {
+    color: #ede7e1; /* Cor clara idêntica à do seu banco de dados */
+    font-family: sans-serif; /* Substitua pela fonte do seu projeto */
+    font-size: 2.5rem; /* Tamanho do título */
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Estilização do subtítulo/ano se quiser em outra linha ou tamanho */
+.colonizacao-text h2 span {
+    font-size: 2rem;
+    font-weight: normal;
+}

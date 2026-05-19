@@ -43,11 +43,14 @@ const topicsData = {
 
             <section id="colonizacao" class="dark-theme">
 
-                <div class="image-oval-container">
-                    <img src="../images/BANNER_2_CHEGADA.jpg" alt="Início da Colonização">
+                <div class="split-container-colonizacao">
+                    <div class="colonizacao-media">
+                        <img src="../images/BANNER_2_CHEGADA.jpg" alt="Início da Colonização">
+                    </div>
+                    <div class="colonizacao-text">
+                        <h2>Início da Colonização<br><span>(Século XVI)</span></h2>
+                    </div>
                 </div>
-
-                <h2>Início da Colonização (Século XVI)</h2>
 
                 <p>
                     A presença portuguesa na região de Escada começou a se tornar efetiva por volta do ano de
