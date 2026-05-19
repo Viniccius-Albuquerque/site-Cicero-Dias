@@ -6,16 +6,15 @@
 - texto justificado (colocar)
 
 # O MUSEU - falta
-- 
+- informação e desing
 
-# ORIGEM DO MUNICIPIO - falta
-- mudar imagem e texto (parce elipitica)
+# ORIGEM DO MUNICIPIO - OK
 
 # BARONATOS - falta
-- 
+- descrição e foto de cada um em especifico
 
 # CICERO DIAS - falta
 - fotos
-- titulo do acervo desing
 
-# CONTATO - OK
+# CONTATO - falta
+- numero e email

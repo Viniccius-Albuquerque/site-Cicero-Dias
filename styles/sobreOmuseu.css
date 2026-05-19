@@ -11,13 +11,25 @@
 }
 
 body {
+    /* Define a imagem de fundo */
+    background-image: url('../images/CICERO_DIAS.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    /* CORREÇÃO: Removido o 'background: #1a1a1a' que apagava a foto. 
+       Se a imagem falhar ou estiver carregando, usamos background-color como segurança: */
+    background-color: #1a1a1a; 
+    
+    margin: 0;
+    padding: 0;
     font-family: 'Istok Web', sans-serif;
     font-weight: 400;
     color: #333;
-    background: #1a1a1a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    /* CORREÇÃO: Removidos o flexbox centralizado que quebrava o layout do app */
+    display: block; 
 }
 
 .sidebar, 
@@ -62,14 +74,25 @@ html, body {
     aspect-ratio: 16 / 9;
 
     display: flex;
-    background: white;
 }
 
 /* BARRA LATERAL */
 .sidebar {
+    position: fixed; /* ADICIONADO: Mantém a barra travada na esquerda por cima do fundo */
+    top: 0;
+    left: 0;
+    z-index: 10; /* ADICIONADO: Garante que ela fique na camada acima do fundo */
+    
     width: 320px;
     height: 100vh;
-    background: #121212;
+    
+    /* ALTERADO: Fundo escuro com 65% de opacidade (o último número controla a transparência) */
+    background: rgba(18, 18, 18, 0.65); 
+    
+    /* OPCIONAL: Adiciona um leve desfoque na imagem que está atrás da barra, igual ao seu print */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
     color: white;
     display: flex;
     flex-direction: column;
@@ -181,7 +204,7 @@ html, body {
 }
 
 .subtopic-item {
-    background: #2a2a2a;
+    background: rgba(42, 42, 42, 0.45);
     border: none;
     color: #cccccc;
     text-align: center;
@@ -193,14 +216,14 @@ html, body {
 }
 
 .subtopic-item:hover {
-    background: #3a3a3a;
+    background: rgba(42, 42, 42, 0.45);
     color: white;
 }
 
 /* ÁREA PRINCIPAL */
 .main-content {
     flex: 1;
-    background: #ece6e0; 
+    background: transparent;
     height: 100vh;
     overflow-x: hidden; 
     overflow-y: auto;   
@@ -208,6 +231,12 @@ html, body {
 }
 
 .content-scroll {
+    margin-left: 320px; /* ADICIONADO: Empurra o conteúdo para a direita, liberando o espaço da sidebar */
+    min-height: 100vh;  /* ADICIONADO: Garante que o container ocupe a altura total da tela */
+    background-color: transparent; /* ADICIONADO: Cor padrão clara para o fundo do texto (que seu JS altera depois) */
+    box-sizing: border-box; /* ADICIONADO: Garante que paddings não quebrem a largura da tela */
+    
+    /* Suas propriedades originais mantidas */
     height: 100%;
     overflow-y: auto;
     display: flex;
@@ -294,18 +323,14 @@ section h2 {
 }
 
 .acessibilidade-lista {
-    margin-top: 20px;
-    padding-left: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-size: 1.05rem;
-    line-height: 1.6;
-    color: #333;
+    margin-top: 25px;
+    padding-left: 20px;
 }
 
 .acessibilidade-lista li {
-    padding-left: 5px;
+    margin-bottom: 22px;
+
+    line-height: 1.6;
 }
 
 .diretrizes-lista {
@@ -334,7 +359,8 @@ section h2 {
 
     font-size: 1.05rem;
     line-height: 1.6;
-    color: #333;
+
+    color: #f1f1f1;
 }
 
 .horario-lista li {
@@ -379,7 +405,6 @@ section p {
 .imagem-destaque {
     width: 100%;
     margin: 40px 0;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
 }
 
 .imagem-destaque img {
@@ -389,11 +414,8 @@ section p {
 }
 
 .imagem-full-width {
-    width: calc(100% + 10%); 
-    margin-left: -5%;        
-    margin-top: 40px;
-    margin-bottom: 40px;
-    overflow: hidden;
+    width: 96%;
+    margin: 40px auto;
 }
 
 .imagem-full-width img {
@@ -962,7 +984,7 @@ section.arco-bg-section p,
 }
 
 .timeline-item {
-    width: 180px;
+    width: 150px;
 
     position: relative;
 }
@@ -1151,7 +1173,6 @@ section.arco-bg-section p,
     width: auto;
     display: block;
     border-radius: 4px; /* Opcional: deixa as bordas levemente arredondadas */
-    box-shadow: 0 8px 24px rgba(0,0,0,0.5); /* Sombra para destacar do fundo preto */
 }
 
 /* Caixa de Texto */
@@ -1176,4 +1197,211 @@ section.arco-bg-section p,
 .colonizacao-text h2 span {
     font-size: 2rem;
     font-weight: normal;
+}
+
+#acervoCompleto h2 {
+    font-family: 'Literata', serif;
+    font-size: 5rem;
+    font-weight: 300;
+
+    color: #000;
+
+    line-height: 1;
+    letter-spacing: -2px;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+#acervoCompleto section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#acervoCompleto p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    color: #222;
+
+    margin-bottom: 25px;
+
+    text-align: justify;
+}
+
+/* IMAGEM */
+#acervoCompleto img {
+    width: 100%;
+    max-width: 500px;
+
+    display: block;
+
+    margin: 35px auto;
+
+    border-radius: 2px;
+}
+
+.acessibilidade-slider {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.acessibilidade-box {
+    border: 2px solid #ff5a5a;
+
+    border-radius: 24px;
+
+    padding: 35px 40px;
+
+    margin-top: 40px;
+
+    background: transparent;
+}
+
+#horario {
+    background: #0d0d0d;
+
+    color: #f5f5f5;
+
+    padding: 80px 70px;
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    width: calc(100% + 10%);
+    margin-left: -5%;
+}
+
+#horario h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 40px;
+
+    color: #ffffff;
+}
+
+#horario p {
+    color: #e5e5e5;
+
+    line-height: 1.9;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 35px;
+
+    max-width: 1000px;
+}
+
+#horario .horario-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Container das duas colunas */
+.datas-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 10px 0;
+    align-items: stretch;
+}
+
+/* Estrutura do Card com borda redonda e contorno preto */
+.mes-card {
+    background-color: transparent;
+    border: 1.5px solid #1a1a1a;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faixa Preta Superior */
+.mes-titulo {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Área interna de texto */
+.mes-conteudo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Nomes dos Eventos */
+.mes-conteudo h4 {
+    font-size: 1.1rem;
+    color: #000000;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* Descrição e detalhes */
+.mes-conteudo p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333333;
+    margin: 0;
+}
+
+/* Linha pontilhada divisória para meses com vários eventos */
+.card-divisor {
+    border: 0;
+    border-top: 1px dashed #cccccc;
+    margin: 4px 0;
+}
+
+/* Faz dezembro ocupar a largura total das duas colunas na base */
+.card-fullwidth {
+    grid-column: span 2;
+}
+
+/* Ajuste de introdução das datas */
+.datas-header {
+    margin-bottom: 25px;
+}
+.datas-header h2 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+.datas-header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.datas-grid-container > div {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-subir {
+    height: 650px;
+}
+
+.imagem-subir img {
+    width: 100%;
+    height: 80%;
+
+    object-fit: cover;
+
+    object-position: center 10%;
 }

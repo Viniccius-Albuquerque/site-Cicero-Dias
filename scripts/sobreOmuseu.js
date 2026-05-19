@@ -358,35 +358,43 @@ const topicsData = {
                         <div class="timeline-item">
                             <span class="year">1907</span>
                             <div class="point"></div>
-                            <p>Nasceu em Jundiaí Escada - PE</p>
+                            <p>Nascimento no Engenho Jundiá, Escada - PE</p>
                         </div>
 
                         <div class="timeline-item">
-                            <span class="year">1928</span>
-                            <div class="point"></div>
-                            <p>Iniciou estudos no Rio de Janeiro</p>
-                        </div>
-
-                        <div class="timeline-item">
-                            <span class="year">1937</span>
+                            <span class="year">1937/1938</span>
                             <div class="point"></div>
                             <p>
-                                Participou da Exposição
-                                de Arte da Bienal 
-                                no Recife
+                                Muda-se para Paris, onde integra a vanguarda 
+                                mundial e torna-se amigo próximo de Pablo Picasso
                             </p>
                         </div>
 
                         <div class="timeline-item">
-                            <span class="year">1948</span>
+                            <span class="year">1998</span>
                             <div class="point"></div>
-                            <p>Representou o Brasil na Bienal de Veneza</p>
+                            <p>
+                                Recebe a comenda "Ordem Nacional do Mérito" do governo da 
+                                França pelo seu impacto cultural global
+                            </p>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="year">2000</span>
+                            <div class="point"></div>
+                            <p>
+                                Projetou o icônico desenho do piso da Praça Marco Zero, 
+                                no Recife Antigo.
+                            </p>
                         </div>
 
                         <div class="timeline-item">
                             <span class="year">2003</span>
                             <div class="point"></div>
-                            <p>Faleceu em Paris, França</p>
+                            <p>
+                                Faleceu em Paris, aos 95 anos, sendo sepultado no 
+                                prestigioso Cemitério de Montparnasse.
+                            </p>
                         </div>
 
                     </div>
@@ -410,18 +418,13 @@ const topicsData = {
                     pintou seu retrato e o poeta Murilo Mendes escreveu versos em sua homenagem.
                 </p>
 
-                <div class="duas-imagens-grid">
-
-                    <img 
-                        src="../images/cicero/imagem1.jpg" 
-                        alt="Imagem 1"
-                    >
-
-                    <img 
-                        src="../images/cicero/imagem2.jpg" 
-                        alt="Imagem 2"
-                    >
-
+                <div class="imagem-destaque">
+                    <div class="imagem-subir">
+                        <img 
+                            src="../images/1 - CÍCERO DIAS CRIANÇA.png"
+                            alt="Primeira fase e modernismo"
+                        >
+                    </div>
                 </div>
 
                 <p>
@@ -665,13 +668,50 @@ const topicsData = {
 
             <section id="acervoCompleto">
 
-                <h2>Acervo</h2>
+                <h2>Acervo Cícero Dias</h2>
 
                 <p>
-                    O Espaço Cultural Museu Cícero Dias reúne um acervo composto por 21 réplicas de 
-                    obras do artista, proporcionando ao público uma imersão em sua trajetória 
-                    criativa e em seu universo marcado pelo modernismo, pela poesia visual e pela 
-                    identidade cultural brasileira.
+                    No Espaço Cultural Museu Cícero Dias encontra-se 22 (vinte e duas) litografias do 
+                    artista plástico Cícero Dias que foram reproduzidas no ano de 1982 / 1983 a partir 
+                    de desenhos aquarelados da década de 1920 / 1930 e doadas pela família do autor.
+                </p>
+
+                <h1>Breve Histórico da Série Suíte Pernambucana</h1>
+
+                <p>
+                    Cícero Dia, em 1982, aceitou o convite do Marchand francês 
+                    Camile Masrour, proprietário da Galuie Belechasse, em Paris, 
+                    para produzir uma coleção de litografias a partir das imagens de suas 
+                    aquarelas da década de 1920. Surreais, oníricas e sensuais, estas obras 
+                    são um marco do modernismo brasileiro.
+                </p>
+
+                <p><em>
+                    "Essas litografias não constituem a reprodução pura e simples de originais 
+                    preexistentes, nem variações a partir de um determinado motivo: ficam a meio 
+                    caminho entre os dois modos. Mantendo as imagens e a composição de cada original, 
+                    elas aumentam bastante o seu primeiro tamanho e diminuem ligeiramente a 
+                    intensidade do antigo esquema cromático."(Texto Cícero Dias: os anos de 
+                    descoberta de Roberto Pontual).
+                </em></p>
+
+                <p>
+                    As litografias foram impressas ao longo de um ano, com tiragem de 75 unidades 
+                    para cada imagem, sob a supervisão do artista, no prestigiado atelier do 
+                    litógrafo Pierre Badey em Paris, que produziu gravuras de grandes nomes do 
+                    século XX. A execução seguiu o tradicional método litográfico, com desenho 
+                    traçado sobre placas. Para impressão de cada folha, em papel Arches, eram 
+                    necessárias de quinze a vinte passagens de diferentes cores e tintas, buscando 
+                    fidelidade à rica paleta do artista. A cada assinatura de Cícero Dias, "bon à 
+                    tirer", aprovado o início da tiragem, era uma festa renovada. Após a conclusão 
+                    do trabalho, as matrizes forem destruídas.
+                </p>
+
+                <p>
+                    A coleção composta de 25 (vinte e cinco) diferentes imagens, foi batizada de 
+                    Suíte Pernambucana. (Texto Regate da Suíte Pernambucana de Waldir Simões de 
+                    Assis Filho Diretor da Simões Assis Galeria de Arte e Representante da Obra 
+                    de Cícero Dias no Brasil)
                 </p>
 
                 <div class="galeria-acervo">
@@ -960,17 +1000,21 @@ const topicsData = {
                     na preservação da memória histórica da cidade.
                 </p>
 
+                <div class="imagem-full-width">
+                    <img src="../images/IMAGEM 5.png" alt="Construção da Matriz e presença franciscana">
+                </div>
+
                 <p>
-                    A concretização do projeto foi possível graças ao empenho da historiadora
-                    Mariinha Leão, além de historiadores, intelectuais, religiosos, leigos e famílias
-                    escadenses. O espaço abriga uma coleção de fotos, objetos, documentos e testemunhos
-                    que resgatam a trajetória dos antepassados escadenses, fortalecendo a identidade
-                    cultural da região.
+                    A concretização do projeto foi possível graças ao empenho da historiadora Mariinha 
+                    Leão, além de historiadores, intelectuais, religiosos, leigos e famílias 
+                    escadenses. O espaço abriga uma coleção de fotos, objetos, documentos e 
+                    testemunhos que resgatam a trajetória dos antepassados escadenses, fortalecendo 
+                    a identidade cultural da região.
                 </p>
 
                 <p>
-                    O Museu tornou-se uma importante conquista para a cidade, permitindo que moradores
-                    e visitantes tenham acesso ao legado histórico local.
+                    O Museu tornou-se uma importante conquista para a cidade, permitindo que 
+                    moradores e visitantes tenham acesso ao legado histórico local.
                 </p>
             </section>
 
@@ -1015,122 +1059,202 @@ const topicsData = {
                     O Espaço Cultural Museu Cícero Dias busca oferecer uma experiência acolhedora e acessível para todos os visitantes.
                 </p>
 
-                <p>
-                    O espaço conta com:
-                </p>
+                <div class="acessibilidade-box">
 
-                <ul class="acessibilidade-lista">
-                    <li>Rampa de acesso para pessoas com dificuldade de locomoção.</li>
-                    <li>Ambientes destinados à circulação segura dos visitantes.</li>
-                    <li>Sanitário disponível para uso do público.</li>
-                    <li>Entrada gratuita para visitação.</li>
-                    <li>Atendimento mediante o acolhimento da equipe do museu.</li>
-                </ul>
+                    <p><strong>O espaço conta com:</strong></p>
+
+                    <ul class="acessibilidade-lista">
+                        <li>Rampa de acesso para pessoas com dificuldade de locomoção.</li>
+
+                        <li>Ambientes destinados à circulação segura dos visitantes.</li>
+
+                        <li>Sanitário disponível para uso do público.</li>
+
+                        <li>Entrada gratuita para visitação.</li>
+
+                        <li>Atendimento mediante o acolhimento da equipe do museu.</li>
+                    </ul>
+
+                </div>
+
+                <!-- CARROSSEL -->
+                <div class="acessibilidade-slider">
+
+                    <button class="slider-btn prev">
+                        ←
+                    </button>
+
+                    <div class="slider-track">
+
+                        <div class="slide active">
+                            <img src="../images/cicero/1.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/cicero/2.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/cicero/3.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/cicero/4.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/cicero/5.jpg" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/cicero/6.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                    <button class="slider-btn next">
+                        →
+                    </button>
+
+                </div>
             </section>
 
             <section id="horario">
-                <h2>Horário de Funcionamento</h2>
+                <div class="horario-conteudo">
+                    <h2>Horário de Funcionamento</h2>
 
-                <p>
-                    As visitas acontecem de segunda a sexta-feira, em horário de funcionamento do espaço.
-                </p>
+                    <p>
+                        O museu está aberto à visitação pública de segunda a sexta-feira, 
+                        das 7h30 às 16h, oferecendo ao público um espaço dedicado à 
+                        preservação da memória, da arte, da cultura e da história de Escada.    
+                        A visitação é gratuita e proporciona uma experiência de conhecimento, 
+                        conexão cultural e valorização do patrimônio histórico local.
+                    </p>
 
-                <ul class="horario-lista">
-                    <li>DAS 7:30 ÀS 16H</li>
+                    <p>
+                        Aos sábados, domingos e feriados, as visitas acontecem mediante 
+                        agendamento prévio, permitindo um atendimento mais organizado e 
+                        acolhedor aos visitantes e grupos interessados.
+                    </p>
 
-                    <li>SÁBADOS, DOMINGOS E FERIADOS COM HORÁRIOS AGENDADOS</li>
-
-                    <li>
-                        Para grupos, escolas ou necessidades específicas de atendimento,
-                        recomenda-se agendamento prévio junto à equipe do museu.
-                    </li>
-                </ul>
-
-                <p>
-                    O espaço, que oferece visitação gratuita, está aberto ao público de segunda a sexta-feira,
-                    das 8h às 14h, proporcionando uma oportunidade de conhecimento e valorização da história de Escada.
-                </p>
+                    <p>
+                        Para escolas, instituições, excursões, grupos culturais ou 
+                        necessidades específicas de atendimento, recomenda-se entrar em 
+                        contato antecipadamente com a equipe do museu para realização do 
+                        agendamento e melhor organização da visita.
+                    </p>
+                </div>
             </section>
 
             <section id="festividades">
-                <h2>Festividades</h2>
-
-                <div class="festividade-mes">
-                    <h3>Fevereiro</h3>
-                    <ul class="festividade-lista">
-                        <li>Ciclo Carnavalesco</li>
-                    </ul>
+                <div class="datas-header">
+                    <h2>Datas Comemorativas</h2>
+                    <p>As datas comemorativas de Escada representam momentos importantes da história, da cultura e das tradições locais, fortalecendo a identidade cultural da cidade e preservando a memória de sua população.</p>
                 </div>
 
-                <div class="festividade-mes">
-                    <h3>Março</h3>
-                    <ul class="festividade-lista">
-                        <li>05.03 — Aniversário de nascimento do pintor Cícero Dias</li>
-                    </ul>
-                </div>
+                <div class="datas-grid-container">
+                    <div class="mes-card">
+                        <div class="mes-titulo">Fevereiro</div>
+                        <div class="mes-conteudo">
+                            <h4>Ciclo Carnavalesco</h4>
+                            <p>Período dedicado às celebrações de carnaval, reunindo manifestações culturais, música, tradição popular e festividades que movimentam a cidade.</p>
+                        </div>
+                    </div>
 
-                <div class="festividade-mes">
-                    <h3>Maio</h3>
-                    <ul class="festividade-lista">
-                        <li>19.05 — Aniversário do Museu Pintor Cícero Dias e Festa de Emancipação Política do Município</li>
-                    </ul>
-                </div>
+                    <div class="mes-card">
+                        <div class="mes-titulo">Março</div>
+                        <div class="mes-conteudo">
+                            <h4>05 de Março<br>Aniversário de Nascimento do Pintor Cícero Dias</h4>
+                            <p>Data em homenagem ao renomado artista escadense Cícero Dias, reconhecido nacional e internacionalmente por sua contribuição às artes plásticas brasileiras.</p>
+                        </div>
+                    </div>
 
-                <div class="festividade-mes">
-                    <h3>Junho</h3>
-                    <ul class="festividade-lista">
-                        <li>Ciclo Junino</li>
-                    </ul>
-                </div>
+                    <div class="mes-card">
+                        <div class="mes-titulo">Maio</div>
+                        <div class="mes-conteudo">
+                            <h4>19 de Maio<br>Aniversário do Museu Pintor Cícero Dias</h4>
+                            <p>Celebração da trajetória do espaço cultural dedicado à preservação da memória e da obra de Cícero Dias.</p>
+                            
+                            <hr class="card-divisor">
+                            
+                            <h4>24 de Maio<br>Festa de Emancipação Política do Município</h4>
+                            <p>Comemoração cívica que celebra a história, a identidade e o desenvolvimento do município de Escada.</p>
+                        </div>
+                    </div>
 
-                <div class="festividade-mes">
-                    <h3>Julho</h3>
-                    <ul class="festividade-lista">
-                        <li>Festa de Nossa Senhora do Carmo (Usina Massauassu)</li>
-                    </ul>
-                </div>
+                    <div class="mes-card">
+                        <div class="mes-titulo">Junho</div>
+                        <div class="mes-conteudo">
+                            <h4>Ciclo Junino</h4>
+                            <p>Período marcado pelas tradicionais festividades juninas, com apresentações culturais, quadrilhas, música regional e valorização das tradições nordestinas.</p>
+                        </div>
+                    </div>
 
-                <div class="festividade-mes">
-                    <h3>Agosto</h3>
-                    <ul class="festividade-lista">
-                        <li>13.08 — Dia Municipal da Capoeira e do Capoeirista</li>
+                    <div class="mes-card">
+                        <div class="mes-titulo">Julho</div>
+                        <div class="mes-conteudo">
+                            <h4>Festa de Nossa Senhora do Carmo</h4>
+                            <p>(Usina Massauassu)<br>Celebração religiosa e cultural tradicional da comunidade, reunindo fiéis e manifestações populares.</p>
+                        </div>
+                    </div>
 
-                        <li>24.08 — Dia do Artista Escadense</li>
-                    </ul>
-                </div>
+                    <div class="mes-card">
+                        <div class="mes-titulo">Agosto</div>
+                        <div class="mes-conteudo">
+                            <h4>13 de Agosto<br>Dia Municipal da Capoeira e do Capoeirista</h4>
+                            <p>Data dedicada à valorização da capoeira como expressão cultural, artística e histórica.</p>
+                            
+                            <hr class="card-divisor">
+                            
+                            <h4>24 de Agosto<br>Dia do Artista Escadense</h4>
+                            <p>Homenagem aos artistas e agentes culturais que contribuem para o fortalecimento da cultura local.</p>
+                        </div>
+                    </div>
 
-                <div class="festividade-mes">
-                    <h3>Setembro</h3>
-                    <ul class="festividade-lista">
-                        <li>Festa do Sagrado Coração de Jesus (Bairro de Jaguaribe)</li>
-                    </ul>
-                </div>
+                    <div class="mes-card">
+                        <div class="mes-titulo">Setembro</div>
+                        <div class="mes-conteudo">
+                            <h4>Festa do Sagrado Coração de Jesus</h4>
+                            <p>(Bairro de Jaguaribe)<br>Tradicional festividade religiosa celebrada pela comunidade local.</p>
+                        </div>
+                    </div>
 
-                <div class="festividade-mes">
-                    <h3>Outubro</h3>
-                    <ul class="festividade-lista">
-                        <li>Festa de Santa Teresinha do Menino Jesus</li>
-                    </ul>
-                </div>
+                    <div class="mes-card">
+                        <div class="mes-titulo">Outubro</div>
+                        <div class="mes-conteudo">
+                            <h4>Festa de Santa Teresinha do Menino Jesus</h4>
+                            <p>Celebração religiosa marcada por manifestações de fé, tradição e participação popular.</p>
+                        </div>
+                    </div>
 
-                <div class="festividade-mes">
-                    <h3>Novembro</h3>
-                    <ul class="festividade-lista">
-                        <li>Festa da Padroeira Nossa Senhora da Apresentação da Escada</li>
-                    </ul>
-                </div>
+                    <div class="mes-card">
+                        <div class="mes-titulo">Novembro</div>
+                        <div class="mes-conteudo">
+                            <h4>Festa da Padroeira Nossa Senhora da Apresentação da Escada</h4>
+                            <p>Uma das principais celebrações religiosas do município, reunindo tradição, cultura e devoção popular.</p>
+                        </div>
+                    </div>
 
-                <div class="festividade-mes">
-                    <h3>Dezembro</h3>
-                    <ul class="festividade-lista">
-                        <li>08.12 — Festa de Nossa Senhora da Conceição (Vila Operária)</li>
-
-                        <li>13.12 — Festa de Santa Luzia (Nova Descoberta)</li>
-
-                        <li>Parada Natalina</li>
-
-                        <li>Cantata Natalina (Natal da Harmonia)</li>
-                    </ul>
+                    <div class="mes-card">
+                        <div class="mes-titulo">Dezembro</div>
+                        <div class="mes-conteudo">
+                            <h4>08 de Dezembro<br>Festa de Nossa Senhora da Conceição (Vila Operária)</h4>
+                            
+                            <hr class="card-divisor">
+                            
+                            <h4>13 de Dezembro<br>Festa de Santa Luzia (Nova Descoberta)</h4>
+                            
+                            <hr class="card-divisor">
+                            
+                            <h4>Parada Natalina</h4>
+                            <p>Evento cultural natalino com apresentações, decoração temática e celebrações abertas ao público.</p>
+                            
+                            <hr class="card-divisor">
+                            
+                            <h4>Cantata Natalina — "Natal da Harmonia"</h4>
+                            <p>Apresentações musicais e celebrações de fim de ano promovendo integração, arte e o espírito natalino.</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         `
