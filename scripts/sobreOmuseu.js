@@ -18,7 +18,7 @@ const topicsData = {
                 </p>
 
                 <div class="imagem-full-width">
-                    <img src="../images/BANNER_1_ALDEIA.jpg" alt="Representação do período pré-colonial">
+                    <img src="../images/IMAGEM 1.png" alt="Representação do período pré-colonial">
                 </div>
 
                 <p>
@@ -45,7 +45,7 @@ const topicsData = {
 
                 <div class="split-container-colonizacao">
                     <div class="colonizacao-media">
-                        <img src="../images/BANNER_2_CHEGADA.jpg" alt="Início da Colonização">
+                        <img src="../images/IMAGEM 2.png" alt="Início da Colonização">
                     </div>
                     <div class="colonizacao-text">
                         <h2>Início da Colonização<br><span>(Século XVI)</span></h2>
@@ -89,7 +89,7 @@ const topicsData = {
                 </p>
                 
                 <div class="imagem-full-width">
-                    <img src="../images/BANNER_3_MARCO.jpg" alt="Marcos do Aldeamento em 1685">
+                    <img src="../images/IMAGEM 3.png" alt="Marcos do Aldeamento em 1685">
                 </div>
 
                 <p>
@@ -186,8 +186,10 @@ const topicsData = {
 
                 <p>
                     <strong>
-                        O ALDEAMENTO DE ESCADA: UMA ANÁLISE ACERCA DOS PROCESSOS HISTÓRICOS
-                        DAS GRANDES NAÇÕES INDÍGENAS (GOMES, 2026, p. 20)
+                        GOMES, Dimison. Cesar. Vieira. O Aldeamento de Escada: uma análise acerca dos processos 
+                        históricos das grandes nações indígenas. Revista Tópicos Ciências Humanas, Linguística 
+                        & Letras e Artes, 5 abr. 2026. DOI: 10.70773/revistatopicos/775311685. Disponível em: 
+                        Revista Tópicos Ciências Humanas, Linguística & Letras e Artes
                     </strong>
                 </p>
 
@@ -198,7 +200,7 @@ const topicsData = {
                 </p>
 
                 <div class="imagem-full-width">
-                    <img src="../images/BANNER_5_CONSTRUCAO.jpg" alt="Construção da Matriz e presença franciscana">
+                    <img src="../images/IMAGEM 5.png" alt="Construção da Matriz e presença franciscana">
                 </div>
 
                 <p>
