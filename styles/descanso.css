@@ -112,6 +112,7 @@ body {
     gap: 15px; 
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-left: 10px;
 }
 
 /* Bolinha vermelha com a animação de pulso na aura */
@@ -147,7 +148,7 @@ body {
 }
 
 .rodape-logos img {
-    width: 120%;
+    width: 110%;
     height: auto;
     object-fit: contain;
 }

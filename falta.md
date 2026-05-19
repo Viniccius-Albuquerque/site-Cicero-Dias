@@ -9,7 +9,6 @@
 - 
 
 # ORIGEM DO MUNICIPIO - falta
-- mudar imagem fundo preto
 - mudar imagem e texto (parce elipitica)
 
 # BARONATOS - falta
