@@ -274,27 +274,27 @@ const topicsData = {
                     <div class="slider-track">
 
                         <div class="slide active">
-                            <img src="../images/cicero/1.jpg" alt="">
+                            <img src="../images/carrosel-Cicero/Bagunça Aquarela 1929 Dimensões com moldura- 1,10cm x 0,77cm_.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/cicero/2.jpg" alt="">
+                            <img src="../images/carrosel-Cicero/Descanço Aquarela década de 1930 Dimensões com moldura- 1,10cm x 0,77cm_.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/cicero/3.jpg" alt="">
+                            <img src="../images/carrosel-Cicero/LIRISMO.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/cicero/4.jpg" alt="">
+                            <img src="../images/carrosel-Cicero/O Sonho  Aquarela década de 1920 Dimensões com moldura- 1,10cm x 0,77cm_.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/cicero/5.jpg" alt="">
+                            <img src="../images/carrosel-Cicero/Retângulo 1.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/cicero/6.jpg" alt="">
+                            <img src="../images/carrosel-Cicero/Sem Título Aquarela 1928 Dimensões com moldura- 1,10cm x 0,77cm_.png" alt="">
                         </div>
 
                     </div>
