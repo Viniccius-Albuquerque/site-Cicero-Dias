@@ -1,20 +1,18 @@
 # O que falta e problemas a solucionar
 
-- falta o conteudo
-- falta de desing
-- mudar imagens
-- texto justificado (colocar)
+- falta o conteudo baronatos
+- imagens
 
 # O MUSEU - falta
-- informação e desing
+- fotos
 
 # ORIGEM DO MUNICIPIO - OK
 
 # BARONATOS - falta
 - descrição e foto de cada um em especifico
+- casarões tbm PORRA?!!!??
 
 # CICERO DIAS - falta
-- fotos
+- fotos e acervo
 
-# CONTATO - falta
-- numero e email
+# CONTATO - OK

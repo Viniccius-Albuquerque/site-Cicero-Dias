@@ -1507,3 +1507,14 @@ section.arco-bg-section p,
     transform: rotate(-5deg);
     z-index: 10; /* Garante que o carimbo fique sobre o texto e a folha */
 }
+
+p, span, li, article, section {
+    text-align: justify;
+}
+
+.sidebar-footer, 
+.sidebar-footer p, 
+.museum-footer, 
+.museum-footer p {
+    text-align: center !important;
+}
