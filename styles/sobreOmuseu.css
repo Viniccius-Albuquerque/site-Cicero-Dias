@@ -1405,3 +1405,105 @@ section.arco-bg-section p,
 
     object-position: center 10%;
 }
+
+.split-container-modernismo {
+    display: flex;
+    align-items: center; 
+    /* 1. Cor de fundo bege e bordas arredondadas no container principal */
+    background-color: #f1daae; /* Tom bege aproximado da imagem */
+    border-radius: 30px;
+    
+    /* 2. Remova o padding da esquerda para a imagem encostar na borda */
+    padding: 0 40px 0 0; /* top | right | bottom | left */
+    gap: 50px; 
+    min-height: 80vh; 
+    box-sizing: border-box;
+    overflow: hidden; /* Garante que a imagem respeite a borda arredondada do container */
+}
+
+.modernismo-text {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    /* Opcional: ajustar a cor do texto para melhor contraste se necessário */
+    color: #1a1a1a; 
+}
+
+/* Caixa da Imagem */
+.modernismo-media {
+    flex: 0 0 auto; 
+    display: flex; /* Garante que não fiquem espaços vazios abaixo da imagem */
+}
+
+.modernismo-media img {
+    max-height: 600px; 
+    width: auto;
+    display: block;
+    
+    /* 3. Arredonda apenas os cantos esquerdos da imagem para casar com o container */
+    border-radius: 30px 30px 30px 30px; 
+}
+
+#internacional {
+    position: relative; /* Essencial para os posicionamentos absolutos funcionarem dentro */
+    width: 100%;
+    max-width: 700px;
+    margin: 40px auto;
+    
+    /* Nota: Removi o filter: drop-shadow como solicitado */
+}
+
+/* 1. Criando uma camada separada apenas para a imagem de fundo */
+#internacional::before {
+    content: ""; /* Necessário para o pseudo-elemento aparecer */
+    position: absolute; /* Preenche todo o container pai */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Coloca esta camada ATRÁS do texto e do carimbo */
+    
+    /* 2. Suas configurações de imagem de fundo originais */
+    background-image: url('../images/carta.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* 3. Definindo a transparência para 60% (0.6) apenas na folha */
+    opacity: 0.6; 
+}
+
+/* Resto das configurações que já tínhamos (mantêm-se iguais) */
+.conteudo-carta {
+    padding: 80px 60px;
+    box-sizing: border-box;
+    position: relative; /* Garante que o texto fique acima do fundo transparente */
+}
+
+#internacional h2 {
+    font-family: 'Georgia', serif;
+    color: #1a1a1a;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#internacional p {
+    font-family: 'Georgia', serif;
+    color: #2b2b2b;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.carimbo-postal {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    width: 120px;
+    height: auto;
+    opacity: 0.85; /* Carimbo mantém sua própria opacidade */
+    pointer-events: none;
+    transform: rotate(-5deg);
+    z-index: 10; /* Garante que o carimbo fique sobre o texto e a folha */
+}

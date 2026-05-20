@@ -467,25 +467,23 @@ const topicsData = {
                     com nomes como Oswald de Andrade, Tarsila do Amaral, Anita Malfatti e Mário de Andrade.
                 </p>
 
-                <div class="imagem-destaque">
-
-                    <img 
-                        src="../images/cicero/imagem-modernismo.jpg" 
-                        alt="Primeira fase e modernismo"
-                    >
-
+                <div class="split-container-modernismo">
+                    <div class="modernismo-media">
+                        <img src="../images/2 - CÍCERO DIAS JOVEM.png" alt="modernismo">
+                    </div>
+                    <div class="modernismo-text">
+                        <p>
+                            Nesta fase inicial, a obra de Cícero Dias era profundamente marcada por uma mistura de 
+                            sonho, memória regional e ousadia moderna. Entre 1926 e 1929, ele trabalhou em sua 
+                            obra-prima desse período: o monumental painel "Eu Vi o Mundo... Ele Começava no 
+                            Recife". Com impressionantes 15 metros de largura, a obra foi pintada em uma casa 
+                            no bairro de Santa Tereza, no Rio de Janeiro, e causou um enorme impacto e reações 
+                            intensas quando foi exibida no Salão de 1931. O painel era tão relevante que gerou 
+                            discussões profundas entre os intelectuais da época, incluindo uma famosa carta de 
+                            Mário de Andrade para Tarsila do Amaral comentando as cenas da pintura.
+                        </p>
+                    </div>
                 </div>
-
-                <p>
-                    Nesta fase inicial, a obra de Cícero Dias era profundamente marcada por uma mistura de 
-                    sonho, memória regional e ousadia moderna. Entre 1926 e 1929, ele trabalhou em sua 
-                    obra-prima desse período: o monumental painel "Eu Vi o Mundo... Ele Começava no 
-                    Recife". Com impressionantes 15 metros de largura, a obra foi pintada em uma casa 
-                    no bairro de Santa Tereza, no Rio de Janeiro, e causou um enorme impacto e reações 
-                    intensas quando foi exibida no Salão de 1931. O painel era tão relevante que gerou 
-                    discussões profundas entre os intelectuais da época, incluindo uma famosa carta de 
-                    Mário de Andrade para Tarsila do Amaral comentando as cenas da pintura.
-                </p>
 
                 <p>
                     A rede de amizades de Cícero durante o auge do Modernismo era vastíssima e reforçava 
@@ -522,63 +520,47 @@ const topicsData = {
             </section>
 
             <section id="internacional">
-                <h2>Carreira Internacional</h2>
-                <p>
-                    Tudo começou com um convite decisivo: em 1937, incentivado por uma carta de Di 
-                    Cavalcanti, Cícero mudou-se para Paris. Já em 1938, realizou sua primeira exposição 
-                    individual na capital francesa, na Galerie Jeanne Castel, onde foi aclamado como um 
-                    mestre de paleta rica e "selvagem esplendidamente civilizado". Foi nessa época que 
-                    ele formou uma amizade profunda com Pablo Picasso, que chegou a declarar que Cícero 
-                    era "um grande poeta, um grande pintor". Mesmo durante os tempos difíceis da 
-                    Segunda Guerra Mundial, ele se manteve integrado à vanguarda intelectual, trocando 
-                    correspondências com amigos como Picasso e o poeta Paul Éluard enquanto estava em 
-                    Lisboa ou Vichy.
-                </p>
+                <img src="../images/SELO.png" class="carimbo-postal" alt="Carimbo Postal 1937">
 
-                <p>
-                    A partir do final da década de 1940, a carreira de Cícero tomou um rumo definitivo 
-                    rumo ao abstracionismo. Em 1948, participou da exposição "Tendências da Arte Abstrata" 
-                    na Galerie Denise René, em Paris, e suas obras murais foram destaque na prestigiosa 
-                    revista francesa Art d’Aujourd’hui, figurando ao lado de mestres como Kandinsky e 
-                    Le Corbusier. Ele se tornou uma figura central no cenário artístico europeu, 
-                    integrando o "Groupe Espace" em 1951 e participando da exposição itinerante "Klar 
-                    Form" por diversos países nórdicos, junto a gigantes como Alexander Calder e 
-                    Fernand Léger. Sua projeção internacional o levou a expor na Bienal de Veneza em 
-                    1950 e em importantes museus, como o MoMA em Nova York e o Centre Pompidou em Paris.
-                </p>
+                <div class="conteudo-carta">
+                    <h2>Carreira Internacional</h2>
+                    <p>
+                        Tudo começou com um convite decisivo: em 1937, incentivado por uma carta de 
+                        Di Cavalcanti, Cícero mudou-se para Paris. Já em 1938, realizou sua primeira 
+                        exposição individual na capital francesa, na Galerie Jeanne Castel, onde foi 
+                        aclamado como um mestre de paleta rica e "selvagem esplendidamente civilizado". 
+                        Foi nessa época que ele formou uma amizade profunda com Pablo Picasso, 
+                        que chegou a declarar que Cícero era "um grande poeta, um grande pintor". 
+                        Mesmo durante os tempos difíceis da Segunda Guerra Mundial, ele se manteve 
+                        integrado à vanguarda intelectual, trocando correspondências com amigos 
+                        como Picasso e o poeta Paul Éluard enquanto estava em Lisboa ou Vichy.
+                    </p>
 
-                <p>
-                    O ápice do reconhecimento na sua "segunda pátria" veio em 1998, quando Cícero 
-                    recebeu das mãos do governo francês a "Ordem Nacional do Mérito". Após uma vida 
-                    dedicada a unir a essência brasileira à modernidade global, Cícero Dias faleceu em 
-                    Paris no dia 28 de janeiro de 2003, aos 95 anos, sendo sepultado no histórico 
-                    Cemitério de Montparnasse. Como prova de seu impacto duradouro na cultura francesa, 
-                    em 2006, a prefeitura de Paris instalou uma placa comemorativa na fachada do 
-                    prédio onde ele viveu, na Rue de Longchamp. Cícero partiu como um artista universal, 
-                    mas que, como diziam suas obras, sempre via o mundo começar no seu querido Recife.
-                </p>
+                    <p>
+                        A partir do final da década de 1940, a carreira de Cícero tomou um rumo 
+                        definitivo rumo ao abstracionismo. Em 1948, participou da exposição 
+                        "Tendências da Arte Abstrata" na Galerie Denise René, em Paris, e suas 
+                        obras murais foram destaque na prestigiosa revista francesa Art 
+                        d’Aujourd’hui, figurando ao lado de mestres como Kandinsky e Le Corbusier. 
+                        Ele se tornou uma figura central no cenário artístico europeu, integrando 
+                        o "Groupe Espace" em 1951 e participando da exposição itinerante "Klar 
+                        Form" por diversos países nórdicos, junto a gigantes como Alexander Calder 
+                        e Fernand Léger. Sua projeção internacional o levou a expor na Bienal de 
+                        Veneza em 1950 e em importantes museus, como o MoMA em Nova York e o Centre 
+                        Pompidou em Paris.
+                    </p>
 
-                <div class="imagem-destaque2">
-
-                    <img 
-                        src="../images/cicero/imagem-modernismo.jpg" 
-                        alt="Primeira fase e modernismo"
-                    >
-
-                </div>
-
-                <div class="duas-imagens-grid2">
-
-                    <img 
-                        src="../images/cicero/imagem1.jpg" 
-                        alt="Imagem 1"
-                    >
-
-                    <img 
-                        src="../images/cicero/imagem2.jpg" 
-                        alt="Imagem 2"
-                    >
-
+                    <p>
+                        O ápice do reconhecimento na sua "segunda pátria" veio em 1998, quando 
+                        Cícero recebeu das mãos do governo francês a "Ordem Nacional do Mérito". 
+                        Após uma vida dedicada a unir a essência brasileira à modernidade global, 
+                        Cícero Dias faleceu em Paris no dia 28 de janeiro de 2003, aos 95 anos, 
+                        sendo sepultado no histórico Cemitério de Montparnasse. Como prova de seu 
+                        impacto duradouro na cultura francesa, em 2006, a prefeitura de Paris 
+                        instalou uma placa comemorativa na fachada do prédio onde ele viveu, na 
+                        Rue de Longchamp. Cícero partiu como um artista universal, mas que, como 
+                        diziam suas obras, sempre via o mundo começar no seu querido Recife.
+                    </p>
                 </div>
             </section>
 
