@@ -91,12 +91,25 @@ body {
 
 /* Título Principal */
 .museu-titulo {
+    font-family: 'Literata', serif;
     font-size: 8rem; 
-    font-weight: 300;
+    font-weight: 400; /* Regular */
     color: #fff;
-    line-height: 0.85;
+    
+    /* 1. Ativa o desenho de Display (alto contraste entre traços grossos/finos) */
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 72; 
+    
+    /* 2. Suavização de renderização (evita que o navegador engorde a fonte) */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    
+    /* 3. Espaçamentos baseados no seu print anterior */
+    line-height: 1.05; 
+    letter-spacing: 1px; /* Um leve ajuste negativo ajuda a aproximar do visual do Figma */
+    
     margin-bottom: 3.5rem; 
-    letter-spacing: -2px;
 }
 
 /* Botão "Conheça nossa história" com a Seta */

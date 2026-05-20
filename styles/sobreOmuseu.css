@@ -859,7 +859,7 @@ section.arco-bg-section p,
     border-radius: 50%;
     border: none;
 
-    background: white;
+    background: rgba(255,255,255,0.40);
 
     font-size: 1.5rem;
 
@@ -1043,8 +1043,6 @@ section.arco-bg-section p,
 
     padding: 14px 30px;
 
-    background: rgba(255,255,255,0.92);
-
     color: #4a4a4a;
 
     border: 2px solid #9f2d2d;
@@ -1066,8 +1064,6 @@ section.arco-bg-section p,
 
 .btn-ver-acervo:hover {
     background: #9f2d2d;
-
-    color: white;
 
     transform: translateY(-2px);
 }
@@ -1448,7 +1444,7 @@ section.arco-bg-section p,
 #internacional {
     position: relative; /* Essencial para os posicionamentos absolutos funcionarem dentro */
     width: 100%;
-    max-width: 700px;
+    max-width: 900px;
     margin: 40px auto;
     
     /* Nota: Removi o filter: drop-shadow como solicitado */
@@ -1476,7 +1472,7 @@ section.arco-bg-section p,
 
 /* Resto das configurações que já tínhamos (mantêm-se iguais) */
 .conteudo-carta {
-    padding: 80px 60px;
+    padding: 100px 80px;
     box-sizing: border-box;
     position: relative; /* Garante que o texto fique acima do fundo transparente */
 }
