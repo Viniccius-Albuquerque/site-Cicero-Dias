@@ -35,6 +35,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 1;
+    background: #000; /* Fundo preto de segurança */
 }
 
 .slide {
@@ -43,13 +44,18 @@ body {
     height: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Estado inicial: Invisível e atrás */
     opacity: 0;
-    transition: opacity 2s ease-in-out;
-    filter: grayscale(100%) brightness(0.8) contrast(1.2);
+    z-index: 1;
+    transition: opacity 2s ease-in-out; /* Transição suave de 2 segundos */
 }
 
+/* Estado ativo: Fica visível e passa para a frente */
 .slide.active {
     opacity: 1;
+    z-index: 2;
 }
 
 /* Sombra suave à direita para destacar o texto */
@@ -87,6 +93,7 @@ body {
     font-weight: 200;
     margin-bottom: 0.5rem;
     opacity: 0.9;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Título Principal */
@@ -110,6 +117,7 @@ body {
     letter-spacing: 1px; /* Um leve ajuste negativo ajuda a aproximar do visual do Figma */
     
     margin-bottom: 3.5rem; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
 /* Botão "Conheça nossa história" com a Seta */
@@ -126,6 +134,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-left: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Bolinha vermelha com a animação de pulso na aura */
@@ -187,4 +196,9 @@ body {
         box-shadow: 0 0 0 0 rgba(212, 0, 0, 0);
         transform: scale(1);
     }
+}
+
+.slide.slide-vertical {
+    background-size: cover;       /* Força a imagem a preencher a tela toda (some com a borda preta) */
+    background-position: center top; /* Alinha por cima! Mostra o topo da foto e corta o excesso embaixo */
 }
