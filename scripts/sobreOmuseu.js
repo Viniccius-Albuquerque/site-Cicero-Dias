@@ -267,41 +267,55 @@ const topicsData = {
                 <!-- CARROSSEL -->
                 <div class="cicero-slider">
 
-                    <button class="slider-btn prev">
-                        ←
-                    </button>
+                    <button class="slider-btn prev">←</button>
 
                     <div class="slider-track">
 
-                        <div class="slide active">
+                        <div class="slide active" 
+                            data-titulo="BAGUNÇA" 
+                            data-detalhes="Aquarela, 1929" 
+                            data-descricao="Cícero Dias apresenta em Bagunça uma composição vibrante e dinâmica, marcada por cores, movimento e elementos do cotidiano nordestino, refletindo a liberdade criativa do modernismo brasileiro.">
                             <img src="../images/carrosel-Cicero/Bagunça Aquarela 1929 Dimensões com moldura- 1,10cm x 0,77cm_.png" alt="">
                         </div>
 
-                        <div class="slide">
+                        <div class="slide" 
+                            data-titulo="DESCANSO" 
+                            data-detalhes="Aquarela, década de 1930" 
+                            data-descricao="Uma cena serena e contemplativa, marcada por traços suaves e atmosfera poética, revelando a sensibilidade do artista ao representar momentos de tranquilidade e intimidade.">
                             <img src="../images/carrosel-Cicero/Descanço Aquarela década de 1930 Dimensões com moldura- 1,10cm x 0,77cm_.png" alt="">
                         </div>
 
-                        <div class="slide">
+                        <div class="slide" 
+                            data-titulo="LIRISMO" 
+                            data-detalhes="Aquarela, 1929" 
+                            data-descricao="Cícero Dias expressa em Lirismo uma atmosfera poética e sensível, unindo cores, formas e delicadeza para transmitir emoção, imaginação e a essência do modernismo brasileiro.">
                             <img src="../images/carrosel-Cicero/LIRISMO.png" alt="">
                         </div>
 
-                        <div class="slide">
+                        <div class="slide" 
+                            data-titulo="O SONHO" 
+                            data-detalhes="Aquarela, 1929" 
+                            data-descricao="Na obra O Sonho, Cícero Dias mergulha no universo da imaginação, criando uma cena envolta em simbolismos, leveza e sensações que transitam entre fantasia e realidade.">
                             <img src="../images/carrosel-Cicero/O Sonho  Aquarela década de 1920 Dimensões com moldura- 1,10cm x 0,77cm_.png" alt="">
                         </div>
 
-                        <div class="slide">
+                        <div class="slide" 
+                            data-titulo="SUÍTE PERNAMBUCANA" 
+                            data-detalhes="Sem data" 
+                            data-descricao="Em Suíte Pernambucana, Cícero Dias celebra a cultura e as paisagens de Pernambuco por meio de cores marcantes, ritmo visual e referências ao cotidiano nordestino.">
                             <img src="../images/carrosel-Cicero/Retângulo 1.png" alt="">
                         </div>
 
-                        <div class="slide">
+                        <div class="slide" 
+                            data-titulo="PIM PAM PUM" 
+                            data-detalhes="Aquarela sobre papel, 1928" 
+                            data-descricao="Em Pim Pam Pum, Cícero Dias explora movimento, ritmo e espontaneidade em uma composição vibrante, marcada pela liberdade estética e pela energia do modernismo.">
                             <img src="../images/carrosel-Cicero/Sem Título Aquarela 1928 Dimensões com moldura- 1,10cm x 0,77cm_.png" alt="">
                         </div>
 
                     </div>
 
-                    <button class="slider-btn next">
-                        →
-                    </button>
+                    <button class="slider-btn next">→</button>
 
                 </div>
 
@@ -322,14 +336,14 @@ const topicsData = {
                         <div class="mini-icon"></div>
 
                         <div>
-                            <strong>PORTO DE ITAPARICA</strong>
-                            <p>Óleo sobre tela, 1928</p>
+                            <strong id="info-titulo">PORTO DE ITAPARICA</strong>
+                            <p id="info-detalhes">Óleo sobre tela, 1928</p>
                         </div>
                     </div>
 
                     <div class="cicero-divider"></div>
 
-                    <div class="cicero-info-text">
+                    <div class="cicero-info-text" id="info-descricao">
                         As paisagens, figuras e naturezas mortas de Cícero Dias
                         revelam um olhar sensível e poético sobre o Brasil,
                         suas cores e sua cultura.
@@ -1637,14 +1651,29 @@ resetarTimer();
 let currentSlide = 0;
 
 function initSlider() {
-
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
 
     if (!slides.length) return;
 
-    function updateSlider(index) {
+    // 1. MAPEIA OS ELEMENTOS DA BARRA DE INFORMAÇÕES
+    const infoTitulo = document.getElementById("info-titulo");
+    const infoDetalhes = document.getElementById("info-detalhes");
+    const infoDescricao = document.getElementById("info-descricao");
 
+    // 2. FUNÇÃO PARA ATUALIZAR OS TEXTOS DA OBRA DE ARTE
+    function atualizarInfoBar(slideAtivo) {
+        const titulo = slideAtivo.getAttribute("data-titulo");
+        const detalhes = slideAtivo.getAttribute("data-detalhes");
+        const descricao = slideAtivo.getAttribute("data-descricao");
+
+        // Só atualiza as tags na tela se os atributos existirem no HTML do slide
+        if (infoTitulo && titulo) infoTitulo.textContent = titulo;
+        if (infoDetalhes && detalhes) infoDetalhes.textContent = detalhes;
+        if (infoDescricao && descricao) infoDescricao.textContent = descricao;
+    }
+
+    function updateSlider(index) {
         slides.forEach(slide => {
             slide.classList.remove('active');
         });
@@ -1653,34 +1682,44 @@ function initSlider() {
             dot.classList.remove('active');
         });
 
-        slides[index].classList.add('active');
-        dots[index].classList.add('active');
+        // Ativa o slide e o dot correspondente
+        const slideAtivo = slides[index];
+        slideAtivo.classList.add('active');
+        if (dots[index]) dots[index].classList.add('active');
+
+        // 3. DISPARA A ATUALIZAÇÃO TODA VEZ QUE O SLIDE MUDAR
+        atualizarInfoBar(slideAtivo);
     }
 
     const nextBtn = document.querySelector('.slider-btn.next');
     const prevBtn = document.querySelector('.slider-btn.prev');
 
-    nextBtn?.addEventListener('click', () => {
+    // Remove listeners antigos limpando e clonando os botões (evita bugs de clique duplicado no carregamento assíncrono)
+    if (nextBtn && prevBtn) {
+        const newNextBtn = nextBtn.cloneNode(true);
+        const newPrevBtn = prevBtn.cloneNode(true);
+        nextBtn.parentNode.replaceChild(newNextBtn, nextBtn);
+        prevBtn.parentNode.replaceChild(newPrevBtn, prevBtn);
 
-        currentSlide++;
+        newNextBtn.addEventListener('click', () => {
+            currentSlide++;
+            if (currentSlide >= slides.length) {
+                currentSlide = 0;
+            }
+            updateSlider(currentSlide);
+        });
 
-        if (currentSlide >= slides.length) {
-            currentSlide = 0;
-        }
+        newPrevBtn.addEventListener('click', () => {
+            currentSlide--;
+            if (currentSlide < 0) {
+                currentSlide = slides.length - 1;
+            }
+            updateSlider(currentSlide);
+        });
+    }
 
-        updateSlider(currentSlide);
-    });
-
-    prevBtn?.addEventListener('click', () => {
-
-        currentSlide--;
-
-        if (currentSlide < 0) {
-            currentSlide = slides.length - 1;
-        }
-
-        updateSlider(currentSlide);
-    });
+    // 4. INICIALIZA A BARRA COM OS DADOS DO PRIMEIRO SLIDE ASSIM QUE CARREGA
+    updateSlider(currentSlide);
 }
 
 // BOTÃO VER ACERVO

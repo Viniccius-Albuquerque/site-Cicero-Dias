@@ -106,7 +106,7 @@ body {
     text-rendering: optimizeLegibility;
     
     /* 3. Espaçamentos baseados no seu print anterior */
-    line-height: 1.05; 
+    line-height: 0.85; 
     letter-spacing: 1px; /* Um leve ajuste negativo ajuda a aproximar do visual do Figma */
     
     margin-bottom: 3.5rem; 
