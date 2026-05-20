@@ -1260,7 +1260,7 @@ const topicsData = {
                     </div>
 
                     <p>
-                        cicerodias_museu2011@yahoo.com
+                        contato.secultescada@gmail.com
                     </p>
                 </div>
 
@@ -1271,7 +1271,7 @@ const topicsData = {
                     </div>
 
                     <p>
-                        (81) 9.9944-7733
+                        (81) 9 9327-1874
                     </p>
                 </div>
 
