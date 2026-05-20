@@ -1514,3 +1514,51 @@ p, span, li, article, section {
 .museum-footer p {
     text-align: center !important;
 }
+
+/* --- CONFIGURAÇÃO DA GRID DOS CASARÕES --- */
+.grid-casaroes {
+    display: grid;
+    /* Cria 2 colunas idênticas que vão esticar até o limite da tela */
+    grid-template-columns: repeat(2, 1fr); 
+    
+    /* Espaço entre as fotos: 30px na vertical, 40px na horizontal */
+    gap: 30px 40px; 
+    
+    /* Força a grid a ocupar toda a largura que o content-scroll oferece */
+    width: 100%; 
+    max-width: 100%; 
+    
+    /* Uma margem de segurança pequena nas laterais para não colar no limite físico do totem */
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 20px;
+    padding-bottom: 80px; 
+    
+    box-sizing: border-box;
+}
+
+/* --- FORÇANDO OS BOTÕES/MOLDURAS A CRESCEREM --- */
+.btn-casarao {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    
+    /* Importante: faz o botão ocupar 100% da largura da coluna da grid */
+    width: 100%; 
+    display: block; 
+}
+
+.btn-casarao .moldura-dourada {
+    width: 100%;
+}
+
+/* --- TORNANDO A IMAGEM TOTALMENTE ELÁSTICA --- */
+.btn-casarao img {
+    /* Remove o limite fixo de pixels (como o width="300" do HTML) e força a imagem 
+       a esticar até preencher toda a largura da coluna da grid */
+    width: 100% !important; 
+    height: auto;
+    object-fit: cover; /* Ou 'contain' se não quiser cortar nenhum milímetro da foto */
+    display: block;
+}

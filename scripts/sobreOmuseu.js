@@ -813,177 +813,379 @@ const topicsData = {
         title: "Baronatos",
 
         content: `
-            <h1 class="page-title" style="color: #ede7e1 !important;">Baronatos</h1>
-            
-            <div class="grid-baronatos">
+            <section id="Barao">
+                <h1 class="page-title" style="color: #ede7e1 !important;">Barões</h1>
+                
+                <div class="grid-baronatos">
 
-                        <button class="quadro-moldura btn-baronato" data-baronato="domPedro2">
+                            <button class="quadro-moldura btn-baronato" data-baronato="domPedro2">
+                                <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png"
+
+                                    alt="1dom pedro II"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="suassuna">
+                                <div class="moldura-dourada">
+                                    <img src="../images/baronatos/imagens-com-molduras/2barão de suassuna.png"
+                                    alt="Barão de Suassuna"
+                                    width="300">
+                                </div>
+                                
+                            </button>
+
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="baronesa">
+
+                                <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/3baronesa de suassuna.png"
+
+                                    alt="baronesa de suassuna"
+
+                                    width="300">
+                                </div>
+                            </button>
+
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="pirangy">
+
                             <div class="moldura-dourada">
 
-                                <img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png"
+                                    <img src="../images/baronatos/imagens-com-molduras/4barão de pirangy.png"
 
-                                alt="1dom pedro II"
+                                    alt="pirangy"
 
-                                width="300">
-                            </div>
+                                    width="300">
+                                </div>
+                            </button>
 
-                        </button>
-
-
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="suassuna">
-                            <div class="moldura-dourada">
-                                <img src="../images/baronatos/imagens-com-molduras/2barão de suassuna.png"
-                                alt="Barão de Suassuna"
-                                width="300">
-                            </div>
-                            
-                        </button>
-
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="baronesa">
+                            <button class="quadro-moldura btn-baronato" data-baronato="baronesaDePirangy">
 
                             <div class="moldura-dourada">
 
-                                <img src="../images/baronatos/imagens-com-molduras/3baronesa de suassuna.png"
+                                    <img src="../images/baronatos/imagens-com-molduras/5baronesa de pirangy.png"
 
-                                alt="baronesa de suassuna"
+                                    alt="pirangy"
 
-                                width="300">
-                            </div>
-                        </button>
+                                    width="300">
+                                </div>
+
+                            </button>
 
 
-                        <button class="quadro-moldura btn-baronato" data-baronato="pirangy">
+                            <button class="quadro-moldura btn-baronato" data-baronato="baraoDeESCADA">
 
+                            <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/6barão de escada.png"
+
+                                    alt="baraoDeESCADA"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeESCADA">
+
+                            <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/7baronesa de escada.png"
+
+                                    alt="baronesaDeESCADA"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="jundia">
+
+                            <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/8barão de jundiá.png"
+
+                                    alt="jundia"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="baronesaDejundia">
+
+                            <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/9baronesa de jundiá.png"
+
+                                    alt="baronesa-de-jundia"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="baraoDeFrexeiras">
+
+                            <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/10barão de frexeiras.png"
+
+                                    alt="baraoDeFrexeiras"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeFrexeiras">
+
+                            <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/11baronesa de frexeiras.png"
+
+                                    alt="baronesaDeFrexeiras"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="baraoDeUtinga">
+
+                            <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/12barão de utinga.png"
+
+                                    alt="baraoDeUtinga"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeUtinga">
+
+                            <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/13baronesa de utinga.png"
+
+                                    alt="baronesaDeUtinga"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+                </div>
+            </section>
+
+            <section id="casarao">
+                <h1 class="page-title" style="color: #ede7e1 !important; margin-top: 60px;">Casarões</h1>
+
+                <div class="grid-casaroes">
+                    
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
                         <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 1.png" alt="Casarão 1" width="300">
+                        </div>
+                    </button>
 
-                                <img src="../images/baronatos/imagens-com-molduras/4barão de pirangy.png"
-
-                                alt="pirangy"
-
-                                width="300">
-                            </div>
-                        </button>
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="baronesaDePirangy">
-
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
                         <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 2.png" alt="Casarão 2" width="300">
+                        </div>
+                    </button>
 
-                                <img src="../images/baronatos/imagens-com-molduras/5baronesa de pirangy.png"
-
-                                alt="pirangy"
-
-                                width="300">
-                            </div>
-
-                        </button>
-
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="baraoDeESCADA">
-
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
                         <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 3.png" alt="Casarão 3" width="300">
+                        </div>
+                    </button>
 
-                                <img src="../images/baronatos/imagens-com-molduras/6barão de escada.png"
-
-                                alt="baraoDeESCADA"
-
-                                width="300">
-                            </div>
-
-                        </button>
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeESCADA">
-
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
                         <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 4.png" alt="Casarão 4" width="300">
+                        </div>
+                    </button>
 
-                                <img src="../images/baronatos/imagens-com-molduras/7baronesa de escada.png"
-
-                                alt="baronesaDeESCADA"
-
-                                width="300">
-                            </div>
-
-                        </button>
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="jundia">
-
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
                         <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 5.png" alt="Casarão 5" width="300">
+                        </div>
+                    </button>
 
-                                <img src="../images/baronatos/imagens-com-molduras/8barão de jundiá.png"
-
-                                alt="jundia"
-
-                                width="300">
-                            </div>
-
-                        </button>
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="baronesaDejundia">
-
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
                         <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 6.png" alt="Casarão 6" width="300">
+                        </div>
+                    </button>
 
-                                <img src="../images/baronatos/imagens-com-molduras/9baronesa de jundiá.png"
-
-                                alt="baronesa-de-jundia"
-
-                                width="300">
-                            </div>
-
-                        </button>
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="baraoDeFrexeiras">
-
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
                         <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 7.png" alt="Casarão 7" width="300">
+                        </div>
+                    </button>
 
-                                <img src="../images/baronatos/imagens-com-molduras/10barão de frexeiras.png"
-
-                                alt="baraoDeFrexeiras"
-
-                                width="300">
-                            </div>
-
-                        </button>
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeFrexeiras">
-
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
                         <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 8.png" alt="Casarão 8" width="300">
+                        </div>
+                    </button>
 
-                                <img src="../images/baronatos/imagens-com-molduras/11baronesa de frexeiras.png"
-
-                                alt="baronesaDeFrexeiras"
-
-                                width="300">
-                            </div>
-
-                        </button>
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="baraoDeUtinga">
-
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
                         <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 9.png" alt="Casarão 9" width="300">
+                        </div>
+                    </button>
 
-                                <img src="../images/baronatos/imagens-com-molduras/12barão de utinga.png"
-
-                                alt="baraoDeUtinga"
-
-                                width="300">
-                            </div>
-
-                        </button>
-
-                        <button class="quadro-moldura btn-baronato" data-baronato="baronesaDeUtinga">
-
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
                         <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 10.png" alt="Casarão 10" width="300">
+                        </div>
+                    </button>
 
-                                <img src="../images/baronatos/imagens-com-molduras/13baronesa de utinga.png"
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 11.png" alt="Casarão 11" width="300">
+                        </div>
+                    </button>
 
-                                alt="baronesaDeUtinga"
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 12.png" alt="Casarão 12" width="300">
+                        </div>
+                    </button>
 
-                                width="300">
-                            </div>
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 13.png" alt="Casarão 13" width="300">
+                        </div>
+                    </button>
 
-                        </button>
-            </div>
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 14.png" alt="Casarão 14" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 15.png" alt="Casarão 15" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 16.png" alt="Casarão 16" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 17.png" alt="Casarão 17" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 18.png" alt="Casarão 18" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 19.png" alt="Casarão 19" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 2.png" alt="Casarão 20" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 21.png" alt="Casarão 21" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 22.png" alt="Casarão 22" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 23.png" alt="Casarão 23" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 24.png" alt="Casarão 24" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 25.png" alt="Casarão 25" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 26.png" alt="Casarão 26" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 27.png" alt="Casarão 27" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 28.png" alt="Casarão 28" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 29.png" alt="Casarão 29" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 30.png" alt="Casarão 30" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao1">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 31.png" alt="Casarão 31" width="300">
+                        </div>
+                    </button>
+
+                    <button class="quadro-moldura btn-casarao" data-casarao="casarao2">
+                        <div class="moldura-dourada">
+                            <img src="../images/casaroes/Prancheta 32.png" alt="Casarão 32" width="300">
+                        </div>
+                    </button>
+
+                </div>
+            </section>
         `
     },
 
