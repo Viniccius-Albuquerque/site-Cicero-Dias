@@ -852,7 +852,7 @@ const topicsData = {
                 <h2>Acervo Cícero Dias</h2>
 
                 <p>
-                    No Espaço Cultural Museu Cícero Dias encontra-se 22 (vinte e duas) litografias do 
+                    No Espaço Cultural Museu Cícero Dias encontra-se 21 (vinte e uma) litografias do 
                     artista plástico Cícero Dias que foram reproduzidas no ano de 1982 / 1983 a partir 
                     de desenhos aquarelados da década de 1920 / 1930 e doadas pela família do autor.
                 </p>
@@ -898,87 +898,288 @@ const topicsData = {
                 <div class="galeria-acervo">
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/1.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 39.png" alt="Lirismo">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Lirismo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1929</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/2.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 40.png" alt="Sem Título">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Título</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1929</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/3.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 41.png" alt="O Sonho">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">O Sonho</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/4.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 42.png" alt="Bagunça">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Bagunça</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1928</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/5.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 43.png" alt="Sem Título">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Descanço</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/6.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 44.png" alt="O Sonho">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Titulo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1928</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/7.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 45.png" alt="Bagunça">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Titulo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/8.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 46.png" alt="Lirismo">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Titulo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/9.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 47.png" alt="Sem Título">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Título</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/10.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 48.png" alt="O Sonho">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Menina Tocando Harpa</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1928</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/11.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO A/LADO A/Ativo 49.png" alt="Bagunça">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Titulo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/12.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO B/LADO B/Ativo 50.png" alt="Sem Título">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Título</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/13.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO B/LADO B/Ativo 51.png" alt="O Sonho">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Titulo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/14.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO B/LADO B/Ativo 52.png" alt="Bagunça">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Titulo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/15.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO B/LADO B/Ativo 53.png" alt="Lirismo">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Titulo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/16.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO B/LADO B/Ativo 54.png" alt="Sem Título">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Título</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/17.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO B/LADO B/Ativo 55.png" alt="O Sonho">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Titulo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/18.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO B/LADO B/Ativo 56.png" alt="Bagunça">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Titulo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/19.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO B/LADO B/Ativo 57.png" alt="Sem Título">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Título</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/20.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO B/LADO B/Ativo 58.png" alt="O Sonho">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Sem Titulo</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1920/1930</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="obra-card">
-                        <img src="../images/cicero/acervo/21.jpg" alt="">
+                        <div class="obra-img-wrapper">
+                            <img src="../images/LADO B/LADO B/Ativo 59.png" alt="Bagunça">
+                        </div>
+                        <div class="obra-info">
+                            <h3 class="obra-titulo">Casal</h3>
+                            <div class="obra-detalhes">
+                                <span class="obra-tecnica">Aquarela 1928</span>
+                                <span class="obra-dimensoes">Dimensões com moldura: 1,10cm x 0,77cm</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="acervo-dados-tecnicos">
+                        <p>Impressão: <strong>Copiadora Nacional</strong></p>
+                        
+                        <p>Técnica: <strong>Impressão à Jato de Tinta com pigmentação em resolução de 1440 DPI, adesivação e laminação a frio.</strong></p>
+                        
+                        <p>Material / Suporte: <strong>Papel Adesivo Vinil 80 micra | Pigmentação: 4x0 cores | Plastificação: laminação com película fosca 03 | Suporte Adesivado em placa de PVC 0,02 cm.</strong></p>
+                        
+                        <p>Material / Moldura: <strong>Tipo Vitrine em madeira Freijó, com vidro, chassi colado no Foam Bording e aparafusado a moldura. Todo material recebeu tratamento com formal.</strong></p>
+                        
+                        <p>Data da Reprodução: <strong>março de 2009.</strong></p>
                     </div>
 
                 </div>

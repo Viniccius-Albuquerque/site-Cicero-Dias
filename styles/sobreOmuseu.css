@@ -1011,22 +1011,73 @@ section.arco-bg-section p,
 /* ACERVO */
 .galeria-acervo {
     margin-top: 40px;
-
     display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr); /* Ajustado para 2 colunas como na imagem */
+    gap: 40px 30px; /* 40px de espaço vertical (para respirar entre as linhas) e 30px horizontal */
+    padding: 0 20px;
 }
 
+/* CARD DA OBRA */
 .obra-card {
     width: 100%;
+    background: transparent; /* Remove o fundo antigo para o texto flutuar no fundo escuro */
+    display: flex;
+    flex-direction: column;
+}
 
-    border-radius: 20px;
-
+.obra-img-wrapper {
+    width: 100%;
+    height: 340px; /* Altura ideal proporcional para as telas horizontais em grade */
+    border-radius: 18px; /* Cantos arredondados idênticos ao exemplo */
     overflow: hidden;
+    margin-bottom: 15px; /* Espaço entre a foto e o início do texto */
+}
 
-    background: #ddd;
+.obra-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante o preenchimento sem distorcer a obra */
+    display: block;
+}
+
+/* ÁREA DE TEXTOS (Flexbox para jogar o título de um lado e os detalhes do outro) */
+.obra-info {
+    display: flex;
+    justify-content: space-between; /* Título na esquerda, detalhes na direita */
+    align-items: flex-start;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/* TÍTULO DA OBRA */
+.obra-titulo {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 15px;
+}
+
+/* BLOCO TÉCNICO (DIREITA) */
+.obra-detalhes {
+    display: flex;
+    flex-direction: column; /* Empilha a Técnica em cima do tamanho */
+    align-items: flex-end; /* Alinha os textos à direita */
+    text-align: right;
+    min-width: 180px;
+}
+
+/* TÉCNICA / ANO */
+.obra-tecnica {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+/* DIMENSÕES DA MOLDURA */
+.obra-dimensoes {
+    color: #888888; /* Tom cinza mais escuro para criar hierarquia visual */
+    font-size: 0.75rem;
 }
 
 .obra-card img {
@@ -2039,4 +2090,30 @@ p, span, li, article, section {
 .acessibilidade-dots .dot.active {
     opacity: 1;
     background: #d92c2c;
+}
+
+.acervo-dados-tecnicos {
+    /* CORREÇÃO CRUCIAL: Faz o bloco ocupar as duas colunas do grid e descer */
+    grid-column: 1 / -1; 
+    clear: both;
+    width: 100%;
+
+    /* Ajuste de margem para afastar da última linha de imagens */
+    margin-top: 80px; 
+    margin-bottom: 40px;
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+.acervo-dados-tecnicos p {
+    color: #888888; /* Tom cinza médio para o rótulo inicial */
+    font-size: 1.1rem; /* Aumentado levemente para melhor leitura no totem */
+    line-height: 1.6;
+    margin-bottom: 28px; /* Espaçamento confortável entre os parágrafos */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
+.acervo-dados-tecnicos p strong {
+    color: #e0e0e0; /* Tom cinza claro para o texto em destaque */
+    font-weight: 600;
 }
