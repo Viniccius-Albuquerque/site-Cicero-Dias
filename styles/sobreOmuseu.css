@@ -1746,3 +1746,55 @@ p, span, li, article, section {
 .bloco-adulto .papel-fotografico {
     transform: rotate(2.5deg); /* Gira apenas a foto e a borda amarelada */
 }
+
+/* Container que gera as duas colunas verticais */
+.galeria-documentos-container {
+    display: grid;
+    /* Divide o totem em 2 colunas de tamanhos iguais */
+    grid-template-columns: repeat(2, 1fr); 
+    
+    /* Espaçamento: 45px entre uma linha e outra, 35px entre a coluna esquerda e direita */
+    gap: 45px 35px; 
+    
+    /* Alinha cada documento pelo seu topo. Evita que o CSS estique as imagens curtas */
+    align-items: start; 
+    
+    width: 100%;
+    max-width: 1200px; /* Mantém o padrão de largura do seu projeto */
+    margin: 40px auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 100px; /* Espaço confortável para o scroll do totem */
+    box-sizing: border-box;
+}
+
+/* Caixa individual de cada imagem + sua legenda */
+.documento-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Estilização das imagens dos documentos */
+.documento-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    /* Cantos arredondados bem visíveis como no layout enviado */
+    border-radius: 20px; 
+    
+    /* Preserva o aspecto original do documento sem distorcer ou amassar */
+    object-fit: contain; 
+}
+
+/* Legendas discretas logo abaixo de cada documento */
+.documento-legenda {
+    font-family: 'Literata', serif;
+    font-size: 0.8rem;
+    color: #333333;
+    line-height: 1.35;
+    margin-top: 12px; /* Distancia o texto ligeiramente da foto */
+    text-align: left;
+    padding-right: 10px;
+}

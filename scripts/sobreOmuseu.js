@@ -632,6 +632,80 @@ const topicsData = {
                 </div>
             </section>
 
+            <div class="galeria-documentos-container">
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/6Convite recebido por Cícero Dias, em março de 1937, para expor as suas obras na Galerie Rive Gauche em Paris.png" alt="Documento 1">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 1</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/7Carta de Di Cavalcanti a Cícero Dias convocando-o para Paris em novembro de 1936.png" alt="Documento 2">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 2</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/8Cícero Dias (de boina) com os pintores Noêmia Mourão e Di Cavalcanti em frente à Catedral de Notre Dame, logo após sua chegada a Paris, 1937.png" alt="Documento 3">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 3</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/9Fac-simile do poema .png" alt="Documento 4">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 4</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/10cartao postal.png" alt="Documento 5">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 5</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/11fac-smile.png" alt="Documento 6">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 6</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/12fac-smile 2.png" alt="Documento 6">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 6</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/14dedicatoria de picasso.png" alt="Documento 1">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 1</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/13poema de paula eluard.png" alt="Documento 2">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 2</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/15cicero dias, raymonde dias.png" alt="Documento 3">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 3</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/16picasso em foto de man ray_.png" alt="Documento 4">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 4</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/oc5.png" alt="Documento 5">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 5</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/16primeiras pinturas.png" alt="Documento 6">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 6</p>
+                    </div>
+
+                    <div class="documento-item">
+                        <img src="../images/internacional/17revista francesa art.png" alt="Documento 6">
+                        <p class="documento-legenda">Texto provisório da legenda do documento 6</p>
+                    </div>
+
+            </div>
+
             <section id="murais">
                 <h2>Abstracionismo e Murais</h2>
                 <p>
