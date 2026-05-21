@@ -830,7 +830,7 @@ section.arco-bg-section p,
 
 .slide {
     position: absolute;
-
+    display: none;
     inset: 0;
 
     opacity: 0;
@@ -840,6 +840,7 @@ section.arco-bg-section p,
 
 .slide.active {
     opacity: 1;
+    display: block;
 }
 
 .slide img {
@@ -1010,22 +1011,73 @@ section.arco-bg-section p,
 /* ACERVO */
 .galeria-acervo {
     margin-top: 40px;
-
     display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr); /* Ajustado para 2 colunas como na imagem */
+    gap: 40px 30px; /* 40px de espaço vertical (para respirar entre as linhas) e 30px horizontal */
+    padding: 0 20px;
 }
 
+/* CARD DA OBRA */
 .obra-card {
     width: 100%;
+    background: transparent; /* Remove o fundo antigo para o texto flutuar no fundo escuro */
+    display: flex;
+    flex-direction: column;
+}
 
-    border-radius: 20px;
-
+.obra-img-wrapper {
+    width: 100%;
+    height: 340px; /* Altura ideal proporcional para as telas horizontais em grade */
+    border-radius: 18px; /* Cantos arredondados idênticos ao exemplo */
     overflow: hidden;
+    margin-bottom: 15px; /* Espaço entre a foto e o início do texto */
+}
 
-    background: #ddd;
+.obra-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante o preenchimento sem distorcer a obra */
+    display: block;
+}
+
+/* ÁREA DE TEXTOS (Flexbox para jogar o título de um lado e os detalhes do outro) */
+.obra-info {
+    display: flex;
+    justify-content: space-between; /* Título na esquerda, detalhes na direita */
+    align-items: flex-start;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/* TÍTULO DA OBRA */
+.obra-titulo {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 15px;
+}
+
+/* BLOCO TÉCNICO (DIREITA) */
+.obra-detalhes {
+    display: flex;
+    flex-direction: column; /* Empilha a Técnica em cima do tamanho */
+    align-items: flex-end; /* Alinha os textos à direita */
+    text-align: right;
+    min-width: 180px;
+}
+
+/* TÉCNICA / ANO */
+.obra-tecnica {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+/* DIMENSÕES DA MOLDURA */
+.obra-dimensoes {
+    color: #888888; /* Tom cinza mais escuro para criar hierarquia visual */
+    font-size: 0.75rem;
 }
 
 .obra-card img {
@@ -1180,6 +1232,14 @@ section.arco-bg-section p,
     justify-content: center; /* Garante centralização vertical extra */
 }
 
+.colonizacao-text img {
+    width: 150px;         /* Deixa o QR Code pequenininho */
+    height: 150px;        /* Mantém a proporção quadrada */
+    object-fit: contain;
+    margin-bottom: 20px; /* Cria o espaçamento perfeito em relação ao h2 de baixo */
+    display: block;
+}
+
 /* Estilização do Título */
 .colonizacao-text h2 {
     color: #ede7e1; /* Cor clara idêntica à do seu banco de dados */
@@ -1255,14 +1315,96 @@ section.arco-bg-section p,
 }
 
 .acessibilidade-slider {
-    width: 100%;
-    position: relative;
+    /* MANTIDO: Largura do jeito que você já aprovou */
+    width: 75%;          
+    max-width: 800px;    
 
-    display: flex;
+    /* EXPANDIDO NA VERTICAL: Aumentamos a altura e o limite máximo */
+    height: 80vh;        
+    max-height: 750px;   
+
+    margin: 0 auto;
+    position: relative;
+    border-radius: 60px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.acessibilidade-slider .slider-track {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.acessibilidade-slider .slide {
+    position: absolute;
+    inset: 0;
+
+    display: none;
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+
     align-items: center;
     justify-content: center;
+}
 
-    margin-top: 30px;
+.acessibilidade-slider .slide.active {
+    display: flex;
+    opacity: 1;
+}
+
+.acessibilidade-slider .slide img {
+    width: 100%;
+    height: 100%;
+
+    /* Ajusta a imagem perfeitamente à nova altura vertical do container */
+    object-fit: fill; 
+    
+    background-color: transparent;
+    display: block;
+}
+/* BOTÕES */
+
+.acessibilidade-slider .slider-btn {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 100;
+
+    backdrop-filter: blur(5px);
+
+    transition: 0.3s;
+}
+
+.acessibilidade-slider .slider-btn:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.acessibilidade-slider .prev {
+    left: 20px;
+}
+
+.acessibilidade-slider .next {
+    right: 20px;
 }
 
 .acessibilidade-box {
@@ -1899,4 +2041,79 @@ p, span, li, article, section {
     font-size: 14px;
     text-align: right;
     white-space: nowrap; /* não deixa quebrar */
+}
+
+.split-container-colonizacao .colonizacao-text {
+    text-align: left;
+}
+
+/* Container que vai abraçar o QR Code e cuidar do alinhamento */
+.qr-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente (caso o container tenha altura) */
+    width: 100%;             /* Ocupa toda a largura disponível */
+    padding: 20px 0;         /* Margem interna para dar respiro em cima e embaixo */
+}
+
+/* Estilização da imagem do QR Code */
+.qr-code {
+    width: 200px;             /* Define o tamanho pequeno ideal */
+    height: 200px;            /* Mantém o formato perfeitamente quadrado */
+    object-fit: contain;     /* Garante que o QR code não distorça */
+    display: block;          /* Remove espaçamentos fantasma de elementos inline */
+    
+    /* Opcional: estilo visual suave */
+    border-radius: 6px;      /* Arredonda levemente os cantos */
+    padding: 6px;            /* Margem interna para o QR não colar na borda do fundo */
+}
+
+/* CONTAINER EXCLUSIVO */
+.acessibilidade-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+/* BOLINHAS EXCLUSIVAS */
+.acessibilidade-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #111;
+    opacity: 0.4;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+/* BOLINHA ATIVA VERMELHA */
+.acessibilidade-dots .dot.active {
+    opacity: 1;
+    background: #d92c2c;
+}
+
+.acervo-dados-tecnicos {
+    /* CORREÇÃO CRUCIAL: Faz o bloco ocupar as duas colunas do grid e descer */
+    grid-column: 1 / -1; 
+    clear: both;
+    width: 100%;
+
+    /* Ajuste de margem para afastar da última linha de imagens */
+    margin-top: 80px; 
+    margin-bottom: 40px;
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+.acervo-dados-tecnicos p {
+    color: #888888; /* Tom cinza médio para o rótulo inicial */
+    font-size: 1.1rem; /* Aumentado levemente para melhor leitura no totem */
+    line-height: 1.6;
+    margin-bottom: 28px; /* Espaçamento confortável entre os parágrafos */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
+.acervo-dados-tecnicos p strong {
+    color: #e0e0e0; /* Tom cinza claro para o texto em destaque */
+    font-weight: 600;
 }
