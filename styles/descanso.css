@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Literata', serif;
+}
+
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.totem {
+    width: 100%;
+    height: 100%;
+}
+
+.frame-descanso {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Carrossel e tratamento de imagem */
+.carrossel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #000; /* Fundo preto de segurança */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Estado inicial: Invisível e atrás */
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 2s ease-in-out; /* Transição suave de 2 segundos */
+}
+
+/* Estado ativo: Fica visível e passa para a frente */
+.slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Sombra suave à direita para destacar o texto */
+.overlay-direito {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0,0,0,0.7), transparent);
+    z-index: 2;
+}
+
+/* Conteúdo e Bloco de Texto */
+.conteudo {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15%; 
+}
+
+.bloco-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    animation: softFade 5s infinite ease-in-out; /* Mantida apenas uma chamada de animação */
+}
+
+/* Texto "Espaço Cultural" */
+.subtitulo-topo {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Título Principal */
+.museu-titulo {
+    font-family: 'Literata', serif;
+    font-size: 8rem; 
+    font-weight: 400; /* Regular */
+    color: #fff;
+    
+    /* 1. Ativa o desenho de Display (alto contraste entre traços grossos/finos) */
+    font-optical-sizing: auto;
+    font-variation-settings: "opsz" 72; 
+    
+    /* 2. Suavização de renderização (evita que o navegador engorde a fonte) */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    
+    /* 3. Espaçamentos baseados no seu print anterior */
+    line-height: 0.85; 
+    letter-spacing: 1px; /* Um leve ajuste negativo ajuda a aproximar do visual do Figma */
+    
+    margin-bottom: 3.5rem; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Botão "Conheça nossa história" com a Seta */
+/* Botão "Conheça nossa história" */
+.btn-fake {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: none; 
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Bolinha vermelha com a animação de pulso na aura */
+.btn-fake::after {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-color: #d40000; 
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M16.01 11H4v2h12.01v3L20 12l-3.99-4v3z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    transition: transform 0.3s ease;
+    
+    /* Adiciona o efeito pulsante discreto na bolinha */
+    animation: pulsarSeta 2s infinite ease-in-out;
+}
+
+.btn-fake:hover::after {
+    transform: translateX(5px); 
+}
+
+/* Rodapé de Colaboradores (Canto inferior esquerdo) */
+.rodape-logos {
+    position: absolute;
+    bottom: 4%; 
+    left: 5%;   
+    z-index: 3;
+    max-width: 450px; 
+    opacity: 0.8;     
+}
+
+.rodape-logos img {
+    width: 110%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Animações */
+@keyframes softFade {
+    0% { opacity: 0.9; }
+    50% { opacity: 1; }
+    100% { opacity: 0.9; }
+}
+
+/* Animação que faz a bolinha soltar um brilho/pulso vermelho sutil */
+@keyframes pulsarSeta {
+    0% {
+        box-shadow: 0 0 0 0 rgba(212, 0, 0, 0.6);
+        transform: scale(1);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(212, 0, 0, 0);
+        transform: scale(1.05); /* Dá uma leve crescidinha */
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(212, 0, 0, 0);
+        transform: scale(1);
+    }
+}
+
+.slide.slide-vertical {
+    background-size: cover;       /* Força a imagem a preencher a tela toda (some com a borda preta) */
+    background-position: center top; /* Alinha por cima! Mostra o topo da foto e corta o excesso embaixo */
+}
