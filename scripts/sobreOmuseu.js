@@ -1967,70 +1967,53 @@ A Associação com a Escravidão Assim como o seu marido, a riqueza da Baronesa 
     },
 
     baraoDeESCADA: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+        title: "Belmino da Silveira Lins, o Barão da Escada",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/6barão de escada (1).png" alt="Henrique Marques">`,
+        bio: ` Nascido por volta de 1827, foi agraciado com o título de Barão da Escada em 1874. 
+        Sua trajetória foi interrompida de forma violenta em 1880, quando foi assassinado, episódio associado
+         pela historiografia local à Hecatombe do Rosário. Poder Político e Econômico: O seu poder estruturava
+         -se em torno do Engenho Limoeiro, uma das propriedades mais produtivas do município. O clã dos Silveira 
+         Lins detinha controle rigoroso sobre a economia local e intervinha diretamente nas disputas de poder de Escada.
+          Contribuições para Escada: O Engenho Limoeiro funcionava como epicentro de desenvolvimento logístico. A casa-grande do engenho e a sua capela neoclássica tornaram-se marcos do patrimônio arquitetônico do município. A Associação com a Escravidão: A grandiosidade de suas propriedades foi erguida pela exploração ininterrupta do trabalho escravizado. A violência estrutural desse sistema reflete-se na memória oral do município, com lendas locais sobre a opressão senhorial na época.
+`
     },
 
     baronesaDeESCADA: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+        title: "Maria de Jesus de Sousa Lins, a Baronesa da Escada",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/7baronesa de escada.png" alt="Henrique Marques">`,
+        bio: `Tornou-se Baronesa através de seu casamento com Belmino da Silveira Lins. Com o assassinato de seu marido em 1880, assumiu a posição de viúva e matriarca de um dos clãs mais poderosos da Mata Sul pernambucana. Poder Político e Econômico: Utilizou sua posição para garantir que a riqueza do Engenho Limoeiro não fosse pulverizada. Orquestrou a união de sua filha com o primo, o 2º Barão de Suassuna, numa estratégia agressiva de concentração de terras e capital. Contribuições para Escada: Garantiu a estabilidade do Engenho Limoeiro em um momento de crise. Mantendo o prestígio da casa-grande e financiando práticas religiosas, assegurou a base material para que seus herdeiros fundassem modernas usinas nas décadas seguintes. A Associação com a Escravidão: Geriu diretamente propriedades onde pessoas negras eram listadas como bens móveis. A riqueza que sustentou seu luto foi gerada pela manutenção do trabalho escravizado, exercendo controle opressivo e violento sobre a escravaria doméstica.
+`
     },
 
     jundia: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
-    },
+        title: "André Dias de Araújo, o Barão de Jundiá",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/8barão de jundiá.png" alt="Henrique Marques">`,
+        bio: ` Nascido em 1825, em Escada, foi o primeiro e único Barão de Jundiá (1880). Casou-se com a sua prima, Thereza Dias dos Santos. Faleceu em 1889, poucos dias antes da Proclamação da República. É o avô paterno do renomado pintor modernista Cícero Dias. Poder Político e Econômico: Senhor do Engenho Nova Noruega e herdeiro dos engenhos Jundiá, Recreio e Bosque.
+    Com a patente de Coronel, personificava o entrelaçamento entre monopólio da terra, força militar e autoridade política em Escada. Contribuições para Escada: A casa-grande do Engenho Jundiá era um epicentro de decisões.
+     No centro do município, seu nome batizou a atual Rua Barão de Jundiá, estabelecendo as bases materiais do protagonismo cultural de sua família. A Associação com a Escravidão e Apagamento Indígena: Seu império foi construído sobre a escravização. Além disso, a atual Rua Barão de Jundiá era historicamente a "Ladeira dos Mariquitos", local original de habitação das populações indígenas Tabajaras e Mariquitos, evidenciando a sobreposição do poder aristocrático sobre terras originárias.`},
 
     baronesaDejundia: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
-    },
+        title: "Thereza Dias dos Santos, a Baronesa de Jundiá",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/9baronesa de jundiá.png" alt="Henrique Marques">`,
+        bio: `Nascida por volta de 1830, no Recife, pertencia a uma rica família de armadores de navios. Aos 17 anos, casou-se com o seu primo, o futuro Barão de Jundiá. Avó do pintor Cícero Dias, faleceu em 1889, no Engenho Nova Noruega. Poder Político e Econômico: O seu casamento endogâmico garantiu que a riqueza familiar não fosse transferida para forasteiros, unindo o comércio do Recife à agroindústria na Mata Sul. Contribuições para Escada: Personificava a "civilidade" da aristocracia rural. Nos Engenhos `},
 
     baraoDeFrexeiras: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+        title: "Antônio dos Santos Pontual, o Barão de Frexeiras",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/10barão de frexeiras.png" alt="Henrique Marques">`,
+        bio: `Nascido em 1827, recebeu o título em 1880. Casou-se com sua prima, 
+        a irmã da Baronesa de Jundiá. Faleceu em 1901, no Recife. Pertencia à poderosa família Pontual, que dominou cerca de 17 engenhos na região de Escada. Poder Político e Econômico: Senhor absoluto do Engenho Cabeça de Negro, atuou como vereador em Escada e Coronel da Guarda Nacional. Essa sobreposição de poder agrário, militar e político tornava-o intocável. Contribuições para Escada: Transformou sua principal propriedade na Usina Cabeça de Negro em 1888. A usina contava com uma via férrea particular de 20 quilômetros interligada à estação de Frexeiras, reconfigurando a logística da região. A Associação com a Escravidão: Foi um ativo articulador político contra o abolicionismo, fundando o "Club da Lavoura" em Escada para combater a libertação e prolongar a exploração. A própria toponímia de sua propriedade — Engenho Cabeça de Negro — reflete a violência racial de seu império.
+`
     },
 
     baronesaDeFrexeiras: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
-    },
+        title: "  Francisca da Anunciação Dias dos Santos, a Baronesa de Frexeiras",
+
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/11baronesa de frexeiras.png" alt="Henrique Marques">`,
+
+        bio: `Nascida por volta de 1835, irmã da Baronesa de Jundiá, casou-se com o seu primo, o Barão de Frexeiras. Faleceu em 1895 e foi sepultada na capela de sua principal propriedade rural em Escada. 
+        Poder Político e Econômico: Neta de um próspero armador de navios do Recife, uniu o capital mercantil urbano com a força produtiva do latifúndio rural da Mata Sul, blindando o patrimônio da família Pontual. Contribuições para Escada: Exerceu o papel de matriarca do Engenho Cabeça de Negro. 
+        O capital de sua família materna foi fundamental para manter o prestígio da casa-grande e subsidiar a influência política de seu marido na região. A Associação com a Escravidão: A sua riqueza operava em duas frentes: a fortuna urbana ligada à economia portuária e o luxo de uma casa-grande rural integralmente mantida pelo trabalho escravizado de africanos e afro-brasileiros.
+`},
 
     baraoDeUtinga: {
         title: "Henrique Marques de Holanda Cavalcanti",
@@ -2053,6 +2036,11 @@ A Associação com a Escravidão Assim como o seu marido, a riqueza da Baronesa 
         <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
         <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
     }
+
+
+
+
+
 };
 
 // LÓGICA PARA ABRIR E FECHAR O PAINEL DE CONTEÚDO (DELEGAÇÃO DE EVENTOS)
