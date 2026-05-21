@@ -698,12 +698,11 @@ const topicsData = {
                         <img src="../images/internacional/16primeiras pinturas.png" alt="Documento 6">
                         <p class="documento-legenda">Primeiras pinturas murais abstratas da América Latina realizadas em 1948 por Cícero Dias para o Edifício da Secretaria da Fazenda do Estado de Pernambuco, Recife</p>
                     </div>
+            </div>
 
-                    <div class="documento-item">
-                        <img src="../images/internacional/17revista francesa art.png" alt="Documento 6">
-                        <p class="documento-legenda">Revista francesa Art d’Aujourd’hui consagra seu primeiro número em junho de 1949 à pintura mural. Acima, a reprodução do artigo de Michel Seuphor, ilustrato com os murais de Kandinsky, Cícero Dias e Le Corbusier</p>
-                    </div>
-
+            <div class="documento-item-total">
+                <img src="../images/internacional/17revista francesa art.png" alt="Documento 6">
+                <p class="documento-legenda">Revista francesa Art d’Aujourd’hui consagra seu primeiro número em junho de 1949 à pintura mural. Acima, a reprodução do artigo de Michel Seuphor, ilustrato com os murais de Kandinsky, Cícero Dias e Le Corbusier</p>
             </div>
 
             <section id="murais">

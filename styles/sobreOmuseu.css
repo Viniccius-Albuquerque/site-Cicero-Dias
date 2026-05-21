@@ -1748,53 +1748,66 @@ p, span, li, article, section {
 }
 
 /* Container que gera as duas colunas verticais */
+/* NOVO CONTAINER: Organiza os documentos em estilo "Mural/Pinterest" */
 .galeria-documentos-container {
-    display: grid;
-    /* Divide o totem em 2 colunas de tamanhos iguais */
-    grid-template-columns: repeat(2, 1fr); 
+    /* Define o número de colunas verticais automáticas */
+    column-count: 2; 
     
-    /* Espaçamento: 45px entre uma linha e outra, 35px entre a coluna esquerda e direita */
-    gap: 45px 35px; 
-    
-    /* Alinha cada documento pelo seu topo. Evita que o CSS estique as imagens curtas */
-    align-items: start; 
+    /* Espaço horizontal fixo entre as duas colunas */
+    column-gap: 35px; 
     
     width: 100%;
-    max-width: 1200px; /* Mantém o padrão de largura do seu projeto */
-    margin: 40px auto;
+    max-width: 1200px;
+    margin: 40px auto 0 auto; /* Removida a margem inferior para colar com a última foto */
     padding-left: 4%;
     padding-right: 4%;
-    padding-bottom: 100px; /* Espaço confortável para o scroll do totem */
     box-sizing: border-box;
 }
 
-/* Caixa individual de cada imagem + sua legenda */
+/* Caixa individual de cada imagem (Ajustada para o novo formato de colunas) */
 .documento-item {
-    display: flex;
-    flex-direction: column;
+    display: inline-block; /* Crucial: impede que o navegador corte o documento ao meio entre as colunas */
     width: 100%;
+    margin-bottom: 45px; /* Espaçamento vertical controlado e idêntico entre os blocos */
 }
 
-/* Estilização das imagens dos documentos */
+/* Estilização das imagens dos documentos (Mantida) */
 .documento-item img {
     width: 100%;
     height: auto;
     display: block;
-    
-    /* Cantos arredondados bem visíveis como no layout enviado */
     border-radius: 20px; 
-    
-    /* Preserva o aspecto original do documento sem distorcer ou amassar */
     object-fit: contain; 
 }
 
-/* Legendas discretas logo abaixo de cada documento */
+/* Legendas discretas (Mantida) */
 .documento-legenda {
     font-family: 'Literata', serif;
     font-size: 0.8rem;
     color: #333333;
     line-height: 1.35;
-    margin-top: 12px; /* Distancia o texto ligeiramente da foto */
+    margin-top: 12px;
     text-align: left;
     padding-right: 10px;
+}
+
+/* --- CLASSE EXCLUSIVA PARA A ÚLTIMA FOTO EM TELA CHEIA --- */
+.documento-item-total {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 100px; /* Margem final do totem */
+    box-sizing: border-box;
+}
+
+.documento-item-total img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 24px; /* Um pouco mais de raio para combinar com o formato esticado */
+    object-fit: cover;
 }
