@@ -239,6 +239,7 @@ html, body {
     /* Suas propriedades originais mantidas */
     height: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -295,7 +296,7 @@ html, body {
     padding: 40px 20px;
     text-align: center;
     color: inherit;
-    font-family: 'Istok Web', sans-serif; /* Fonte padrão do corpo */
+    font-family: 'Istok Web', sans-serif;
     font-size: 0.9rem;
     line-height: 1.6;
 }
@@ -1195,12 +1196,27 @@ section.arco-bg-section p,
     font-weight: normal;
 }
 
+#acervoCompleto {
+    background: #1a1a1a; 
+
+    color: #f5f5f5;
+
+    padding: 80px 70px 120px 70px; 
+
+    margin-top: 80px;
+    margin-bottom: -40px !important; /* Garante que termine em zero para grudar no footer */
+
+    width: calc(100% + 10%);
+    margin-left: -5%;
+    box-sizing: border-box;
+}
+
 #acervoCompleto h2 {
     font-family: 'Literata', serif;
     font-size: 5rem;
     font-weight: 300;
 
-    color: #000;
+    color: #ffffff; /* Branco para destacar no fundo escuro */
 
     line-height: 1;
     letter-spacing: -2px;
@@ -1219,7 +1235,7 @@ section.arco-bg-section p,
     font-size: 0.95rem;
     line-height: 1.7;
 
-    color: #222;
+    color: #e5e5e5; /* Tom claro idêntico ao exemplo para perfeita leitura */
 
     margin-bottom: 25px;
 
@@ -1810,4 +1826,58 @@ p, span, li, article, section {
     display: block;
     border-radius: 24px; /* Um pouco mais de raio para combinar com o formato esticado */
     object-fit: cover;
+}
+
+/* CONTAINER PRINCIPAL: Divide os blocos automaticamente em 2 colunas verticais */
+.galeria-fase-final-container {
+    /* Define a divisão em duas colunas fluídas */
+    column-count: 2;
+    
+    /* Espaço horizontal entre a coluna da esquerda e da direita */
+    column-gap: 35px;
+    
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 120px; /* Margem de respiro generosa para o final do totem */
+    box-sizing: border-box;
+}
+
+/* Caixa individual de cada foto + legenda */
+.fase-final-item {
+    /* Evita que o navegador rache a foto ou o texto na transição de colunas */
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px; /* Espaçamento vertical igual entre as fotos */
+}
+
+/* Estilização das imagens */
+.fase-final-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    /* Cantos arredondados bem suaves idênticos aos anteriores */
+    border-radius: 20px; 
+    object-fit: contain;
+}
+
+/* Legendas abaixo das fotos */
+.fase-final-legenda {
+    font-family: 'Literata', serif;
+    font-size: 0.8rem;
+    color: #333333;
+    line-height: 1.35;
+    margin-top: 12px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.museum-footer.dark-footer {
+    margin-top: 0 !important; /* Remove o espaço claro colando no conteúdo superior */
+    width: calc(100% + 10%) !important; /* Expande para as laterais anulando o padding pai */
+    margin-left: -5% !important; /* Ajusta o alinhamento esquerdo */
+    box-sizing: border-box;
 }

@@ -170,7 +170,7 @@ const topicsData = {
             </section>
 
             <section id="evolucao">
-                <h2>Marco do Aldeamento</h2>
+                <h2>Herança Indígena</h2>
 
                 <p>
                     A Herança Indígena por meio da Toponímia, que nada mais é do que o estudo dos nomes dos lugares.
@@ -746,6 +746,35 @@ const topicsData = {
                     muralismo não eram apenas formas de arte, mas pontes que conectavam a 
                     geometria universal ao cotidiano das pessoas.
                 </p>
+
+                <div class="galeria-fase-final-container">
+
+                    <div class="fase-final-item">
+                        <img src="../images/abstracionismo e murais/Cícero Dias em seu atelier, Paris década de 1970.png" alt="Cícero Dias em seu atelier, Paris">
+                        <p class="fase-final-legenda">Cícero Dias em seu atelier, Paris, década de 1970</p>
+                    </div>
+
+                    <div class="fase-final-item">
+                        <img src="../images/abstracionismo e murais/Cícero Dias em Olinda, Pernambuco, décado de 1970.png" alt="Cícero Dias em Olinda">
+                        <p class="fase-final-legenda">Cícero Dias em Olinda, Pernambuco, década de 1970</p>
+                    </div>
+
+                    <div class="fase-final-item">
+                        <img src="../images/abstracionismo e murais/Cícero Dias e Gilberto Freyre, Recife, década de 1970.png" alt="Cícero Dias e Gilberto Freyre">
+                        <p class="fase-final-legenda">Cícero Dias e Gilberto Freyre, Recife, década de 1970</p>
+                    </div>
+
+                    <div class="fase-final-item">
+                        <img src="../images/abstracionismo e murais/Cícero Dias com os escritores jorge Amado e Zélia Gatai, em sua exposição em Salvador, 1975.png" alt="Cícero Dias com Jorge Amado e Zélia Gattai">
+                        <p class="fase-final-legenda">Cícero Dias com os escritores Jorge Amado e Zélia Gattai, em sua exposição em Salvador, 1975</p>
+                    </div>
+
+                    <div class="fase-final-item">
+                        <img src="../images/abstracionismo e murais/Cícero Dias apresenta aos coordenadores do projeto o estudo definitivo do desenho do piso da praça Marco Zero, Recife, 1999.png" alt="Cícero Dias apresenta estudo do Marco Zero">
+                        <p class="fase-final-legenda">Cícero Dias apresenta aos coordenadores do projeto o estudo definitivo do desenho do piso da praça Marco Zero, Recife, 1999</p>
+                    </div>
+
+                </div>
             </section>
 
             <section id="legado">
@@ -787,6 +816,30 @@ const topicsData = {
                     universais e recebido elogios de gênios como Picasso, nunca deixou de carregar 
                     consigo a alma e as cores de Pernambuco.
                 </p>
+
+                <div class="galeria-fase-final-container">
+
+                    <div class="fase-final-item">
+                        <img src="../images/reconhecimento e legado/Ativo 32.png" alt="Cícero Dias em seu atelier, Paris">
+                        <p class="fase-final-legenda">Leonel Kaz, secretário da Cultura do Rio de Janeiro, embaixador da França no Brasil e Sr. Philippe Lecoutier e Sylvia Dias, na retrospectiva de Cícero Dias na Casa França-Brasil, Rio de Janeiro, 1996</p>
+                    </div>
+
+                    <div class="fase-final-item">
+                        <img src="../images/reconhecimento e legado/cicero diassss.jpg" alt="Cícero Dias em Olinda">
+                        <p class="fase-final-legenda">Cícero Dias na praça Vendôme em Paris diante do cartaz de sua exposião na Galerie Marwan Hoss, Parisa, 1994</p>
+                    </div>
+
+                    <div class="fase-final-item">
+                        <img src="../images/reconhecimento e legado/Ativo 31.png" alt="Cícero Dias e Gilberto Freyre">
+                        <p class="fase-final-legenda">Cícero Dias com os escritores jorge Amado e Zélia Gatai, em sua exposição em Salvador, 1975</p>
+                    </div>
+
+                    <div class="fase-final-item">
+                        <img src="../images/reconhecimento e legado/Ativo 30.png" alt="Cícero Dias com Jorge Amado e Zélia Gattai">
+                        <p class="fase-final-legenda">Ministro da Cultura do Brasil Francisco Weffort, Raymonde e Cícero Dias e Waldir Simões de Assis Filho, UNESCO, Paris, 1996</p>
+                    </div>
+
+                </div>
             </section>
 
             <section id="acervoCompleto">
@@ -1675,23 +1728,26 @@ function loadTopic(topicId) {
     const footer = document.querySelector('.museum-footer');
 
     if (topicId === 'baronatos') {
-
         contentBody.style.backgroundColor = '#151617';
         contentBody.style.color = '#ede7e1';
-
-        footer.style.backgroundColor = '#151617';
-        footer.style.color = '#ede7e1';
-
     } else {
-
         contentBody.style.backgroundColor = '#fff8f0';
         contentBody.style.color = '#333333';
+    }
 
+    if (topicId === 'baronatos' || topicId === 'ciceroDias') {
+        // Define o tom de escuro específico para o footer de cada um
+        const footerBg = (topicId === 'ciceroDias') ? '#1a1a1a' : '#151617';
+        
+        footer.style.backgroundColor = footerBg;
+        footer.style.color = '#ede7e1';
+    } else {
+        // Footer claro padrão para os demais tópicos
         footer.style.backgroundColor = '#fff8f0';
         footer.style.color = '#333333';
     }
 
-    footer.classList.toggle('dark-footer', topicId === 'baronatos');
+    footer.classList.toggle('dark-footer', topicId === 'baronatos' || topicId === 'ciceroDias');
     
     // SELEÇÃO DO CONTAINER DE SCROLL
     const container = document.querySelector('.content-scroll');
