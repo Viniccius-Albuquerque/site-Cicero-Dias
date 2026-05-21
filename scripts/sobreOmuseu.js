@@ -636,72 +636,72 @@ const topicsData = {
 
                     <div class="documento-item">
                         <img src="../images/internacional/6Convite recebido por Cícero Dias, em março de 1937, para expor as suas obras na Galerie Rive Gauche em Paris.png" alt="Documento 1">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 1</p>
+                        <p class="documento-legenda">Convite recebido por Cícero Dias, em março de 1937, para expor as suas obras na Galerie Rive Gauche em Paris</p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/7Carta de Di Cavalcanti a Cícero Dias convocando-o para Paris em novembro de 1936.png" alt="Documento 2">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 2</p>
+                        <p class="documento-legenda">Carta de Di Cavalcanti a Cícero Dias convocando-o para Paris em novembro de 1936</p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/8Cícero Dias (de boina) com os pintores Noêmia Mourão e Di Cavalcanti em frente à Catedral de Notre Dame, logo após sua chegada a Paris, 1937.png" alt="Documento 3">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 3</p>
+                        <p class="documento-legenda">Cícero Dias (de boina) com os pintores Noêmia Mourão e Di Cavalcanti em frente à Catedral de Notre Dame, logo após sua chegada a Paris, 1937</p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/9Fac-simile do poema .png" alt="Documento 4">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 4</p>
+                        <p class="documento-legenda">Fac-simile do poema de Paul Éluard enviado a Cícero Dias, por ocasião de sua exposição em Lisboa, 1942</p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/10cartao postal.png" alt="Documento 5">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 5</p>
+                        <p class="documento-legenda">Cartão postal enviado por Paul Éluard a Cícero Dias, durante a sua permancência em Vichy</p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/11fac-smile.png" alt="Documento 6">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 6</p>
+                        <p class="documento-legenda">Fac-simile das cartas de Paul Éluard enviadas a Cícero Dias em Liboa em 1942, dando notícias suas, de outros amigos que se encontravam em Paris </p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/12fac-smile 2.png" alt="Documento 6">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 6</p>
+                        <p class="documento-legenda"></p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/14dedicatoria de picasso.png" alt="Documento 1">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 1</p>
+                        <p class="documento-legenda">Dedicatória de Picasso no livro Le Plaisir Attrapé par la Queque, coma peça de teatro de sua autoria, enviado a Cícero Dias em Lisboa, em 1945</p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/13poema de paula eluard.png" alt="Documento 2">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 2</p>
+                        <p class="documento-legenda">Poema de Paul Éluard enviado a Cícero Dias por ocasião de sua exposição em Lisboa, 1943</p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/15cicero dias, raymonde dias.png" alt="Documento 3">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 3</p>
+                        <p class="documento-legenda">Cícero Dias, Raymonde Dias e Jayme Sabartés (secretário de Picasso). Foto de Dora Maar, Paris, 1942</p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/16picasso em foto de man ray_.png" alt="Documento 4">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 4</p>
+                        <p class="documento-legenda">Picasso em foto de Man Ray, dedicada a Cícero Dias</p>
                     </div>
 
                     <div class="documento-item">
-                        <img src="../images/internacional/oc5.png" alt="Documento 5">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 5</p>
+                        <img src="../images/internacional/Carta de Calder.png" alt="Documento 5">
+                        <p class="documento-legenda">Carta de Calder enviada a Cícero Dias</p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/16primeiras pinturas.png" alt="Documento 6">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 6</p>
+                        <p class="documento-legenda">Primeiras pinturas murais abstratas da América Latina realizadas em 1948 por Cícero Dias para o Edifício da Secretaria da Fazenda do Estado de Pernambuco, Recife</p>
                     </div>
 
                     <div class="documento-item">
                         <img src="../images/internacional/17revista francesa art.png" alt="Documento 6">
-                        <p class="documento-legenda">Texto provisório da legenda do documento 6</p>
+                        <p class="documento-legenda">Revista francesa Art d’Aujourd’hui consagra seu primeiro número em junho de 1949 à pintura mural. Acima, a reprodução do artigo de Michel Seuphor, ilustrato com os murais de Kandinsky, Cícero Dias e Le Corbusier</p>
                     </div>
 
             </div>
