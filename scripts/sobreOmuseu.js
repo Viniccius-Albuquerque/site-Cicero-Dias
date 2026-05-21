@@ -535,17 +535,54 @@ const topicsData = {
                     a alma do Recife que ele "viu começar o mundo".
                 </p>
 
-                <div class="duas-imagens-grid">
+                <div class="secao-modernismo-container">
 
-                    <img 
-                        src="../images/cicero/imagem1.jpg" 
-                        alt="Imagem 1"
-                    >
+                    <div class="secao-modernismo-item-total">
+                        <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/1exposição de cicero.png" alt="Exposição de Cícero Dias na Policlínica">
+                        <p class="secao-modernismo-legenda">Exposição de Cícero Dias na Policlínica, Rio de Janeiro, 1928. Entre os presentes: Dr. Costa Ribeiro, Murilo Mendes, Rodrigo Médicis, Josué de Castro, José Chaves, Lula Cardoso Ayres, Cícero Dias (indicado pela flecha), Ruy Coutinho, Nené Prado, Graça Aranha, Nazareth Pedro, Eugênia Moreira, Álvaro Moreira, Evandro Pequeno, Mary Pedrosa, Ismael e Antonio Bento</p>
+                    </div>
 
-                    <img 
-                        src="../images/cicero/imagem2.jpg" 
-                        alt="Imagem 2"
-                    >
+                    <div class="secao-modernismo-grid-inferior">
+
+                        <div class="secao-modernismo-item">
+                            <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/2Paul Morand, Murilo Mendes e Cícero Dias, Rio de Janeiro, 1929.png" alt="Paul Morand, Murilo Mendes e Cícero Dias">
+                            <p class="secao-modernismo-legenda">Paul Morand, Murilo Mendes e Cícero Dias, Rio de Janeiro, 1929</p>
+                        </div>
+
+                        <div class="secao-modernismo-item">
+                            <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/3Cícero Dias, Sra. Antonio de Alcântara Machado, Manuel Bandeira e Mário de Andrade, Rio de Jnaeiro, 1929.png" alt="Cícero Dias, Sra. Antônio de Alcântara Machado, Manuel Bandeira e Mário de Andrade">
+                            <p class="secao-modernismo-legenda">Cícero Dias, Sra. Antônio de Alcântara Machado, Manuel Bandeira e Mário de Andrade, Rio de Janeiro, 1929</p>
+                        </div>
+
+                        <div class="secao-modernismo-item">
+                            <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/5Murilo Mendes, Rachel de Queiroz e Cícero Dias, Rio de Janeiro, 1930.png" alt="Murilo Mendes, Rachel de Queiroz e Cícero Dias">
+                            <p class="secao-modernismo-legenda">Murilo Mendes, Rachel de Queiroz e Cícero Dias, Rio de Janeiro, 1930</p>
+                        </div>
+
+                        <div class="secao-modernismo-item">
+                            <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/4Cicero Dias, Mário de Andrade e Anita Malfatti, Rio de Janeiro, 1927.png" alt="Cícero Dias, Mário de Andrade e Anita Malfatti">
+                            <p class="secao-modernismo-legenda">Cícero Dias, Mário de Andrade e Anita Malfatti, Rio de Janeiro, 1927</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="album-sobreposto-container">
+    
+                    <div class="foto-album-bloco bloco-familia">
+                        <div class="papel-fotografico">
+                            <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/famialia cicero dias.png" alt="Cícero Dias em retrato com a sua família">
+                        </div>
+                        <p class="album-legenda">Cícero Dias em retrato com a sua família</p>
+                    </div>
+
+                    <div class="foto-album-bloco bloco-adulto">
+                        <div class="papel-fotografico">
+                            <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/cícero dias adulto.png" alt="Foto de Cícero Dias em sua fase adulta">
+                        </div>
+                        <p class="album-legenda">Foto de Cícero Dias em sua fase adulta</p>
+                    </div>
 
                 </div>
             </section>

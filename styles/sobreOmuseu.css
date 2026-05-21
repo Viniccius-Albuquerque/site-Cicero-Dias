@@ -1618,3 +1618,131 @@ p, span, li, article, section {
     border-radius: 18px; /* Cantos arredondados */
     object-fit: cover; /* Faz a foto preencher o bloco perfeitamente sem distorcer */
 }
+
+/* Container que envelopa o bloco inteiro */
+.secao-modernismo-container {
+    width: 100%;
+    max-width: 1200px; /* Alinha com os limites do seu painel do totem */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Distância entre a foto grande do topo e a grid de baixo */
+    box-sizing: border-box;
+}
+
+/* Tratamento para qualquer imagem dentro desta seção */
+.secao-modernismo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 24px; /* Cantos arredondados idênticos ao layout enviado */
+    object-fit: cover;
+}
+
+/* Bloco superior de largura total */
+.secao-modernismo-item-total {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid que organiza as 4 fotos inferiores de duas em duas */
+.secao-modernismo-grid-inferior {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide perfeitamente em duas colunas */
+    gap: 30px 25px; /* Espaçamento: 30px entre linhas, 25px entre colunas */
+    width: 100%;
+}
+
+/* Blocos individuais da grid inferior */
+.secao-modernismo-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Estilo padrão para todas as frases de legenda abaixo das fotos */
+.secao-modernismo-legenda {
+    font-family: 'Literata', serif;
+    font-size: 0.85rem;
+    color: #333333; /* Cor escura legível para o fundo claro */
+    line-height: 1.4;
+    margin-top: 10px; /* Distancia a frase do fundo da imagem */
+    padding-right: 5px;
+    text-align: left;
+}
+
+/* Container do Álbum */
+.album-sobreposto-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 950px; 
+    margin: 60px auto;
+    box-sizing: border-box;
+}
+
+/* Estrutura base mantida */
+.foto-album-bloco {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Simulação da borda de papel fotográfico antigo (mantida) */
+.papel-fotografico {
+    padding: 15px 15px 25px 15px;
+    border-radius: 4px;
+}
+
+.papel-fotografico img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.album-legenda {
+    font-family: 'Literata', serif;
+    font-size: 0.85rem;
+    color: #4a4a4a;
+    margin-top: 15px;
+    line-height: 1.3;
+}
+
+/* --- CALIBRAÇÃO DOS TAMANHOS E POSIÇÕES --- */
+
+/* Foto da Família (BEM MAIOR) */
+/* --- SEUS BLOCOS PAIS (AGORA SEM O ROTATE) --- */
+
+/* Foto da Família */
+.bloco-familia {
+    width: 100%; 
+    max-width: 650px; 
+    left: -2%; 
+    top: 20px;
+    z-index: 1; 
+    /* transform: rotate(-2deg); <-- REMOVIDO DAQUI */
+}
+
+/* Foto do Cícero Adulto */
+.bloco-adulto {
+    width: 50%; 
+    max-width: 460px; 
+    right: 4%; 
+    top: 300px; 
+    z-index: 2; 
+    /* transform: rotate(2.5deg); <-- REMOVIDO DAQUI */
+}
+
+/* --- APLICAÇÃO DA ROTAÇÃO APENAS NAS FOTOS --- */
+
+/* Alvo: Apenas o papel fotográfico dentro do bloco da família */
+.bloco-familia .papel-fotografico {
+    transform: rotate(-2deg); /* Gira apenas a foto e a borda amarelada */
+}
+
+/* Alvo: Apenas o papel fotográfico dentro do bloco do Cícero adulto */
+.bloco-adulto .papel-fotografico {
+    transform: rotate(2.5deg); /* Gira apenas a foto e a borda amarelada */
+}
