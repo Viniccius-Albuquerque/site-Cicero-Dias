@@ -1018,6 +1018,37 @@ const topicsData = {
                             </button>
 
 
+                            <button class="quadro-moldura btn-baronato" data-baronato="baraoutinga">
+                                <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/1visconde de utinga.png"
+
+                                    alt="utinga"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="baronesautinga">
+                                <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/1viscondessa de utinga.png"
+
+                                    alt="utinga2"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+
+
+
+
+
 
                             <button class="quadro-moldura btn-baronato" data-baronato="suassuna">
                                 <div class="moldura-dourada">
@@ -1892,7 +1923,7 @@ function voltarParaDescanso() {
 const detalhesBaronatos = {
     domPedro2: {
         title: "Dom Pedro II: O Imperador Viajante e sua Passagem por Escada",
-        content: `<img src="../images/baronatos/baronatos-sem-molduras/1dom pedro II sem molduras.png" alt="Henrique Marques">`,
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/1dom pedro II sem molduras.png" alt="dom pedro II">`,
         bio: `Pedro de Alcântara João Carlos Leopoldo Salvador Bibiano Francisco Xavier de Paula Leocádio Miguel Gabriel Rafael Gonzaga de Bragança e Habsburgo — Dom Pedro II — nasceu no Rio de Janeiro em 2 de dezembro de 1825 e subiu ao trono do Brasil ainda criança, aos 14 anos, em 1841, após um período de regências conturbadas que se seguiu à abdicação de seu pai, Dom Pedro I. Filho de uma princesa austríaca e de um rei português, cresceu mais brasileiro do que qualquer herança europeia poderia sugerir. Estudioso incansável, falava mais de dez idiomas, cultivava a astronomia, a literatura e a fotografia, e mantinha correspondência com os maiores intelectuais do mundo — de Victor Hugo a Louis Pasteur. Era um monarca que lia, que questionava, que se movia.
 Seu reinado, o mais longo da história brasileira, durou quase meio século, de 1841 até a Proclamação da República, em 1889. Nesse período, o Brasil atravessou transformações profundas: a abolição progressiva do tráfico de escravos, a guerra do Paraguai, a expansão das ferrovias e, por fim, a própria abolição da escravidão, em 1888. Dom Pedro II foi figura central em todas essas mudanças, ainda que contraditória — um homem pessoalmente avesso à escravidão que durante décadas governou um Estado que a sustentava.
 Uma das marcas mais distintas de seu governo era o costume de viajar pelo próprio país, prática incomum entre os monarcas do século XIX. Ele percorreu províncias do Norte ao Sul, querendo ver com os próprios olhos a terra que governava. Entre 1859 e 1860, o monarca visitou o Nordeste, sendo recebido com grandes festas na Bahia, em Pernambuco, na Paraíba, em Alagoas, Sergipe e Espírito Santo.
@@ -1906,22 +1937,30 @@ O monarca que dormiu no Matapiruma seria, menos de trinta anos depois, o mesmo q
     },
 
 
+    baraoutinga: {
+        title: "Henrique Marques Lins, o 1.º Visconde de Utinga",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/1visconde de utinga sem molduras.png" alt="Henrique Marques lins ">`,
+        bio: `Nascido a 13 de julho de 1800, Henrique Marques Lins foi a viga-mestra da aristocracia da Mata Sul pernambucana. Pela sua imensa influência territorial e política, foi agraciado com o título de Barão de Utinga em 1860 e elevado a Visconde de Utinga no ano de 1876 pelo Império. Foi o pai de figuras centrais da história de Escada, como Belmino da Silveira Lins (o Barão da Escada) e Florismundo Marques Lins (o 2.º Barão de Utinga), desenhando a árvore genealógica que dominaria a região. Faleceu em 1877.
+Poder Político e Econômico O Visconde não era apenas um senhor de engenho; ele foi um dos políticos e líderes mais implacáveis do Brasil Imperial na província. A sua atuação extrapolou as fronteiras de Escada: ele utilizou o seu prestígio para interligar os interesses da lavoura açucareira diretamente aos gabinetes de poder no Rio de Janeiro. Sob sua liderança, a família Lins fundou um verdadeiro monopólio fundiário, concentrando as melhores e mais produtivas terras da bacia do rio Ipojuca sob o domínio de um único clã.
+Contribuições para Escada Foi ele o grande estruturador do poderio de Escada no século XIX, injetando capital na construção de benfeitorias que marcaram a paisagem da região. Um exemplo colossal de sua riqueza foi a edificação da suntuosa casa-grande do Engenho Sapucaji em 1862, que funcionava como um autêntico palácio rural e um símbolo inquestionável da autoridade de sua linhagem. Ele inseriu Escada definitivamente no mapa das principais decisões políticas do Nordeste, atraindo investimentos que viabilizariam o futuro das usinas de seus herdeiros.
+A Associação com a Escravidão Como o patriarca que ergueu a base da família durante o Segundo Reinado, o Visconde de Utinga operou no período mais duro e lucrativo do escravismo brasileiro. Todo o seu poder territorial, incluindo engenhos monumentais como o Sapucaji, foi levantado e operado por trabalhadores escravizados. Enquanto a sua influência política ditava os rumos de Pernambuco, essa mesma força era utilizada para proteger o sistema cativeiro contra as pressões abolicionistas internacionais e nacionais. O "sucesso" da família Lins — as futuras ferrovias, os títulos de nobreza dos filhos e as casas-grandes luxuosas — foi integralmente pago com a vida e a privação de liberdade das centenas de pessoas negras que formavam a base da sua riqueza
+ até a sua morte em 1877
+`
+    },
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    baronesautinga: {
+        title: "Antônia Francisca Velloso da Silveira, a Viscondessa de Utinga",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/1viscondessa de utinga (2).png" alt="Henrique Marques lins ">`,
+        bio: `Antônia Francisca Velloso da Silveira, a Viscondessa de Utinga, foi a matriarca da mais influente dinastia açucareira da Mata Sul pernambucana no século XIX. Era irmã de Anna Velloso da Silveira (a Baronesa de Pirangy) e, ao casar-se com Henrique Marques Lins (o 1.º Visconde de Utinga), uniu duas imensas fortunas. Como mãe de figuras que viriam a receber seus próprios títulos nobiliárquicos — a exemplo de Belmino (Barão da Escada) e Florismundo (2.º Barão de Utinga) —, ela foi a raiz genealógica da elite que controlou o município de Escada durante o Império.
+Poder Político e Econômico O casamento de Antônia Francisca foi o alicerce sobre o qual se construiu o monopólio da família Marques Lins. Ela não apenas integrou as vastas terras da família Velloso da Silveira ao patrimônio do marido, como também atuou como a principal articuladora das uniões de seus filhos. Foi a Viscondessa quem orquestrou os casamentos consanguíneos da geração seguinte (como o de seu filho Florismundo com a prima Teudelina, filha de sua irmã), formando um consórcio familiar de engenhos que dominava o fluxo econômico e as decisões políticas da província.
+Contribuições para Escada Enquanto o Visconde transitava pelas esferas do poder no Recife e no Rio de Janeiro, cabia à Viscondessa o domínio sobre o território local. A suntuosa casa-grande do Engenho Sapucaji e as demais propriedades da família em Escada eram administradas sob a sua supervisão severa. Ela ditava o ritmo da sociabilidade, os ritos religiosos e os padrões de "civilidade" europeia que a aristocracia tentava reproduzir no interior de Pernambuco, consolidando a influência cultural de sua família sobre a população de Escada.
+A Associação com a Escravidão A figura da Viscondessa de Utinga é crucial para desmistificar a aura de passividade das grandes "sinhás" do Império. O império colossal que ela ajudou a erguer e que legou aos seus filhos (os futuros barões) foi construído tijolo por tijolo através do trabalho escravizado. A sua gestão das casas-grandes envolvia o controle direto, constante e frequentemente violento sobre as mulheres, homens e crianças negras que compunham a escravaria doméstica. O luxo de seus banquetes, a educação de seus herdeiros e o prestígio de seu título de nobreza custaram a liberdade e a vida de centenas de africanos e
+ afro-brasileiros ao longo de décadas nas propriedades da família Marques Lins.
+`
+    },
 
 
 
@@ -1929,45 +1968,45 @@ O monarca que dormiu no Matapiruma seria, menos de trinta anos depois, o mesmo q
     suassuna: {
         title: "Henrique Marques de Holanda Cavalcanti",
         content: `<img src="../images/baronatos/baronatos-sem-molduras/2barão de suassuna sem molduras.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+        bio: ` Nascido em 21 de dezembro de 1854, no Engenho Taquara, em Escada, Henrique Marques de Holanda Cavalcanti foi uma figura central da aristocracia açucareira pernambucana. Formado em Direito pela Faculdade do Recife em 1873, recebeu o título de 2º Barão de Suassuna em 1889, nos últimos meses do período imperial. Faleceu no Recife em 1941, aos 86 anos.
+Poder Político e Econômico Herdeiro de uma vasta fortuna e de propriedades da tradicional família Cavalcanti, o Barão foi um símbolo da transição do antigo engenho banguê para a moderna agroindústria. Ele foi senhor das usinas Mameluco e Limoeirinho (esta última fundada por ele). Politicamente, foi um quadro forte do Partido Conservador, atuando como Deputado Provincial, Senador Provincial e Deputado à Assembleia Geral do Império por Pernambuco.
+Contribuições para Escada Sua atuação acelerou a modernização estrutural do município de Escada. A Usina Mameluco, sob sua gestão, chegou a operar com dezenas de quilômetros de ferrovias próprias, escoando a produção por meio da interligação com a Linha Sul. A influência do Barão era tão expressiva que a via férrea local contava com a "Estação Barão de Suassuna". Ele também mantinha escolas para os filhos dos trabalhadores e uma associação beneficente na usina, criando uma fachada social para a modernização da indústria local.
+A Associação com a Escravidão Apesar da aura de modernizador, toda a base de riqueza que permitiu ao Barão estudar, expandir seus negócios e industrializar a produção foi erguida sobre a exploração do trabalho de africanos e afro-brasileiros escravizados. O Engenho Taquara, onde nasceu, e as operações iniciais de suas propriedades funcionaram graças à mão de obra cativa. Mesmo quando o maquinário a vapor das usinas substituiu a tração animal, a mentalidade senhorial permaneceu. A transição para o trabalho "livre" no pós-abolição manteve estruturas de profunda desigualdade em Escada, perpetuando o controle sobre os trabalhadores e moradores de engenho sob novas roupagens para garantir que o poder e o capital continuassem concentrados nas mãos de famílias como a dele.
+
+
+`
     },
 
     baronesa: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+        title: "Maria da Silveira Lins, a 2.ª Baronesa de Suassuna",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/3baronesa de suassuna (1).png" alt="Henrique Marques">`,
+        bio: `Nascida a 31 de março de 1857, no Engenho Limoeiro, em Escada, Maria da Silveira Lins (mais tarde conhecida como Maria Lins de Holanda Cavalcanti) pertencia ao núcleo duro da aristocracia açucareira pernambucana. Era filha de Belmino da Silveira Lins e Maria de Jesus de Sousa Lins, os Barões de Escada, e neta do 1.º Visconde de Utinga. A 22 de outubro de 1881, casou-se com o seu primo, Henrique Marques de Holanda Cavalcanti, o 2.º Barão de Suassuna. Faleceu a 4 de junho de 1940, no Recife, aos 83 anos.
+Poder Político e Económico A Baronesa de Suassuna é o exemplo perfeito da estratégia de endogamia (casamentos entre parentes) praticada pelas elites do Império. Os casamentos entre membros das famílias Lins e Cavalcanti eram alianças económicas estritamente calculadas para evitar a dispersão do património fundiário. Ao casar com o primo, Maria da Silveira Lins uniu heranças colossais, consolidando o domínio do casal sobre as ricas usinas Limoeiro e Mameluco num período de forte transição tecnológica na região.
+Contribuições para Escada A influência da Baronesa estendia-se também ao espaço urbano de Escada, onde a aristocracia mantinha residências imponentes para além das casas-grandes das usinas e engenhos. Um marco histórico da sua presença na cidade é a construção conhecida como a "Casa da Baronesa de Suassuna", localizada na Rua da Matriz (n.º 51). Erguido no início do século XX, o imóvel atesta a influência destas famílias na urbanização e na transferência da sociabilidade dos engenhos para o centro do município.
+A Associação com a Escravidão Assim como o seu marido, a riqueza da Baronesa assentava numa linhagem que prosperou durante gerações à custa do tráfico negreiro e da escravização. Ela nasceu, cresceu e tornou-se herdeira num mundo onde homens, mulheres e crianças negras eram contabilizados como bens e mercadorias nos inventários da sua família. A imensa fortuna que permitiu a preservação do status nobiliárquico, a construção de palacetes na cidade e a vida de privilégios da Baronesa foi diretamente extraída da exploração extrema do trabalho cativo nos engenhos da família Lins e, posteriormente, nas terras partilhadas com o Barão de Suassuna.
+`
     },
 
+    
+
     pirangy: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+        title: "Francisco Antônio de Barros e Silva, o Barão de Pirangy",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/4barão de pirangy.png" alt="pirangy">`,
+        bio: `Agraciado com o título nobiliárquico em 1873,
+         foi um dos mais expressivos senhores de engenho de Pernambuco. 
+         Faleceu em novembro de 1887, no seu Engenho Firmeza, e foi sepultado na Igreja Matriz de Nossa Senhora da Escada. Poder Político e Econômico: Construiu um latifúndio monopolista, controlando sete engenhos: Firmeza, Canto Escuro, Maracujá, Pirangy, Cassuá, Jaguaribe e Vilhetas. Exercia forte controle repressivo como Tenente-Coronel da Guarda Nacional e delegado de Escada. Contribuições para Escada: A voracidade de seus negócios moldou a ocupação do solo de Escada. A memória territorial de suas propriedades sobrevive na geografia urbana da cidade, a exemplo do atual Bairro do Maracujá.
+         A Associação com a Escravidão e Grilagem: O avanço de seus canaviais deu-se a partir da usurpação das terras da antiga Aldeia de Escada, removendo populações indígenas. Simultaneamente, extraiu até o seu último suspiro os lucros derivados da mão de obra cativa, falecendo às vésperas da Lei Áurea.`
     },
 
     baronesaDePirangy: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+        title: " Anna Velloso da Silveira, a Baronesa de Pirangy",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/5baronesa de pirangy (1).png" alt="Henrique Marques">`,
+        bio: `Nascida por volta de 1805, irmã da Viscondessa de Utinga, teve uma vida longa, falecendo em 1898,
+         aos 93 anos. Seu casamento uniu heranças e consolidou um dos ramos mais poderosos da aristocracia da
+        Mata Sul. Poder Político e Econômico: Assumiu o papel de matriarca responsável por tecer a teia de
+        parentesco que sustentava o monopólio fundiário em Escada, garantindo através de alianças que os engenhos permanecessem blindados contra a dispersão.
+         Contribuições para Escada: As alianças que forjou moldaram a elite que controlaria a economia do município nas décadas seguintes, assegurando que a aristocracia mantivesse o poder local durante a Primeira República. A Associação com a Escravidão: O imenso conforto em que viveu foi pago com a exploração brutal nos engenhos da família. Viúva às vésperas da abolição, liderou a adaptação da família às novas formas de subordinação do trabalhador rural no limiar do século XX.
+`
     },
 
     baraoDeESCADA: {
