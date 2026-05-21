@@ -159,7 +159,7 @@ const topicsData = {
                 <p>
                     Para selar esse processo de consolidação urbana, institucional e religiosa, o
                     Templo Matriz de Nossa Senhora da Apresentação da Escada foi inaugurado
-                    em 28 de junho de 1874. Esta construção tornou-se o grande símbolo da
+                   <br> em 28 de junho de 1874. Esta construção tornou-se o grande símbolo da
                     estruturação de Escada como um centro político, social e religioso na região.
                 </p>
 
@@ -1403,6 +1403,44 @@ const topicsData = {
                                 </div>
 
                             </button>
+
+
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="contendas">
+
+                            <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/16barão de contendas.png"
+
+                                    alt="contendas"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+                            <button class="quadro-moldura btn-baronato" data-baronato="baronesacontendas">
+
+                            <div class="moldura-dourada">
+
+                                    <img src="../images/baronatos/imagens-com-molduras/17baronesa de contendas.png"
+
+                                    alt="baronesa-de-contendas"
+
+                                    width="300">
+                                </div>
+
+                            </button>
+
+
+
+
+
+
+
+
+
+
                 </div>
             </section>
 
@@ -1604,9 +1642,25 @@ const topicsData = {
                     </button>
 
                 </div>
+
+                
             </section>
+
+
+
+
+
         `
+
+
+
     },
+
+
+
+
+
+
 
     sobreMuseu: {
         title: "O Museu",
@@ -2260,26 +2314,80 @@ A Associação com a Escravidão Assim como o seu marido, a riqueza da Baronesa 
 `},
 
     baraoDeUtinga: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+        title: "Florismundo Marques Lins, o 2.º Barão de Utinga",
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/12barão de utinga.png" alt="Henrique Marques">`,
+        bio: `Nascido a 9 de abril de 1838, no Engenho Dinamite, no município de Escada, Florismundo Marques Lins era filho de Henrique Marques Lins (o 1.º Barão e Visconde de Utinga) e de Antônia Francisca Velloso da Silveira. O seu percurso foi marcado pela consolidação das alianças familiares locais: casou-se em primeiras núpcias, em 1857, com a sua prima direta, Teudelina de Barros e Silva, filha do Barão de Pirangy. Após enviuvar, casou-se com Anna Elisa Wanderley em 1877. Faleceu no Recife a 2 de setembro de 1895.
+Poder Político e Econômico Enquanto o seu pai havia elevado o nome da família, coube a Florismundo a tarefa de expandir e proteger esse monopólio durante as décadas de crise do escravismo. Ele era o senhor absoluto do Engenho Giqui (ou Jiqui), uma das ricas propriedades que compunham o império agrário dos Lins na região. O seu poder não era apenas territorial, mas profundamente político, interligando a sua família com os clãs dos Barões de Escada (seu irmão) e de Araçagi (seu cunhado), formando uma oligarquia praticamente intransponível na província de Pernambuco.
+Contribuições para Escada A presença do 2.º Barão de Utinga em Escada representava a continuidade da modernização agroindustrial gerida pela família Marques Lins. Ele herdou a responsabilidade de gerir um complexo sistema de produção e escoamento de açúcar que ditou o ritmo econômico do município na segunda metade do século XIX. O prestígio de Florismundo assegurou que as propriedades da família se mantivessem como epicentros de sociabilidade, mantendo Escada como uma das freguesias mais vitais para a economia do Império.
+A Associação com a Escravidão A biografia de Florismundo Marques Lins é emblemática para o estudo do abolicionismo em Pernambuco. Ele foi agraciado pelo Império com o título de 2.º Barão de Utinga através do decreto de 30 de maio de 1888 — ou seja, exatos 17 dias após a assinatura da Lei Áurea. Esse momento histórico não é mera coincidência: o título funcionou como uma compensação política do combalido governo imperial a um dos maiores proprietários de terras e de escravizados da região. Toda a riqueza que ele extraiu do Engenho Giqui até maio de 1888 originou-se do suor e do sangue de africanos e afro-brasileiros. A outorga de seu título de nobreza no mês da abolição simboliza o esforço final da monarquia para apaziguar a fúria dos senhores de engenho pernambucanos que acabavam de perder a posse legal sobre os seus cativos.
+`
     },
 
+
+
+
     baronesaDeUtinga: {
-        title: "Henrique Marques de Holanda Cavalcanti",
-        content: `<img src="../images/baronatos/imagens-com-molduras/1dom_pedro_II.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+        title: "Anna Elisa Wanderley, a 2.ª Baronesa de Utinga",
+
+
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/13baronesa de utinga.png" alt="Henrique Marques">`,
+
+
+        bio: `Anna Elisa Wanderley, a 2.ª Baronesa de Utinga. Membro da tradicional e poderosa família Wanderley — uma das linhagens canavieiras mais antigas de Pernambuco —, ela casou-se em 1877 com Florismundo Marques Lins, viúvo da sua primeira esposa. Ascendeu ao título nobiliárquico de Baronesa no dia 30 de maio de 1888, acompanhando a nomeação do seu marido pelo decadente governo imperial.
+Poder Político e Econômico Se o primeiro casamento do Barão serviu para fechar o cerco fundiário em Escada (unindo os Lins aos Barros e Silva), a sua união com Anna Elisa Wanderley representou uma expansão de alianças a nível provincial. O casamento fundiu o capital político de duas das mais intransigentes oligarquias açucareiras do Nordeste. A Baronesa trouxe para o núcleo familiar de Escada o peso e a rede de contatos dos Wanderley, fortalecendo a blindagem da família contra as crises econômicas que ameaçavam o setor no final do século XIX.
+Contribuições para Escada No imponente Engenho Giqui (ou Jiqui), propriedade do casal, a Baronesa desempenhou o papel de gestora do espaço doméstico e social. Cabia a ela a manutenção da "etiqueta civilizatória" que a elite de Escada fazia questão de ostentar para se diferenciar do resto da população. Ela orquestrava as festividades, os ritos católicos e a hospitalidade que transformavam as casas-grandes em verdadeiros centros de decisões políticas locais, garantindo que o prestígio da família Lins permanecesse inabalável na região.
+A Associação com a Escravidão A trajetória de Anna Elisa Wanderley é um retrato contundente da face feminina do escravismo. Tendo recebido o título de Baronesa exatos 17 dias após a sanção da Lei Áurea, ela viveu o auge da sua vida adulta governando uma estrutura baseada na mão de obra cativa. A sua atuação não se limitava aos lucros dos canaviais; ela exercia poder direto e cotidiano sobre a escravaria doméstica. As amas de leite, engomadeiras, cozinheiras e mucamas que sustentavam o brilho e o conforto da casa-grande do Engenho Giqui estavam sob o seu comando. A violência intramuros — física e psicológica — 
+era uma ferramenta padrão utilizada pelas "sinhás" para manter a ordem e a submissão, uma realidade cruel que sustentava o requinte das baronesas do Império.`
+    },
+
+
+
+
+    contendas: {
+        title: "Antônio Epaminondas de Barros Correia, o Barão de Contendas",
+
+
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/16barão de contendas.png" alt="Henrique Marques">`,
+
+
+        bio: `Nascido a 3 de junho de 1839, Antônio Epaminondas de Barros Correia formou-se em Direito pela Faculdade do Recife em 1864. Casou-se em 1872 com Maria José Alves de Araújo, filha do Barão de Amaraji. Recebeu o título nobiliárquico de Barão de Contendas nos últimos meses do Império, a 26 de junho de 1889. Faleceu em 1905, na sua residência no Engenho Contendas. Como detalhe genealógico fascinante, o Barão de Contendas era o avô materno do pintor Cícero Dias. Como vimos no totem 7, o Barão de Jundiá era o avô paterno do artista, evidenciando como a elite fechava os seus círculos.
+Poder Político e Econômico O Barão de Contendas foi um verdadeiro "peso-pesado" da política pernambucana. Membro proeminente do Partido Liberal, exerceu os cargos de promotor e juiz antes de se dedicar ativamente à vida partidária. Foi deputado provincial, vice-presidente e assumiu a presidência (cargo equivalente ao de governador) da província de Pernambuco por três vezes durante o Império, além de governar o estado já sob o regime republicano, entre 1891 e 1892. O seu domínio institucional e legal era sustentado pela sua vasta riqueza territorial.
+`
+    },
+
+
+
+    baronesacontendas: {
+        title: "Maria José Alves de Araújo, a Baronesa de Contendas",
+
+
+        content: `<img src="../images/baronatos/baronatos-sem-molduras/17baronesa de contendas (1).png" alt="Henrique Marques">`,
+
+
+        bio: `Nascida em 1855, filha dos Barões de Amaraji, casou-se com o jurista que viria a ser o Barão de Contendas. Avó materna de Cícero Dias, viveu até 1940, aos 85 anos. Poder Político e Econômico: Trouxe para o consórcio familiar uma rede de alianças que consolidou o marido no poder estadual. Atuava como ponte consanguínea entre Escada e Amaraji, garantindo a manutenção do monopólio regional. Contribuições para Escada: Como matriarca, governava a suntuosa casa-grande do Engenho Contendas, que funcionava como verdadeira sede do poder estadual no interior, sediando intensas negociações partidárias. A Associação com a Escravidão: A vasta estrutura doméstica sob seu comando operou através da exploração direta de dezenas de mulheres e homens negros. A riqueza extraída desse sistema permitiu financiar a educação de seus 15 filhos, garantindo o domínio de sua linhagem após a República.
+`
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
