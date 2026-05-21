@@ -10,7 +10,6 @@
 
 # BARONATOS - falta
 - descrição e foto de cada um em especifico
-- casarões tbm PORRA?!!!??
 
 # CICERO DIAS - falta
 - fotos e acervo

@@ -432,13 +432,26 @@ const topicsData = {
                     pintou seu retrato e o poeta Murilo Mendes escreveu versos em sua homenagem.
                 </p>
 
-                <div class="imagem-destaque">
-                    <div class="imagem-subir">
-                        <img 
-                            src="../images/1 - CÍCERO DIAS CRIANÇA.png"
-                            alt="Primeira fase e modernismo"
-                        >
+                <div class="painel-historico-cicero">
+    
+                    <div class="coluna-fotos-engenho">
+                        
+                        <div class="bloco-foto-legenda">
+                            <img src="../images/INÍCIO DE VIDA E FORMAÇÃO/INÍCIO DE VIDA E FORMAÇÃO/Vista da Casa Grande Engenho Jundiá, Pernambuco, onde nasceu Cícero Dias.png" alt="Vista da Casa Grande Engenho Jundia">
+                            <p class="legenda-foto">Vista da Casa Grande Engenho Jundiá, Pernambuco, onde nasceu Cícero Dias</p>
+                        </div>
+
+                        <div class="bloco-foto-legenda">
+                            <img src="../images/INÍCIO DE VIDA E FORMAÇÃO/INÍCIO DE VIDA E FORMAÇÃO/Cícero Dias em um carro de boi com seu pai, Engenho Jundiá, 1910.png" alt="Cícero Dias em um carro de boi">
+                            <p class="legenda-foto">Cícero Dias em um carro de boi com seu pai, Engenho Jundiá, 1910</p>
+                        </div>
+                        
                     </div>
+
+                    <div class="foto-cicero-vertical">
+                        <img src="../images/1 - CÍCERO DIAS CRIANÇA.png" alt="Cícero Dias Criança">
+                    </div>
+
                 </div>
 
                 <p>
