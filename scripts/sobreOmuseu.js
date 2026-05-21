@@ -18,7 +18,7 @@ const topicsData = {
                 </p>
 
                 <div class="imagem-full-width">
-                    <img src="../images/IMAGEM 1.png" alt="Representação do período pré-colonial">
+                    <img src="../images/imagensQR/Período Pré-Colonial (1500)_2 (1).png" alt="Representação do período pré-colonial">
                 </div>
 
                 <p>
@@ -48,6 +48,7 @@ const topicsData = {
                         <img src="../images/IMAGEM 2.png" alt="Início da Colonização">
                     </div>
                     <div class="colonizacao-text">
+                        <img src="../images/imagensQR/Início da Colonização (Século XVI)_3.png" alt="Início da Colonização">
                         <h2>Início da Colonização<br><span>(Século XVI)</span></h2>
                     </div>
                 </div>
@@ -89,7 +90,7 @@ const topicsData = {
                 </p>
                 
                 <div class="imagem-full-width">
-                    <img src="../images/IMAGEM 3.png" alt="Marcos do Aldeamento em 1685">
+                    <img src="../images/imagensQR/Marcos do Aldeamento__1(1).png" alt="Marcos do Aldeamento em 1685">
                 </div>
 
                 <p>
@@ -167,6 +168,10 @@ const topicsData = {
                     vigários, como Francisco Cavalcanti de Albuquerque Lacerda em 1786,
                     transformou o antigo aldeamento no próspero município que hoje celebramos.
                 </p>
+
+                <div class="qr-container">
+                    <img src="../images/imagensQR/Evolução Administrativa e Marco Legal__1.png" alt="QR Code" class="qr-code">
+                </div>
             </section>
 
             <section id="evolucao">
@@ -200,7 +205,7 @@ const topicsData = {
                 </p>
 
                 <div class="imagem-full-width">
-                    <img src="../images/IMAGEM 5.png" alt="Construção da Matriz e presença franciscana">
+                    <img src="../images/imagensQR/Herança Indígina_(1).png" alt="Construção da Matriz e presença franciscana">
                 </div>
 
                 <p>
@@ -1379,7 +1384,7 @@ const topicsData = {
                 </p>
 
                 <div class="imagem-full-width">
-                    <img src="../images/IMAGEM 5.png" alt="Construção da Matriz e presença franciscana">
+                    <img src="../images/ESPAÇO CULTURAL MUSEU CICERO DIAS_1.png" alt="Construção da Matriz e presença franciscana">
                 </div>
 
                 <p>
@@ -1465,27 +1470,47 @@ const topicsData = {
                     <div class="slider-track">
 
                         <div class="slide active">
-                            <img src="../images/cicero/1.jpg" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 3.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/cicero/2.jpg" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 4.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/cicero/3.jpg" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 5.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/cicero/4.jpg" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 6.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/cicero/5.jpg" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 7.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/cicero/6.jpg" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 8.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/carrosselOmuseu/Ativo 9.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/carrosselOmuseu/Ativo 10.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/carrosselOmuseu/Ativo 11.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/carrosselOmuseu/Ativo 12.png" alt="">
+                        </div>
+
+                        <div class="slide">
+                            <img src="../images/carrosselOmuseu/Ativo 13.png" alt="">
                         </div>
 
                     </div>
@@ -2125,4 +2150,53 @@ document.addEventListener('click', (e) => {
 
         }
     }
+});
+
+let currentSlideAcessibilidade = 0;
+
+function initSliderAcessibilidade() {
+
+    const slides = document.querySelectorAll('.acessibilidade-slider .slide');
+
+    if (!slides.length) return;
+
+    const nextBtn = document.querySelector('.acessibilidade-slider .next');
+    const prevBtn = document.querySelector('.acessibilidade-slider .prev');
+
+    function updateSlider() {
+
+        slides.forEach(slide => {
+            slide.classList.remove('active');
+        });
+
+        slides[currentSlideAcessibilidade].classList.add('active');
+    }
+
+    nextBtn.addEventListener('click', () => {
+
+        currentSlideAcessibilidade++;
+
+        if (currentSlideAcessibilidade >= slides.length) {
+            currentSlideAcessibilidade = 0;
+        }
+
+        updateSlider();
+    });
+
+    prevBtn.addEventListener('click', () => {
+
+        currentSlideAcessibilidade--;
+
+        if (currentSlideAcessibilidade < 0) {
+            currentSlideAcessibilidade = slides.length - 1;
+        }
+
+        updateSlider();
+    });
+
+    updateSlider();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    initSliderAcessibilidade();
 });

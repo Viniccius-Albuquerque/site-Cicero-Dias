@@ -1180,6 +1180,14 @@ section.arco-bg-section p,
     justify-content: center; /* Garante centralização vertical extra */
 }
 
+.colonizacao-text img {
+    width: 150px;         /* Deixa o QR Code pequenininho */
+    height: 150px;        /* Mantém a proporção quadrada */
+    object-fit: contain;
+    margin-bottom: 20px; /* Cria o espaçamento perfeito em relação ao h2 de baixo */
+    display: block;
+}
+
 /* Estilização do Título */
 .colonizacao-text h2 {
     color: #ede7e1; /* Cor clara idêntica à do seu banco de dados */
@@ -1880,4 +1888,29 @@ p, span, li, article, section {
     width: calc(100% + 10%) !important; /* Expande para as laterais anulando o padding pai */
     margin-left: -5% !important; /* Ajusta o alinhamento esquerdo */
     box-sizing: border-box;
+}
+
+.split-container-colonizacao .colonizacao-text {
+    text-align: left;
+}
+
+/* Container que vai abraçar o QR Code e cuidar do alinhamento */
+.qr-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente (caso o container tenha altura) */
+    width: 100%;             /* Ocupa toda a largura disponível */
+    padding: 20px 0;         /* Margem interna para dar respiro em cima e embaixo */
+}
+
+/* Estilização da imagem do QR Code */
+.qr-code {
+    width: 200px;             /* Define o tamanho pequeno ideal */
+    height: 200px;            /* Mantém o formato perfeitamente quadrado */
+    object-fit: contain;     /* Garante que o QR code não distorça */
+    display: block;          /* Remove espaçamentos fantasma de elementos inline */
+    
+    /* Opcional: estilo visual suave */
+    border-radius: 6px;      /* Arredonda levemente os cantos */
+    padding: 6px;            /* Margem interna para o QR não colar na borda do fundo */
 }
