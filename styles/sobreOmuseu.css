@@ -1890,6 +1890,25 @@ p, span, li, article, section {
     box-sizing: border-box;
 }
 
+.baronatos-topo {
+    display: flex;              /* coloca lado a lado */
+    justify-content: space-between; /* título esquerda / texto direita */
+    align-items: center;
+    width: 100%;
+}
+
+.page-title {
+    margin: 0;
+    width: auto; /* MUITO IMPORTANTE */
+}
+
+.autor-texto {
+    color: #ede7e1;
+    font-size: 14px;
+    text-align: right;
+    white-space: nowrap; /* não deixa quebrar */
+}
+
 .split-container-colonizacao .colonizacao-text {
     text-align: left;
 }

@@ -995,7 +995,13 @@ const topicsData = {
 
         content: `
             <section id="Barao">
-                <h1 class="page-title" style="color: #ede7e1 !important;">Barões</h1>
+                <h1 class="page-title" style="color: #ede7e1 !important;">Baronatos</h1>
+
+                
+<div class="autor-texto">
+                Professor Dr. Arthur Danillo Castelo Branco de Souza
+            </div>
+
                 
                 <div class="grid-baronatos">
 
@@ -1867,15 +1873,40 @@ function voltarParaDescanso() {
 // BANCO DE DADOS DOS BARÕES (POPOUTS)
 const detalhesBaronatos = {
     domPedro2: {
-        title: "Henrique Marques de Holanda Cavalcanti",
+        title: "Dom Pedro II: O Imperador Viajante e sua Passagem por Escada",
         content: `<img src="../images/baronatos/baronatos-sem-molduras/1dom pedro II sem molduras.png" alt="Henrique Marques">`,
-        bio: `Quem foi: Aristocrata da elite açucareira, nascido em Escada (1854-1941). Formado em Direito, foi uma das figuras políticas e econômicas mais poderosas de Pernambuco no final do Império e início da República.<br><br>
-        <strong>Poder e Modernização:</strong><br>
-        • Líder Econômico: Dono das usinas Mameluco e Limoeirinho, simbolizou a transição dos antigos engenhos para a agroindústria moderna.<br>
-        • Política: Atuou como Deputado e Senador Provincial pelo Partido Conservador.<br><br>
-        <strong>Legado em Escada:</strong> Trouxe ferrovias para a região (incluindo a "Estação Barão de Suassuna") e promoveu ações sociais, como escolas e associações beneficentes nas usinas.<br><br>
-        <strong>O Lado Sombrio da Riqueza:</strong> Apesar do perfil modernizador, sua fortuna e influência foram construídas sobre a exploração do trabalho escravizado. Mesmo após a abolição, manteve o controle social e econômico sobre os trabalhadores, perpetuando estruturas de desigualdade que garantiram a concentração de poder nas mãos de sua família por gerações.`
+        bio: `Pedro de Alcântara João Carlos Leopoldo Salvador Bibiano Francisco Xavier de Paula Leocádio Miguel Gabriel Rafael Gonzaga de Bragança e Habsburgo — Dom Pedro II — nasceu no Rio de Janeiro em 2 de dezembro de 1825 e subiu ao trono do Brasil ainda criança, aos 14 anos, em 1841, após um período de regências conturbadas que se seguiu à abdicação de seu pai, Dom Pedro I. Filho de uma princesa austríaca e de um rei português, cresceu mais brasileiro do que qualquer herança europeia poderia sugerir. Estudioso incansável, falava mais de dez idiomas, cultivava a astronomia, a literatura e a fotografia, e mantinha correspondência com os maiores intelectuais do mundo — de Victor Hugo a Louis Pasteur. Era um monarca que lia, que questionava, que se movia.
+Seu reinado, o mais longo da história brasileira, durou quase meio século, de 1841 até a Proclamação da República, em 1889. Nesse período, o Brasil atravessou transformações profundas: a abolição progressiva do tráfico de escravos, a guerra do Paraguai, a expansão das ferrovias e, por fim, a própria abolição da escravidão, em 1888. Dom Pedro II foi figura central em todas essas mudanças, ainda que contraditória — um homem pessoalmente avesso à escravidão que durante décadas governou um Estado que a sustentava.
+Uma das marcas mais distintas de seu governo era o costume de viajar pelo próprio país, prática incomum entre os monarcas do século XIX. Ele percorreu províncias do Norte ao Sul, querendo ver com os próprios olhos a terra que governava. Entre 1859 e 1860, o monarca visitou o Nordeste, sendo recebido com grandes festas na Bahia, em Pernambuco, na Paraíba, em Alagoas, Sergipe e Espírito Santo.
+A chegada ao Recife foi um acontecimento. Em 1859, o Recife era a mais importante capital das províncias do Norte do Brasil, já contando com Teatro de Santa Isabel, iluminação a gás carbônico nas ruas centrais e as obras da ferrovia Recife–São Francisco recém-iniciadas. A chegada do Imperador Dom Pedro II e da Imperatriz Tereza Cristina aconteceu no dia 22 de novembro de 1859, a bordo do navio Apa, sendo amplamente coberta pelo Diario de Pernambuco. Dom Pedro II permaneceu na província por duas semanas, visitando o Ginásio Pernambucano, onde elogiou o ensino do francês, e percorreu diferentes pontos da capital.
+Mas o olhar do imperador não ficou restrito ao Recife. Ele seguiu pelos caminhos de barro e canaviais da Zona da Mata, até chegar a Escada — município encravado na Mata Sul de Pernambuco, coração da economia açucareira da província. Durante essa visita, o imperador e sua comitiva hospedaram-se na casa-grande do Engenho Matapiruma, então pertencente à influente família Marques Lins. O engenho, erguido ainda no período colonial às margens do rio homônimo e adquirido por Henrique Marques Lins em 1841, era um dos mais expressivos da região — domínio quase autossuficiente, com sua própria lógica social e econômica, símbolo do poder da classe latifundiária.
+A presença do imperador no engenho reforça a relevância da propriedade e da família Marques Lins no contexto político e econômico da época. A passagem de Dom Pedro II por Escada ilustra sua prática de viajar pelo Brasil para conhecer de perto as diversas regiões do Império e compreender as necessidades de sua população. A hospitalidade recebida não passou em branco: em 14 de março de 1860, Henrique Marques Lins foi agraciado com o título de Barão de Utinga por decreto imperial, em agradecimento à hospitalidade oferecida durante a visita a Pernambuco em 1859.
+O que o imperador viu em Escada era a face mais crua e mais viva da civilização do açúcar. Os engenhos da Zona da Mata eram, naquele momento, o motor da riqueza pernambucana — mas também palco de uma ordem social fundada no trabalho escravo, na hierarquia rígida entre senhores e cativos, e no isolamento quase total dessas comunidades em relação ao mundo externo. Ao longo do século XIX, anúncios de escravos fugidos do Matapiruma apareciam no Diario de Pernambuco, testemunho silencioso da violência que sustentava aquele mundo que o imperador contemplou da varanda da casa-grande.
+Dom Pedro II tinha consciência das contradições do Império que governava. Em seus diários de viagem pelo Nordeste, registrou impressões sobre o atraso das estradas, a dureza do clima, a riqueza do solo e a vida das populações interioranas. Não há registro público de suas anotações específicas sobre Escada, mas a região que viu era representativa de toda a complexidade que o angustiava: uma terra fértil e produtiva, organizada sobre a exploração de seres humanos escravizados, distante das luzes e do progresso que ele tanto admirava na Europa.
+O monarca que dormiu no Matapiruma seria, menos de trinta anos depois, o mesmo que assinou a Lei Áurea — em 13 de maio de 1888 — pondo fim legal à escravidão no Brasil. Poucos meses mais tarde, em novembro de 1889, seria deposto pela Proclamação da República e partiria ao exílio em Portugal, onde morreria em 1891. A passagem por Escada e pelos engenhos de Pernambuco fazia parte de uma longa formação de um homem que tentou, com todas as contradições de seu tempo, compreender o país que governava ao percorrê-lo a cavalo, de norte a sul, com os olhos abertos.
+`
     },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     suassuna: {
         title: "Henrique Marques de Holanda Cavalcanti",
