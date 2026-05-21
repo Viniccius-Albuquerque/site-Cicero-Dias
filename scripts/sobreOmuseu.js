@@ -1562,7 +1562,7 @@ const topicsData = {
 
                 </div>
 
-                <div class="slider-dots">
+                <div class="acessibilidade-dots">
                     <span class="dot active"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -2243,45 +2243,51 @@ document.addEventListener('click', (e) => {
 let currentSlideAcessibilidade = 0;
 
 function initSliderAcessibilidade() {
-
     const slider = document.querySelector('.acessibilidade-slider');
-
     if (!slider) return;
 
     const slides = slider.querySelectorAll('.slide');
     const nextBtn = slider.querySelector('.slider-btn.next');
     const prevBtn = slider.querySelector('.slider-btn.prev');
+    
+    // CORREÇÃO 1: Mapeia as bolinhas exclusivas da acessibilidade
+    const dots = document.querySelectorAll('.acessibilidade-dots .dot');
 
     if (!slides.length || !nextBtn || !prevBtn) return;
 
     function updateSlider() {
-
+        // Remove active dos slides
         slides.forEach(slide => {
             slide.classList.remove('active');
         });
 
+        // CORREÇÃO 2: Remove active de todas as bolinhas da acessibilidade
+        dots.forEach(dot => {
+            dot.classList.remove('active');
+        });
+
+        // Ativa o slide atual
         slides[currentSlideAcessibilidade].classList.add('active');
+        
+        // CORREÇÃO 3: Ativa a bolinha correspondente
+        if (dots[currentSlideAcessibilidade]) {
+            dots[currentSlideAcessibilidade].classList.add('active');
+        }
     }
 
     nextBtn.addEventListener('click', () => {
-
         currentSlideAcessibilidade++;
-
         if (currentSlideAcessibilidade >= slides.length) {
             currentSlideAcessibilidade = 0;
         }
-
         updateSlider();
     });
 
     prevBtn.addEventListener('click', () => {
-
         currentSlideAcessibilidade--;
-
         if (currentSlideAcessibilidade < 0) {
             currentSlideAcessibilidade = slides.length - 1;
         }
-
         updateSlider();
     });
 

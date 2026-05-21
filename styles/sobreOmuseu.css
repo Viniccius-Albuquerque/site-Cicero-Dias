@@ -2016,3 +2016,27 @@ p, span, li, article, section {
     border-radius: 6px;      /* Arredonda levemente os cantos */
     padding: 6px;            /* Margem interna para o QR não colar na borda do fundo */
 }
+
+/* CONTAINER EXCLUSIVO */
+.acessibilidade-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+/* BOLINHAS EXCLUSIVAS */
+.acessibilidade-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #111;
+    opacity: 0.4;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+/* BOLINHA ATIVA VERMELHA */
+.acessibilidade-dots .dot.active {
+    opacity: 1;
+    background: #d92c2c;
+}
