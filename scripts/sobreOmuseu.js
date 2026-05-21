@@ -1466,6 +1466,10 @@ const topicsData = {
 
                 </div>
 
+                <p>
+
+                </p>
+
                 <!-- CARROSSEL -->
                 <div class="acessibilidade-slider">
 
@@ -1525,6 +1529,20 @@ const topicsData = {
                         →
                     </button>
 
+                </div>
+
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </section>
 
@@ -2187,12 +2205,15 @@ let currentSlideAcessibilidade = 0;
 
 function initSliderAcessibilidade() {
 
-    const slides = document.querySelectorAll('.acessibilidade-slider .slide');
+    const slider = document.querySelector('.acessibilidade-slider');
 
-    if (!slides.length) return;
+    if (!slider) return;
 
-    const nextBtn = document.querySelector('.acessibilidade-slider .next');
-    const prevBtn = document.querySelector('.acessibilidade-slider .prev');
+    const slides = slider.querySelectorAll('.slide');
+    const nextBtn = slider.querySelector('.slider-btn.next');
+    const prevBtn = slider.querySelector('.slider-btn.prev');
+
+    if (!slides.length || !nextBtn || !prevBtn) return;
 
     function updateSlider() {
 
@@ -2228,6 +2249,4 @@ function initSliderAcessibilidade() {
     updateSlider();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    initSliderAcessibilidade();
-});
+document.addEventListener('DOMContentLoaded', initSliderAcessibilidade);
