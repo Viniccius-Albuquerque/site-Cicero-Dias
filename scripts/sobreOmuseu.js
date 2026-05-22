@@ -547,7 +547,7 @@ const topicsData = {
                 <div class="secao-modernismo-container">
 
                     <div class="secao-modernismo-item-total">
-                        <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/1exposição de cicero.png" alt="Exposição de Cícero Dias na Policlínica">
+                        <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/1exposição de cicero.png" alt="Exposição de Cícero Dias na Policlínica">
                         <p class="secao-modernismo-legenda">Exposição de Cícero Dias na Policlínica, Rio de Janeiro, 1928. Entre os presentes: Dr. Costa Ribeiro, Murilo Mendes, Rodrigo Médicis, Josué de Castro, José Chaves, Lula Cardoso Ayres, Cícero Dias (indicado pela flecha), Ruy Coutinho, Nené Prado, Graça Aranha, Nazareth Pedro, Eugênia Moreira, Álvaro Moreira, Evandro Pequeno, Mary Pedrosa, Ismael e Antonio Bento</p>
                     </div>
 
@@ -583,14 +583,14 @@ const topicsData = {
                         <div class="papel-fotografico">
                             <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/famialia cicero dias.png" alt="Cícero Dias em retrato com a sua família">
                         </div>
-                        <p class="album-legenda">Cícero Dias em retrato com a sua família</p>
+                        <p class="album-legenda"></p>
                     </div>
 
                     <div class="foto-album-bloco bloco-adulto">
                         <div class="papel-fotografico">
                             <img src="../images/PRIMEIRA FASE E MODERNISMO/PRIMEIRA FASE E MODERNISMO/cícero dias adulto.png" alt="Foto de Cícero Dias em sua fase adulta">
                         </div>
-                        <p class="album-legenda">Foto de Cícero Dias em sua fase adulta</p>
+                        <p class="album-legenda"></p>
                     </div>
 
                 </div>
@@ -1680,7 +1680,7 @@ const topicsData = {
                 </p>
 
                 <div class="imagem-full-width">
-                    <img src="../images/ESPAÇO CULTURAL MUSEU CICERO DIAS_1.png" alt="Construção da Matriz e presença franciscana">
+                    <img src="../images/frente museu.png" alt="Construção da Matriz e presença franciscana">
                 </div>
 
                 <p>
@@ -2278,7 +2278,7 @@ loadTopic('sobreMuseu');
 let tempoInatividade;
 
 // tempo em milissegundos (1 minuto = 60000)
-const TEMPO_LIMITE = 30000;
+const TEMPO_LIMITE = 60000;
 
 function resetarTimer() {
     clearTimeout(tempoInatividade);
