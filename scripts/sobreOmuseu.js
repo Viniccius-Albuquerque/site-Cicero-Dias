@@ -1203,10 +1203,16 @@ const topicsData = {
                 <h1 class="page-title" style="color: #ede7e1 !important;">Baronatos</h1>
 
                 
+<<<<<<< HEAD
             <div class="autor-texto">
 
                 Professor Dr. Arthur Danillo Castelo Branco de Souza
             </div>
+=======
+                <div class="autor-texto">
+                    Professor Dr. Arthur Danillo Castelo Branco de Souza
+                </div>
+>>>>>>> 1a00023935f538819e78327fbeb8ea05e148558a
 
                 
                 <div class="grid-baronatos">
@@ -1758,7 +1764,9 @@ const topicsData = {
                 </div>
 
                 <p>
-
+                    <br>
+                    <br>
+                    <br>
                 </p>
 
                 <!-- CARROSSEL -->
