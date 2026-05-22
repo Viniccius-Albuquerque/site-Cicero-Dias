@@ -971,9 +971,11 @@ section.arco-bg-section p,
 
 .timeline-line {
     margin-top: 40px;
+    align-items: flex-start !important;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start !important;
+    gap: 5%;
 
     position: relative;
 }
@@ -990,17 +992,21 @@ section.arco-bg-section p,
     height: 2px;
 
     background: #d92c2c;
+    z-index: 1;
 }
 
 .timeline-item {
-    width: 110px;
-    text-align: left !important;
+    width: 120px;
+    flex: 0 0 auto;
     position: relative;
+    z-index: 2;
+    text-align: left !important; /* Garante que os textos dentro do item alinhem à esquerda */
 }
 
 .year {
     font-weight: bold;
     color: #d92c2c;
+    font-size: 150%;
 }
 
 .point {
@@ -1011,7 +1017,7 @@ section.arco-bg-section p,
 
     background: #d92c2c;
 
-    margin: 18px 0;
+    margin: 12px 0;
     transform: translateY(-11px);
 }
 

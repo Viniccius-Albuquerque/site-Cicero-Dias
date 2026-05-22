@@ -377,43 +377,43 @@ const topicsData = {
                         <div class="timeline-item">
                             <span class="year">1907</span>
                             <div class="point"></div>
-                            <p>Nascimento no Engenho Jundiá, Escada - PE</p>
+                            <div class="text-tempo"><p>Nascimento no Engenho Jundiá, Escada - PE</p></div>
                         </div>
 
                         <div class="timeline-item">
                             <span class="year">1937/1938</span>
                             <div class="point"></div>
-                            <p>
+                            <div class="text-tempo"><p>
                                 Muda-se para Paris, onde integra a vanguarda 
                                 mundial e torna-se amigo próximo de Pablo Picasso
-                            </p>
+                            </p></div>
                         </div>
 
                         <div class="timeline-item">
                             <span class="year">1998</span>
                             <div class="point"></div>
-                            <p>
+                            <div class="text-tempo"><p>
                                 Recebe a comenda "Ordem Nacional do Mérito" do governo da 
                                 França pelo seu impacto cultural global
-                            </p>
+                            </p></div>
                         </div>
 
                         <div class="timeline-item">
                             <span class="year">2000</span>
                             <div class="point"></div>
-                            <p>
+                            <div class="text-tempo"><p>
                                 Projetou o icônico desenho do piso da Praça Marco Zero, 
                                 no Recife Antigo.
-                            </p>
+                            </p></div>
                         </div>
 
                         <div class="timeline-item">
                             <span class="year">2003</span>
                             <div class="point"></div>
-                            <p>
+                            <div class="text-tempo"><p>
                                 Faleceu em Paris, aos 95 anos, sendo sepultado no 
                                 prestigioso Cemitério de Montparnasse.
-                            </p>
+                            </p></div>
                         </div>
 
                     </div>
@@ -2154,7 +2154,7 @@ loadTopic('sobreMuseu');
 let tempoInatividade;
 
 // tempo em milissegundos (1 minuto = 60000)
-const TEMPO_LIMITE = 30000;
+//const TEMPO_LIMITE = 30000;
 
 function resetarTimer() {
     clearTimeout(tempoInatividade);
