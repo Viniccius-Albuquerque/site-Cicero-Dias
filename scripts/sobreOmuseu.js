@@ -1203,9 +1203,9 @@ const topicsData = {
                 <h1 class="page-title" style="color: #ede7e1 !important;">Baronatos</h1>
 
                 
-<div class="autor-texto">
-                Professor Dr. Arthur Danillo Castelo Branco de Souza
-            </div>
+                <div class="autor-texto">
+                    Professor Dr. Arthur Danillo Castelo Branco de Souza
+                </div>
 
                 
                 <div class="grid-baronatos">
