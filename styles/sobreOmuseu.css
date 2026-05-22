@@ -1,0 +1,2132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* Em vez de fixar, dizemos que a fonte base é calculada pela largura da tela (Viewport Width) */
+    /* Exemplo: 1.2vw significa que a base da fonte será sempre 1.2% da largura total da tela */
+    font-size: 1.2vw; 
+    overflow: hidden;
+}
+
+:root {
+    --fundo-papel: #ece6e0;
+    --texto-escuro: #1a1a1a;
+    --detalhe-amarelo: #e9c46a;
+}
+
+body {
+    /* Define a imagem de fundo */
+    background-image: url('../images/CICERO_DIAS.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    /* CORREÇÃO: Removido o 'background: #1a1a1a' que apagava a foto. 
+       Se a imagem falhar ou estiver carregando, usamos background-color como segurança: */
+    background-color: #1a1a1a; 
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
+    color: #333;
+    
+    /* CORREÇÃO: Removidos o flexbox centralizado que quebrava o layout do app */
+    display: block; 
+}
+
+.sidebar, 
+.nav-item, 
+.subtopic-item, 
+.sidebar-footer p {
+    font-family: 'Istok Web', sans-serif;
+}
+
+.page-title, 
+section h2, 
+.festividade-mes h3,
+.nav-item.active,
+.museum-brand h2,
+strong {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 700; /* Bold */
+}
+
+section p, 
+.lorem-block, 
+.diretrizes-lista li, 
+.acessibilidade-lista li, 
+.horario-lista li, 
+.festividade-lista li {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400; /* Regular */
+    line-height: 1.6;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+.totem-container {
+    width: 100vw;
+    height: 100vh;
+
+    max-width: 100vw;
+    max-height: 100vh;
+
+    aspect-ratio: 16 / 9;
+
+    display: flex;
+}
+
+/* BARRA LATERAL */
+.sidebar {
+    position: fixed; /* ADICIONADO: Mantém a barra travada na esquerda por cima do fundo */
+    top: 0;
+    left: 0;
+    z-index: 10; /* ADICIONADO: Garante que ela fique na camada acima do fundo */
+    
+    width: 20%;
+    height: 100vh;
+    
+    /* ALTERADO: Fundo escuro com 65% de opacidade (o último número controla a transparência) */
+    background: rgba(18, 18, 18, 0.65); 
+    
+    /* OPCIONAL: Adiciona um leve desfoque na imagem que está atrás da barra, igual ao seu print */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 30px;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+.sidebar-footer {
+    margin-top: -10px; 
+    padding: 10px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    flex-shrink: 0; 
+}
+.sidebar-footer p {
+    color: #ffffff;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-footer strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.qr-code-img {
+    width: 160px; 
+    height: 160px;
+    object-fit: contain;
+}
+
+.museum-brand {
+    display: none;
+}
+
+/* Menu de Navegação */
+.nav-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nav-item {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.nav-item:hover {
+    background: #333;
+    color: white;
+}
+
+.nav-item.active {
+    font-weight: normal;
+}
+
+.nav-item.active::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #e61919; 
+    margin: 8px auto 0;
+}
+
+.nav-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.subtopics {
+    display: none;
+    flex-direction: column;
+    width: 90%;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.subtopics.open {
+    display: flex;
+}
+
+.subtopic-item {
+    background: rgba(42, 42, 42, 0.45);
+    border: none;
+    color: #cccccc;
+    text-align: center;
+    padding: 12px 10px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    width: 100%;
+    transition: background 0.2s;
+}
+
+.subtopic-item:hover {
+    background: rgba(42, 42, 42, 0.45);
+    color: white;
+}
+
+/* ÁREA PRINCIPAL */
+.main-content {
+    flex: 1;
+    background: transparent;
+    height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: auto;   
+    position: relative;
+}
+
+.content-scroll {
+    margin-left: 20%; /* ADICIONADO: Empurra o conteúdo para a direita, liberando o espaço da sidebar */
+    min-height: 100vh;  /* ADICIONADO: Garante que o container ocupe a altura total da tela */
+    background-color: transparent; /* ADICIONADO: Cor padrão clara para o fundo do texto (que seu JS altera depois) */
+    box-sizing: border-box; /* ADICIONADO: Garante que paddings não quebrem a largura da tela */
+    
+    /* Suas propriedades originais mantidas */
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.content-body {
+    padding: 40px 4%; 
+    width: 100%;
+    display: block;
+}
+
+/* TÍTULOS */
+.page-title {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.page-title::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    width: 5px;
+    height: 32px;
+
+    background: #e53935;
+
+    border-radius: 20px;
+}
+/* LOREM IPSUM DOLOR */
+.lorem-block {
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.lorem-block p {
+    margin-bottom: 20px;
+}
+
+/* RODAPÉ */
+.museum-footer {
+    background-color: inherit; /* Cor de fundo bege padrão */
+    padding: 40px 20px;
+    text-align: center;
+    color: inherit;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #ccc; /* Linha fina que aparece no topo da imagem */
+    margin-bottom: 20px;
+}
+
+.museum-footer p {
+    margin: 5px 0;
+}
+
+section {
+    padding: 40px 0;
+    width: 100%;
+    position: relative;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.acessibilidade-lista {
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+.acessibilidade-lista li {
+    margin-bottom: 22px;
+
+    line-height: 1.6;
+}
+
+.diretrizes-lista {
+    margin-top: 20px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.diretrizes-lista li {
+    padding-left: 5px;
+}
+
+.horario-lista {
+    margin: 20px 0;
+
+    padding-left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 1.05rem;
+    line-height: 1.6;
+
+    color: #f1f1f1;
+}
+
+.horario-lista li {
+    padding-left: 5px;
+}
+
+.festividade-mes {
+    margin-bottom: 35px;
+}
+
+.festividade-mes h3 {
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    border-left: 4px solid #e9c46a;
+    padding-left: 12px;
+}
+
+.festividade-lista {
+    padding-left: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.festividade-lista li {
+    padding-left: 5px;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.45;
+    margin-bottom: 25px;
+    max-width: 95%; 
+}
+
+.imagem-destaque {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.imagem-destaque img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imagem-full-width {
+    width: 96%;
+    margin: 40px auto;
+}
+
+.imagem-full-width img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Seção com Fundo Preto Específica */
+section.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    box-shadow: 0 0 0 100vmax #1a1a1a;
+    clip-path: inset(0 -100vmax);
+    margin: 40px 0;
+}
+
+section.dark-theme h2, 
+section.dark-theme p {
+    color: #ffffff;
+}
+
+/* Moldura Oval da Imagem */
+.image-oval-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+.image-oval-container img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 250px; 
+    object-fit: cover;
+}
+
+/* Seção com Imagem de Fundo Expansiva e Arco */
+section.arco-bg-section {
+    position: relative;
+    width: calc(100% + 10%);
+    margin-left: -5%;
+    padding: 120px 10%;
+    text-align: left;
+    /* Configuração da Imagem de Fundo */
+    background-image: url('../images/BANNER_4_TOPONIMOS.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Formato de Arco Gigante */
+
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* camada escura */
+section.arco-bg-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45); /* aumenta ou diminui aqui */
+
+    z-index: 1;
+}
+
+/* deixa o conteúdo acima da camada */
+section.arco-bg-section * {
+    position: relative;
+    z-index: 2;
+}
+
+section.arco-bg-section h2, 
+section.arco-bg-section h3 {
+    color: #ffffff;
+    font-family: 'Istok Web', sans-serif;
+    margin-top: 30px;
+}
+
+section.arco-bg-section p, 
+.timeline-entry {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+}
+
+.timeline-entry strong {
+    display: block;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Remove a borda e o fundo cinza que o navegador ou o código antigo estava pondo */
+.btn-baronato {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;                           /* Faz o botão ocupar o espaço da coluna da grid */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-baronato img {
+    width: 100%;
+    max-width: 280px; /* Ajuste o tamanho do quadro aqui */
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+.btn-baronato p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 1.1rem;
+}
+
+/* Grid para organizar os quadros */
+.grid-baronatos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria exatamente 3 colunas iguais */
+    gap: 20px;                             /* Espaçamento de 20px entre os botões */
+    padding: 20px;                         /* Espaçamento interno do container */
+    max-width: 100%;                       /* Garante que não passe da tela */
+    box-sizing: border-box;
+}
+
+/* O container ocupa toda a área de conteúdo, deixando a sidebar visível */
+#popoutBaronato {
+    position: fixed;
+
+    top: 0;
+    left: 20%;
+
+    width: 80%;
+    height: 100vh;
+
+    background: #E9CFA7;
+
+    z-index: 99999;
+
+    display: none;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* quando abrir */
+#popoutBaronato.active {
+    display: block;
+}
+
+/* Quando o modal estiver ativo */
+.popout-overlay.active {
+    display: flex;
+}
+
+/* Botão de fechar */
+.close-popout {
+    position: absolute;
+
+    top: 25px;
+    right: 35px;
+
+    background: transparent;
+    border: none;
+
+    color: #000;
+
+    font-size: 2.2rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 100000;
+
+    line-height: 1;
+
+    transition: transform 0.2s ease;
+}
+
+.close-popout:hover {
+    transform: scale(1.15);
+}
+
+#popoutBody {
+    flex: 1;
+    overflow-y: auto;
+
+    padding: 50px 70px;
+}
+
+#popoutBody::-webkit-scrollbar {
+    width: 10px;
+}
+
+#popoutBody::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.25);
+    border-radius: 20px;
+}
+
+.popout-media-centered {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 40px;
+}
+
+.popout-media-centered img {
+    width: 100%;
+    max-width: 500px;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+
+    filter: drop-shadow(0 10px 25px rgba(0,0,0,0.25));
+}
+
+.popout-content-vatican {
+    width: 100%;
+    max-width: 1000px;
+
+    position: relative;
+
+    margin: 0 auto;
+
+    padding: 60px 60px 40px;
+}
+
+/* Estilo para remover bordas do botão de imagem */
+.btn-baronato {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.modulo-baronatos {
+    background-color: #151617 !important;
+    color: #ede7e1 !important;
+    padding: 40px;
+    min-height: 100vh; /* Garante que preencha o fundo até embaixo */
+    box-sizing: border-box;
+}
+
+.modulo-baronatos p, 
+.modulo-baronatos strong, 
+.modulo-baronatos span {
+    color: #ede7e1 !important;
+}
+
+.modulo-baronatos h1, 
+.modulo-baronatos h2 {
+    color: #ede7e1 !important;
+    font-family: 'Stok Web', sans-serif;
+    font-weight: bold;
+}
+
+#contentBody[style*="background-color: rgb(21, 22, 23)"] h2,
+#contentBody[style*="background-color: rgb(21, 22, 23)"] span,
+#contentBody[style*="background-color: rgb(21, 22, 23)"] strong {
+    color: #ede7e1 !important;
+}
+
+#contentBody[style*="background-color: rgb(21, 22, 23)"] .baronatos-grid,
+.baronatos-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 30px !important; /* Espaçamento elegante entre as fotos */
+    padding: 20px 0;
+    width: 100%;
+}
+
+.popout-content-vatican {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popout-title-gold {
+    font-size: 3rem;
+    text-align: center;
+
+    color: #4d2e16;
+
+    margin-bottom: 30px;
+}
+
+
+.popout-bio-text {
+    font-size: 1.2rem;
+    line-height: 2;
+
+    color: #2d2118;
+
+    text-align: justify;
+}
+
+
+.popout-bio-text strong {
+    color: #3d2413;
+    font-weight: 700;
+}
+
+#popoutBaronato::-webkit-scrollbar {
+    width: 10px;
+}
+
+#popoutBaronato::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.25);
+    border-radius: 20px;
+}
+
+.museum-footer.dark-footer .footer-divider {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* CONTATO */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+    padding-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.contact-title h2 {
+    font-size: 2rem;
+    margin: 0;
+    color: #111;
+}
+
+.contact-icon {
+    color: #e53935;
+    font-size: 1.7rem;
+    width: 28px;
+    text-align: center;
+}
+
+.contact-item p {
+    margin-left: 42px;
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 0;
+}
+
+.diretrizes-lista,
+.acessibilidade-lista,
+.horario-lista,
+.festividade-lista {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    gap: 8px;
+}
+
+/* HERO CICERO */
+.cicero-hero {
+    margin-bottom: 70px;
+}
+
+/* SLIDER */
+.cicero-slider {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 30px;
+}
+
+.slider-track {
+    width: 100%;
+    height: 320px;
+
+    position: relative;
+
+    overflow: hidden;
+    border-radius: 24px;
+
+    background: #000;
+}
+
+.slide {
+    position: absolute;
+    display: none;
+    inset: 0;
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.slider-btn {
+    position: absolute;
+
+    z-index: 10;
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: rgba(255,255,255,0.40);
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+}
+
+.slider-btn.prev {
+    left: 20px;
+}
+
+.slider-btn.next {
+    right: 20px;
+}
+
+/* DOTS */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 18px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #111;
+    opacity: 0.4;
+}
+
+.dot.active {
+    opacity: 1;
+    background: #d92c2c;
+}
+
+/* INFO BAR */
+.cicero-info-bar {
+    margin-top: 35px;
+
+    border-top: 1px solid #d6a7a7;
+    padding-top: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cicero-info-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    min-width: 240px;
+}
+
+.mini-icon {
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #d92c2c;
+}
+
+.cicero-divider {
+    width: 1px;
+    height: 70px;
+
+    background: #d6a7a7;
+}
+
+.cicero-info-text {
+    flex: 1;
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.btn-acervo {
+    padding: 12px 26px;
+
+    border: 1px solid #d92c2c;
+
+    background: transparent;
+
+    color: #d92c2c;
+
+    cursor: pointer;
+}
+
+/* TIMELINE */
+.cicero-timeline {
+    margin-top: 70px;
+}
+
+.timeline-description {
+    max-width: 1000px;
+}
+
+.timeline-line {
+    margin-top: 40px;
+    align-items: flex-start !important;
+
+    display: flex;
+    justify-content: flex-start !important;
+    gap: 5%;
+
+    position: relative;
+}
+
+.timeline-line::before {
+    content: "";
+
+    position: absolute;
+
+    top: 36px;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: #d92c2c;
+    z-index: 1;
+}
+
+.timeline-item {
+    width: 120px;
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 2;
+    text-align: left !important; /* Garante que os textos dentro do item alinhem à esquerda */
+}
+
+.year {
+    font-weight: bold;
+    color: #d92c2c;
+    font-size: 150%;
+}
+
+.point {
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: #d92c2c;
+
+    margin: 12px 0;
+    transform: translateY(-11px);
+}
+
+/* ACERVO */
+.galeria-acervo {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ajustado para 2 colunas como na imagem */
+    gap: 40px 30px; /* 40px de espaço vertical (para respirar entre as linhas) e 30px horizontal */
+    padding: 0 20px;
+}
+
+/* CARD DA OBRA */
+.obra-card {
+    width: 100%;
+    background: transparent; /* Remove o fundo antigo para o texto flutuar no fundo escuro */
+    display: flex;
+    flex-direction: column;
+}
+
+.obra-img-wrapper {
+    width: 100%;
+    height: 340px; /* Altura ideal proporcional para as telas horizontais em grade */
+    border-radius: 18px; /* Cantos arredondados idênticos ao exemplo */
+    overflow: hidden;
+    margin-bottom: 15px; /* Espaço entre a foto e o início do texto */
+}
+
+.obra-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante o preenchimento sem distorcer a obra */
+    display: block;
+}
+
+/* ÁREA DE TEXTOS (Flexbox para jogar o título de um lado e os detalhes do outro) */
+.obra-info {
+    display: flex;
+    justify-content: space-between; /* Título na esquerda, detalhes na direita */
+    align-items: flex-start;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/* TÍTULO DA OBRA */
+.obra-titulo {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 0;
+    padding-right: 15px;
+}
+
+/* BLOCO TÉCNICO (DIREITA) */
+.obra-detalhes {
+    display: flex;
+    flex-direction: column; /* Empilha a Técnica em cima do tamanho */
+    align-items: flex-end; /* Alinha os textos à direita */
+    text-align: right;
+    min-width: 180px;
+}
+
+/* TÉCNICA / ANO */
+.obra-tecnica {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+/* DIMENSÕES DA MOLDURA */
+.obra-dimensoes {
+    color: #888888; /* Tom cinza mais escuro para criar hierarquia visual */
+    font-size: 0.75rem;
+}
+
+.obra-card img {
+    width: 100%;
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.btn-ver-acervo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 14px 30px;
+
+    color: #4a4a4a;
+
+    border: 2px solid #9f2d2d;
+
+    border-radius: 999px;
+
+    text-decoration: none;
+
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border 0.25s ease,
+        color 0.25s ease;
+}
+
+.btn-ver-acervo:hover {
+    background: #9f2d2d;
+
+    transform: translateY(-2px);
+}
+
+.btn-ver-acervo::after {
+    content: " ↗";
+
+    margin-left: 6px;
+
+    font-size: 0.95rem;
+}
+
+.duas-imagens-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    margin: 40px 0;
+}
+
+.duas-imagens-grid img {
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius: 24px;
+
+    display: block;
+}
+
+.imagem-destaque {
+    margin: 40px 0;
+}
+
+.imagem-destaque img {
+    width: 100%;
+    height: 340px;
+
+    object-fit: cover;
+
+    border-radius: 24px;
+
+    display: block;
+}
+
+.imagem-destaque2 {
+    margin: 40px 0;
+}
+
+.imagem-destaque2 img {
+    width: 100%;
+    height: 340px;
+
+    object-fit: cover;
+
+    border-radius: 24px;
+
+    display: block;
+}
+
+.duas-imagens-grid2 {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+
+    margin: 40px 0;
+}
+
+.duas-imagens-grid2 img {
+    width: 100%;
+    height: 420px;
+
+    object-fit: cover;
+
+    border-radius: 24px;
+
+    display: block;
+}
+
+/* Container principal que junta a foto e o título */
+.split-container-colonizacao {
+    display: flex;
+    align-items: flex-end; /* ALTERADO: Alinha a base da imagem e do texto por baixo */
+    background-color: #1a1a1a; 
+    padding: 40px;
+    gap: 50px; 
+    min-height: 80vh; 
+    box-sizing: border-box;
+}
+
+/* Caixa da Imagem */
+.colonizacao-media {
+    flex: 0 0 auto; /* Impede que a imagem esmague ou estique bizarramente */
+}
+
+.colonizacao-media img {
+    max-height: 600px; /* Controla a altura máxima para manter o formato vertical */
+    width: auto;
+    display: block;
+    border-radius: 4px; /* Opcional: deixa as bordas levemente arredondadas */
+}
+
+/* Caixa de Texto */
+.colonizacao-text {
+    flex: 1; /* Ocupa o restante do espaço da direita */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Garante centralização vertical extra */
+}
+
+.colonizacao-text img {
+    width: 150px;         /* Deixa o QR Code pequenininho */
+    height: 150px;        /* Mantém a proporção quadrada */
+    object-fit: contain;
+    margin-bottom: 20px; /* Cria o espaçamento perfeito em relação ao h2 de baixo */
+    display: block;
+}
+
+/* Estilização do Título */
+.colonizacao-text h2 {
+    color: #ede7e1; /* Cor clara idêntica à do seu banco de dados */
+    font-family: sans-serif; /* Substitua pela fonte do seu projeto */
+    font-size: 2.5rem; /* Tamanho do título */
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0;
+}
+
+/* Estilização do subtítulo/ano se quiser em outra linha ou tamanho */
+.colonizacao-text h2 span {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+#acervoCompleto {
+    background: #1a1a1a; 
+
+    color: #f5f5f5;
+
+    padding: 80px 70px 120px 70px; 
+
+    margin-top: 80px;
+    margin-bottom: -40px !important; /* Garante que termine em zero para grudar no footer */
+
+    width: calc(100% + 10%);
+    margin-left: -5%;
+    box-sizing: border-box;
+}
+
+#acervoCompleto h2 {
+    font-family: 'Literata', serif;
+    font-size: 5rem;
+    font-weight: 300;
+
+    color: #ffffff; /* Branco para destacar no fundo escuro */
+
+    line-height: 1;
+    letter-spacing: -2px;
+
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+#acervoCompleto section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#acervoCompleto p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+
+    color: #e5e5e5; /* Tom claro idêntico ao exemplo para perfeita leitura */
+
+    margin-bottom: 25px;
+
+    text-align: justify;
+}
+
+/* IMAGEM */
+#acervoCompleto img {
+    width: 100%;
+    max-width: 500px;
+
+    display: block;
+
+    margin: 35px auto;
+
+    border-radius: 2px;
+}
+
+.acessibilidade-slider {
+    /* MANTIDO: Largura do jeito que você já aprovou */
+    width: 100%;          
+    max-width: 800px;    
+
+    /* EXPANDIDO NA VERTICAL: Aumentamos a altura e o limite máximo */
+    height: 60vh;        
+    max-height: 900px;   
+
+    margin: 0 auto;
+    position: relative;
+    border-radius: 60px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.acessibilidade-slider .slider-track {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+.acessibilidade-slider .slide {
+    position: absolute;
+    inset: 0;
+
+    display: none;
+
+    opacity: 0;
+
+    transition: opacity 0.4s ease;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.acessibilidade-slider .slide.active {
+    display: flex;
+    opacity: 1;
+}
+
+.acessibilidade-slider .slide img {
+    width: 100%;
+    height: 100%;
+
+    /* Ajusta a imagem perfeitamente à nova altura vertical do container */
+    object-fit: fill; 
+    
+    background-color: transparent;
+    display: block;
+}
+/* BOTÕES */
+
+.acessibilidade-slider .slider-btn {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 50px;
+    height: 50px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.3);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    z-index: 100;
+
+    backdrop-filter: blur(5px);
+
+    transition: 0.3s;
+}
+
+.acessibilidade-slider .slider-btn:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+.acessibilidade-slider .prev {
+    left: 20px;
+}
+
+.acessibilidade-slider .next {
+    right: 20px;
+}
+
+.acessibilidade-box {
+    border: 2px solid #ff5a5a;
+
+    border-radius: 24px;
+
+    padding: 35px 40px;
+
+    margin-top: 40px;
+
+    background: transparent;
+}
+
+#horario {
+    background: #0d0d0d;
+
+    color: #f5f5f5;
+
+    padding: 80px 70px;
+
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    width: calc(100% + 10%);
+    margin-left: -5%;
+}
+
+#horario h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 40px;
+
+    color: #ffffff;
+}
+
+#horario p {
+    color: #e5e5e5;
+
+    line-height: 1.9;
+
+    font-size: 1.05rem;
+
+    margin-bottom: 35px;
+
+    max-width: 1000px;
+}
+
+#horario .horario-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Container das duas colunas */
+.datas-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 10px 0;
+    align-items: stretch;
+}
+
+/* Estrutura do Card com borda redonda e contorno preto */
+.mes-card {
+    background-color: transparent;
+    border: 1.5px solid #1a1a1a;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Faixa Preta Superior */
+.mes-titulo {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Área interna de texto */
+.mes-conteudo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Nomes dos Eventos */
+.mes-conteudo h4 {
+    font-size: 1.1rem;
+    color: #000000;
+    margin: 0;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+/* Descrição e detalhes */
+.mes-conteudo p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333333;
+    margin: 0;
+}
+
+/* Linha pontilhada divisória para meses com vários eventos */
+.card-divisor {
+    border: 0;
+    border-top: 1px dashed #cccccc;
+    margin: 4px 0;
+}
+
+/* Faz dezembro ocupar a largura total das duas colunas na base */
+.card-fullwidth {
+    grid-column: span 2;
+}
+
+/* Ajuste de introdução das datas */
+.datas-header {
+    margin-bottom: 25px;
+}
+.datas-header h2 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+.datas-header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.datas-grid-container > div {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-subir {
+    height: 650px;
+}
+
+.imagem-subir img {
+    width: 100%;
+    height: 80%;
+
+    object-fit: cover;
+
+    object-position: center 10%;
+}
+
+.split-container-modernismo {
+    display: flex;
+    align-items: center; 
+    /* 1. Cor de fundo bege e bordas arredondadas no container principal */
+    background-color: #f1daae; /* Tom bege aproximado da imagem */
+    border-radius: 30px;
+    
+    /* 2. Remova o padding da esquerda para a imagem encostar na borda */
+    padding: 0 40px 0 0; /* top | right | bottom | left */
+    gap: 50px; 
+    min-height: 80vh; 
+    box-sizing: border-box;
+    overflow: hidden; /* Garante que a imagem respeite a borda arredondada do container */
+}
+
+.modernismo-text {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    /* Opcional: ajustar a cor do texto para melhor contraste se necessário */
+    color: #1a1a1a; 
+}
+
+/* Caixa da Imagem */
+.modernismo-media {
+    flex: 0 0 auto; 
+    display: flex; /* Garante que não fiquem espaços vazios abaixo da imagem */
+}
+
+.modernismo-media img {
+    max-height: 600px; 
+    width: auto;
+    display: block;
+    
+    /* 3. Arredonda apenas os cantos esquerdos da imagem para casar com o container */
+    border-radius: 30px 30px 30px 30px; 
+}
+
+#internacional {
+    position: relative; /* Essencial para os posicionamentos absolutos funcionarem dentro */
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    
+    /* Nota: Removi o filter: drop-shadow como solicitado */
+}
+
+/* 1. Criando uma camada separada apenas para a imagem de fundo */
+#internacional::before {
+    content: ""; /* Necessário para o pseudo-elemento aparecer */
+    position: absolute; /* Preenche todo o container pai */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Coloca esta camada ATRÁS do texto e do carimbo */
+    
+    /* 2. Suas configurações de imagem de fundo originais */
+    background-image: url('../images/carta.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    /* 3. Definindo a transparência para 60% (0.6) apenas na folha */
+    opacity: 0.6; 
+}
+
+/* Resto das configurações que já tínhamos (mantêm-se iguais) */
+.conteudo-carta {
+    padding: 100px 80px;
+    box-sizing: border-box;
+    position: relative; /* Garante que o texto fique acima do fundo transparente */
+}
+
+#internacional h2 {
+    font-family: 'Istok Web', sans-serif;
+    color: #1a1a1a;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#internacional p {
+    font-family: 'Istok Web', sans-serif;
+    color: #2b2b2b;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.carimbo-postal {
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    width: 120px;
+    height: auto;
+    opacity: 0.85; /* Carimbo mantém sua própria opacidade */
+    pointer-events: none;
+    transform: rotate(-5deg);
+    z-index: 10; /* Garante que o carimbo fique sobre o texto e a folha */
+}
+
+p, span, li, article, section {
+    text-align: justify;
+}
+
+.sidebar-footer, 
+.sidebar-footer p, 
+.museum-footer, 
+.museum-footer p {
+    text-align: center !important;
+}
+
+/* --- CONFIGURAÇÃO DA GRID DOS CASARÕES --- */
+.grid-casaroes {
+    display: grid;
+    /* Cria 2 colunas idênticas que vão esticar até o limite da tela */
+    grid-template-columns: repeat(2, 1fr); 
+    
+    /* Espaço entre as fotos: 30px na vertical, 40px na horizontal */
+    gap: 30px 40px; 
+    
+    /* Força a grid a ocupar toda a largura que o content-scroll oferece */
+    width: 100%; 
+    max-width: 100%; 
+    
+    /* Uma margem de segurança pequena nas laterais para não colar no limite físico do totem */
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 20px;
+    padding-bottom: 80px; 
+    
+    box-sizing: border-box;
+}
+
+/* --- FORÇANDO OS BOTÕES/MOLDURAS A CRESCEREM --- */
+.btn-casarao {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    
+    /* Importante: faz o botão ocupar 100% da largura da coluna da grid */
+    width: 100%; 
+    display: block; 
+}
+
+.btn-casarao .moldura-dourada {
+    width: 100%;
+}
+
+/* --- TORNANDO A IMAGEM TOTALMENTE ELÁSTICA --- */
+.btn-casarao img {
+    /* Remove o limite fixo de pixels (como o width="300" do HTML) e força a imagem 
+       a esticar até preencher toda a largura da coluna da grid */
+    width: 100% !important; 
+    height: auto;
+    object-fit: cover; /* Ou 'contain' se não quiser cortar nenhum milímetro da foto */
+    display: block;
+}
+
+/* Container que junta os dois lados */
+.painel-historico-cicero {
+    display: grid;
+    /* Divide o espaço em duas colunas de tamanhos iguais */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px; /* Espaço elegante entre o bloco esquerdo e o direito */
+    width: 100%;
+    max-width: 1100px; /* Limite confortável para o totem */
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* Coluna esquerda: empilha os dois blocos de foto + legenda */
+.coluna-fotos-engenho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Garante que fiquem bem distribuídas na altura */
+    gap: 20px;
+}
+
+/* Caixa individual de cada foto menor com sua legenda */
+.bloco-foto-legenda {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.bloco-foto-legenda img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px; /* Cantos arredondados idênticos ao do design */
+    object-fit: cover;
+}
+
+/* Estilo das legendas pequenas abaixo das fotos */
+.legenda-foto {
+    font-family: 'Literata', serif;
+    font-size: 0.85rem;
+    color: #4a4a4a; /* Tom de cinza escuro suave */
+    margin-top: 8px;
+    line-height: 1.3;
+}
+
+/* Coluna direita: Foto vertical grande */
+.foto-cicero-vertical {
+    width: 100%;
+    height: 100%;
+}
+
+.foto-cicero-vertical img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px; /* Cantos arredondados */
+    object-fit: cover; /* Faz a foto preencher o bloco perfeitamente sem distorcer */
+}
+
+/* Container que envelopa o bloco inteiro */
+.secao-modernismo-container {
+    width: 100%;
+    max-width: 1200px; /* Alinha com os limites do seu painel do totem */
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Distância entre a foto grande do topo e a grid de baixo */
+    box-sizing: border-box;
+}
+
+/* Tratamento para qualquer imagem dentro desta seção */
+.secao-modernismo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 24px; /* Cantos arredondados idênticos ao layout enviado */
+    object-fit: cover;
+}
+
+/* Bloco superior de largura total */
+.secao-modernismo-item-total {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grid que organiza as 4 fotos inferiores de duas em duas */
+.secao-modernismo-grid-inferior {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Divide perfeitamente em duas colunas */
+    gap: 30px 25px; /* Espaçamento: 30px entre linhas, 25px entre colunas */
+    width: 100%;
+}
+
+/* Blocos individuais da grid inferior */
+.secao-modernismo-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Estilo padrão para todas as frases de legenda abaixo das fotos */
+.secao-modernismo-legenda {
+    font-family: 'Literata', serif;
+    font-size: 0.85rem;
+    color: #333333; /* Cor escura legível para o fundo claro */
+    line-height: 1.4;
+    margin-top: 10px; /* Distancia a frase do fundo da imagem */
+    padding-right: 5px;
+    text-align: left;
+}
+
+/* Container do Álbum */
+.album-sobreposto-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    height: 950px; 
+    margin: 60px auto;
+    box-sizing: border-box;
+}
+
+/* Estrutura base mantida */
+.foto-album-bloco {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Simulação da borda de papel fotográfico antigo (mantida) */
+.papel-fotografico {
+    padding: 15px 15px 25px 15px;
+    border-radius: 4px;
+}
+
+.papel-fotografico img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.album-legenda {
+    font-family: 'Literata', serif;
+    font-size: 0.85rem;
+    color: #4a4a4a;
+    margin-top: 15px;
+    line-height: 1.3;
+}
+
+/* --- CALIBRAÇÃO DOS TAMANHOS E POSIÇÕES --- */
+
+/* Foto da Família (BEM MAIOR) */
+/* --- SEUS BLOCOS PAIS (AGORA SEM O ROTATE) --- */
+
+/* Foto da Família */
+.bloco-familia {
+    width: 100%; 
+    max-width: 650px; 
+    left: -2%; 
+    top: 20px;
+    z-index: 1; 
+    /* transform: rotate(-2deg); <-- REMOVIDO DAQUI */
+}
+
+/* Foto do Cícero Adulto */
+.bloco-adulto {
+    width: 50%; 
+    max-width: 460px; 
+    right: 4%; 
+    top: 300px; 
+    z-index: 2; 
+    /* transform: rotate(2.5deg); <-- REMOVIDO DAQUI */
+}
+
+/* --- APLICAÇÃO DA ROTAÇÃO APENAS NAS FOTOS --- */
+
+/* Alvo: Apenas o papel fotográfico dentro do bloco da família */
+.bloco-familia .papel-fotografico {
+    transform: rotate(-2deg); /* Gira apenas a foto e a borda amarelada */
+}
+
+/* Alvo: Apenas o papel fotográfico dentro do bloco do Cícero adulto */
+.bloco-adulto .papel-fotografico {
+    transform: rotate(2.5deg); /* Gira apenas a foto e a borda amarelada */
+}
+
+/* Container que gera as duas colunas verticais */
+/* NOVO CONTAINER: Organiza os documentos em estilo "Mural/Pinterest" */
+.galeria-documentos-container {
+    /* Define o número de colunas verticais automáticas */
+    column-count: 2; 
+    
+    /* Espaço horizontal fixo entre as duas colunas */
+    column-gap: 35px; 
+    
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto 0 auto; /* Removida a margem inferior para colar com a última foto */
+    padding-left: 4%;
+    padding-right: 4%;
+    box-sizing: border-box;
+}
+
+/* Caixa individual de cada imagem (Ajustada para o novo formato de colunas) */
+.documento-item {
+    display: inline-block; /* Crucial: impede que o navegador corte o documento ao meio entre as colunas */
+    width: 100%;
+    margin-bottom: 45px; /* Espaçamento vertical controlado e idêntico entre os blocos */
+}
+
+/* Estilização das imagens dos documentos (Mantida) */
+.documento-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px; 
+    object-fit: contain; 
+}
+
+/* Legendas discretas (Mantida) */
+.documento-legenda {
+    font-family: 'Literata', serif;
+    font-size: 0.8rem;
+    color: #333333;
+    line-height: 1.35;
+    margin-top: 12px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+/* --- CLASSE EXCLUSIVA PARA A ÚLTIMA FOTO EM TELA CHEIA --- */
+.documento-item-total {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 100px; /* Margem final do totem */
+    box-sizing: border-box;
+}
+
+.documento-item-total img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 24px; /* Um pouco mais de raio para combinar com o formato esticado */
+    object-fit: cover;
+}
+
+/* CONTAINER PRINCIPAL: Divide os blocos automaticamente em 2 colunas verticais */
+.galeria-fase-final-container {
+    /* Define a divisão em duas colunas fluídas */
+    column-count: 2;
+    
+    /* Espaço horizontal entre a coluna da esquerda e da direita */
+    column-gap: 35px;
+    
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 120px; /* Margem de respiro generosa para o final do totem */
+    box-sizing: border-box;
+}
+
+/* Caixa individual de cada foto + legenda */
+.fase-final-item {
+    /* Evita que o navegador rache a foto ou o texto na transição de colunas */
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px; /* Espaçamento vertical igual entre as fotos */
+}
+
+/* Estilização das imagens */
+.fase-final-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    
+    /* Cantos arredondados bem suaves idênticos aos anteriores */
+    border-radius: 20px; 
+    object-fit: contain;
+}
+
+/* Legendas abaixo das fotos */
+.fase-final-legenda {
+    font-family: 'Literata', serif;
+    font-size: 0.8rem;
+    color: #333333;
+    line-height: 1.35;
+    margin-top: 12px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.museum-footer.dark-footer {
+    margin-top: 0 !important; /* Remove o espaço claro colando no conteúdo superior */
+    width: calc(100% + 10%) !important; /* Expande para as laterais anulando o padding pai */
+    margin-left: -5% !important; /* Ajusta o alinhamento esquerdo */
+    box-sizing: border-box;
+}
+
+.baronatos-topo {
+    display: flex;              /* coloca lado a lado */
+    justify-content: space-between; /* título esquerda / texto direita */
+    align-items: center;
+    width: 100%;
+}
+
+.page-title {
+    margin: 0;
+    width: auto; /* MUITO IMPORTANTE */
+}
+
+.autor-texto {
+    color: #ede7e1;
+    font-size: 14px;
+    text-align: right;
+    white-space: nowrap; /* não deixa quebrar */
+}
+
+.split-container-colonizacao .colonizacao-text {
+    text-align: left;
+}
+
+/* Container que vai abraçar o QR Code e cuidar do alinhamento */
+.qr-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente (caso o container tenha altura) */
+    width: 100%;             /* Ocupa toda a largura disponível */
+    padding: 20px 0;         /* Margem interna para dar respiro em cima e embaixo */
+}
+
+/* Estilização da imagem do QR Code */
+.qr-code {
+    width: 200px;             /* Define o tamanho pequeno ideal */
+    height: 200px;            /* Mantém o formato perfeitamente quadrado */
+    object-fit: contain;     /* Garante que o QR code não distorça */
+    display: block;          /* Remove espaçamentos fantasma de elementos inline */
+    
+    /* Opcional: estilo visual suave */
+    border-radius: 6px;      /* Arredonda levemente os cantos */
+    padding: 6px;            /* Margem interna para o QR não colar na borda do fundo */
+}
+
+/* CONTAINER EXCLUSIVO */
+.acessibilidade-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+/* BOLINHAS EXCLUSIVAS */
+.acessibilidade-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #111;
+    opacity: 0.4;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+/* BOLINHA ATIVA VERMELHA */
+.acessibilidade-dots .dot.active {
+    opacity: 1;
+    background: #d92c2c;
+}
+
+.acervo-dados-tecnicos {
+    /* CORREÇÃO CRUCIAL: Faz o bloco ocupar as duas colunas do grid e descer */
+    grid-column: 1 / -1; 
+    clear: both;
+    width: 100%;
+
+    /* Ajuste de margem para afastar da última linha de imagens */
+    margin-top: 80px; 
+    margin-bottom: 40px;
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+.acervo-dados-tecnicos p {
+    color: #888888; /* Tom cinza médio para o rótulo inicial */
+    font-size: 1.1rem; /* Aumentado levemente para melhor leitura no totem */
+    line-height: 1.6;
+    margin-bottom: 28px; /* Espaçamento confortável entre os parágrafos */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+}
+
+.acervo-dados-tecnicos p strong {
+    color: #e0e0e0; /* Tom cinza claro para o texto em destaque */
+    font-weight: 600;
+}

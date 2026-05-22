@@ -2025,6 +2025,129 @@ const topicsData = {
 
 };
 
+// LÓGICA DO CARROSSEL DE CÍCERO DIAS (CORRIGIDA)
+function initSlider() {
+    const slider = document.querySelector('.cicero-slider');
+    if (!slider) return; // Segurança: se o carrossel não estiver na tela, não faz nada
+
+    const slides = slider.querySelectorAll('.slide');
+    const nextBtn = slider.querySelector('.slider-btn.next');
+    const prevBtn = slider.querySelector('.slider-btn.prev');
+    const dots = document.querySelectorAll('.slider-dots .dot');
+
+    if (!slides.length || !nextBtn || !prevBtn) return;
+
+    let currentSlide = 0;
+
+    // Elementos da barra de informações da obra
+    const txtTitulo = document.getElementById('info-titulo');
+    const txtDetalhes = document.getElementById('info-detalhes');
+    const txtDescricao = document.getElementById('info-descricao');
+
+    function updateSlider() {
+        // Remove a classe active de todos os slides e bolinhas
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
+        // Ativa o slide e a bolinha correspondente ao índice atual
+        const activeSlide = slides[currentSlide];
+        activeSlide.classList.add('active');
+        if (dots[currentSlide]) {
+            dots[currentSlide].classList.add('active');
+        }
+
+        // Atualiza dinamicamente as informações da legenda da obra
+        if (activeSlide) {
+            const titulo = activeSlide.getAttribute('data-titulo');
+            const detalhes = activeSlide.getAttribute('data-detalhes');
+            const descricao = activeSlide.getAttribute('data-descricao');
+
+            if (txtTitulo && titulo) txtTitulo.textContent = titulo;
+            if (txtDetalhes && detalhes) txtDetalhes.textContent = detalhes;
+            if (txtDescricao && descricao) txtDescricao.textContent = descricao;
+        }
+    }
+
+    // Evento do botão Avançar
+    nextBtn.onclick = () => {
+        currentSlide++;
+        if (currentSlide >= slides.length) {
+            currentSlide = 0;
+        }
+        updateSlider();
+    };
+
+    // Evento do botão Voltar
+    prevBtn.onclick = () => {
+        currentSlide--;
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+        }
+        updateSlider();
+    };
+
+    // Permitir clicar diretamente nas bolinhas para mudar de slide
+    dots.forEach((dot, index) => {
+        dot.onclick = () => {
+            currentSlide = index;
+            updateSlider();
+        };
+    });
+
+    // Garante que começa no primeiro slide correto e carrega seus textos
+    updateSlider();
+}
+
+// LÓGICA DO CARROSSEL SOBRE O MUSEU (MANTIDA CORRETA)
+function initSliderOmuseu() {
+    const slider = document.querySelector('.acessibilidade-slider');
+    if (!slider) return; 
+
+    const slides = slider.querySelectorAll('.slide');
+    const nextBtn = slider.querySelector('.slider-btn.next');
+    const prevBtn = slider.querySelector('.slider-btn.prev');
+    const dots = document.querySelectorAll('.acessibilidade-dots .dot');
+
+    if (!slides.length || !nextBtn || !prevBtn) return;
+
+    let currentSlideAcessibilidade = 0;
+
+    function updateSliderOmuseu() {
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
+        slides[currentSlideAcessibilidade].classList.add('active');
+        if (dots[currentSlideAcessibilidade]) {
+            dots[currentSlideAcessibilidade].classList.add('active');
+        }
+    }
+
+    nextBtn.onclick = () => {
+        currentSlideAcessibilidade++;
+        if (currentSlideAcessibilidade >= slides.length) {
+            currentSlideAcessibilidade = 0;
+        }
+        updateSliderOmuseu();
+    };
+
+    prevBtn.onclick = () => {
+        currentSlideAcessibilidade--;
+        if (currentSlideAcessibilidade < 0) {
+            currentSlideAcessibilidade = slides.length - 1;
+        }
+        updateSliderOmuseu();
+    };
+
+    dots.forEach((dot, index) => {
+        dot.onclick = () => {
+            currentSlideAcessibilidade = index;
+            updateSliderOmuseu();
+        };
+    });
+
+    updateSliderOmuseu();
+}
+
 // CARREGAR TÓPICO
 function loadTopic(topicId) {
     if (!topicsData[topicId]) return;
@@ -2037,6 +2160,8 @@ function loadTopic(topicId) {
 
     if (topicId === 'ciceroDias') {
         initSlider();
+    } else if (topicId === 'sobreMuseu') {
+        initSliderOmuseu();
     }
     
     // CORREÇÃO: Aplica a cor escura na tela inteira se for o tópico de baronatos
@@ -2419,80 +2544,6 @@ document.addEventListener('click', (e) => {
 // inicia o timer quando entra na página
 resetarTimer();
 
-let currentSlide = 0;
-
-function initSlider() {
-    const slides = document.querySelectorAll('.slide');
-    const dots = document.querySelectorAll('.dot');
-
-    if (!slides.length) return;
-
-    // 1. MAPEIA OS ELEMENTOS DA BARRA DE INFORMAÇÕES
-    const infoTitulo = document.getElementById("info-titulo");
-    const infoDetalhes = document.getElementById("info-detalhes");
-    const infoDescricao = document.getElementById("info-descricao");
-
-    // 2. FUNÇÃO PARA ATUALIZAR OS TEXTOS DA OBRA DE ARTE
-    function atualizarInfoBar(slideAtivo) {
-        const titulo = slideAtivo.getAttribute("data-titulo");
-        const detalhes = slideAtivo.getAttribute("data-detalhes");
-        const descricao = slideAtivo.getAttribute("data-descricao");
-
-        // Só atualiza as tags na tela se os atributos existirem no HTML do slide
-        if (infoTitulo && titulo) infoTitulo.textContent = titulo;
-        if (infoDetalhes && detalhes) infoDetalhes.textContent = detalhes;
-        if (infoDescricao && descricao) infoDescricao.textContent = descricao;
-    }
-
-    function updateSlider(index) {
-        slides.forEach(slide => {
-            slide.classList.remove('active');
-        });
-
-        dots.forEach(dot => {
-            dot.classList.remove('active');
-        });
-
-        // Ativa o slide e o dot correspondente
-        const slideAtivo = slides[index];
-        slideAtivo.classList.add('active');
-        if (dots[index]) dots[index].classList.add('active');
-
-        // 3. DISPARA A ATUALIZAÇÃO TODA VEZ QUE O SLIDE MUDAR
-        atualizarInfoBar(slideAtivo);
-    }
-
-    const nextBtn = document.querySelector('.slider-btn.next');
-    const prevBtn = document.querySelector('.slider-btn.prev');
-
-    // Remove listeners antigos limpando e clonando os botões (evita bugs de clique duplicado no carregamento assíncrono)
-    if (nextBtn && prevBtn) {
-        const newNextBtn = nextBtn.cloneNode(true);
-        const newPrevBtn = prevBtn.cloneNode(true);
-        nextBtn.parentNode.replaceChild(newNextBtn, nextBtn);
-        prevBtn.parentNode.replaceChild(newPrevBtn, prevBtn);
-
-        newNextBtn.addEventListener('click', () => {
-            currentSlide++;
-            if (currentSlide >= slides.length) {
-                currentSlide = 0;
-            }
-            updateSlider(currentSlide);
-        });
-
-        newPrevBtn.addEventListener('click', () => {
-            currentSlide--;
-            if (currentSlide < 0) {
-                currentSlide = slides.length - 1;
-            }
-            updateSlider(currentSlide);
-        });
-    }
-
-    // 4. INICIALIZA A BARRA COM OS DADOS DO PRIMEIRO SLIDE ASSIM QUE CARREGA
-    updateSlider(currentSlide);
-}
-
 // BOTÃO VER ACERVO
 document.addEventListener('click', (e) => {
 
@@ -2516,59 +2567,5 @@ document.addEventListener('click', (e) => {
         }
     }
 });
-
-let currentSlideAcessibilidade = 0;
-
-function initSliderAcessibilidade() {
-    const slider = document.querySelector('.acessibilidade-slider');
-    if (!slider) return;
-
-    const slides = slider.querySelectorAll('.slide');
-    const nextBtn = slider.querySelector('.slider-btn.next');
-    const prevBtn = slider.querySelector('.slider-btn.prev');
-    
-    // CORREÇÃO 1: Mapeia as bolinhas exclusivas da acessibilidade
-    const dots = document.querySelectorAll('.acessibilidade-dots .dot');
-
-    if (!slides.length || !nextBtn || !prevBtn) return;
-
-    function updateSlider() {
-        // Remove active dos slides
-        slides.forEach(slide => {
-            slide.classList.remove('active');
-        });
-
-        // CORREÇÃO 2: Remove active de todas as bolinhas da acessibilidade
-        dots.forEach(dot => {
-            dot.classList.remove('active');
-        });
-
-        // Ativa o slide atual
-        slides[currentSlideAcessibilidade].classList.add('active');
-        
-        // CORREÇÃO 3: Ativa a bolinha correspondente
-        if (dots[currentSlideAcessibilidade]) {
-            dots[currentSlideAcessibilidade].classList.add('active');
-        }
-    }
-
-    nextBtn.addEventListener('click', () => {
-        currentSlideAcessibilidade++;
-        if (currentSlideAcessibilidade >= slides.length) {
-            currentSlideAcessibilidade = 0;
-        }
-        updateSlider();
-    });
-
-    prevBtn.addEventListener('click', () => {
-        currentSlideAcessibilidade--;
-        if (currentSlideAcessibilidade < 0) {
-            currentSlideAcessibilidade = slides.length - 1;
-        }
-        updateSlider();
-    });
-
-    updateSlider();
-}
 
 document.addEventListener('DOMContentLoaded', initSliderAcessibilidade);
