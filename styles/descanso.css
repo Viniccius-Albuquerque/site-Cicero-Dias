@@ -99,7 +99,7 @@ body {
 /* Título Principal */
 .museu-titulo {
     font-family: 'Literata', serif;
-    font-size: 8rem; 
+    font-size: 7rem; 
     font-weight: 400; /* Regular */
     color: #fff;
     
@@ -162,10 +162,10 @@ body {
 /* Rodapé de Colaboradores (Canto inferior esquerdo) */
 .rodape-logos {
     position: absolute;
-    bottom: 4%; 
-    left: 5%;   
+    bottom: 3%; 
+    left: 4%;   
     z-index: 3;
-    max-width: 450px; 
+    max-width: 400px; 
     opacity: 0.8;     
 }
 

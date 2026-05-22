@@ -2154,7 +2154,7 @@ loadTopic('sobreMuseu');
 let tempoInatividade;
 
 // tempo em milissegundos (1 minuto = 60000)
-const TEMPO_LIMITE = 60000;
+const TEMPO_LIMITE = 30000;
 
 function resetarTimer() {
     clearTimeout(tempoInatividade);

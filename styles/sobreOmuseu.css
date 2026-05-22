@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+html {
+    /* Em vez de fixar, dizemos que a fonte base é calculada pela largura da tela (Viewport Width) */
+    /* Exemplo: 1.2vw significa que a base da fonte será sempre 1.2% da largura total da tela */
+    font-size: 1.2vw; 
+    overflow: hidden;
+}
+
 :root {
     --fundo-papel: #ece6e0;
     --texto-escuro: #1a1a1a;
@@ -83,7 +90,7 @@ html, body {
     left: 0;
     z-index: 10; /* ADICIONADO: Garante que ela fique na camada acima do fundo */
     
-    width: 320px;
+    width: 20%;
     height: 100vh;
     
     /* ALTERADO: Fundo escuro com 65% de opacidade (o último número controla a transparência) */
@@ -231,7 +238,7 @@ html, body {
 }
 
 .content-scroll {
-    margin-left: 320px; /* ADICIONADO: Empurra o conteúdo para a direita, liberando o espaço da sidebar */
+    margin-left: 20%; /* ADICIONADO: Empurra o conteúdo para a direita, liberando o espaço da sidebar */
     min-height: 100vh;  /* ADICIONADO: Garante que o container ocupe a altura total da tela */
     background-color: transparent; /* ADICIONADO: Cor padrão clara para o fundo do texto (que seu JS altera depois) */
     box-sizing: border-box; /* ADICIONADO: Garante que paddings não quebrem a largura da tela */
@@ -552,9 +559,9 @@ section.arco-bg-section p,
     position: fixed;
 
     top: 0;
-    left: 320px;
+    left: 20%;
 
-    width: calc(100% - 320px);
+    width: 80%;
     height: 100vh;
 
     background: #E9CFA7;
@@ -986,8 +993,8 @@ section.arco-bg-section p,
 }
 
 .timeline-item {
-    width: 150px;
-
+    width: 110px;
+    text-align: left !important;
     position: relative;
 }
 
