@@ -784,6 +784,21 @@ section.arco-bg-section p,
     gap: 14px;
 }
 
+.contact-title img{
+    height: 39px;
+    width: 39px;
+}
+
+.a2 img{
+    height: 26px;
+    width: 38px;
+}
+
+.a3 img{
+    height: 42px;
+    width: 36px;
+}
+
 .contact-title h2 {
     font-size: 2rem;
     margin: 0;

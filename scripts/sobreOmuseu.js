@@ -1972,7 +1972,7 @@ const topicsData = {
 
                 <div class="contact-item">
                     <div class="contact-title">
-                        <i class="fa-regular fa-envelope contact-icon"></i>
+                        <div class="a2"><img src="../images/icons/Ativo 9.png" alt=""></div>
                         <h2>E-mail</h2>
                     </div>
 
@@ -1983,7 +1983,7 @@ const topicsData = {
 
                 <div class="contact-item">
                     <div class="contact-title">
-                        <i class="fa-brands fa-whatsapp contact-icon"></i>
+                        <img src="../images/icons/Ativo 8.png" alt="">
                         <h2>Whatsapp</h2>
                     </div>
 
@@ -1994,7 +1994,7 @@ const topicsData = {
 
                 <div class="contact-item">
                     <div class="contact-title">
-                        <i class="fa-brands fa-instagram contact-icon"></i>
+                        <img src="../images/icons/Ativo 12.png" alt="">
                         <h2>Instagram</h2>
                     </div>
 
@@ -2005,7 +2005,7 @@ const topicsData = {
 
                 <div class="contact-item">
                     <div class="contact-title">
-                        <i class="fa-brands fa-youtube contact-icon"></i>
+                        <div class="a2"><img src="../images/icons/Ativo 7.png" alt=""></div>
                         <h2>Youtube</h2>
                     </div>
 
@@ -2016,7 +2016,7 @@ const topicsData = {
 
                 <div class="contact-item">
                     <div class="contact-title">
-                        <i class="fa-solid fa-location-dot contact-icon"></i>
+                        <div class="a3"><img src="../images/icons/Ativo 6.png" alt=""></div>
                         <h2>Endereço</h2>
                     </div>
 
