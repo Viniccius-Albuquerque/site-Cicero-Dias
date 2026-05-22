@@ -88,7 +88,7 @@ body {
 
 /* Texto "Espaço Cultural" */
 .subtitulo-topo {
-    color: #fff;
+    color: #ede7e1;
     font-size: 1.8rem;
     font-weight: 200;
     margin-bottom: 0.5rem;
@@ -101,7 +101,7 @@ body {
     font-family: 'Literata', serif;
     font-size: 7rem; 
     font-weight: 400; /* Regular */
-    color: #fff;
+    color: #ede7e1;
     
     /* 1. Ativa o desenho de Display (alto contraste entre traços grossos/finos) */
     font-optical-sizing: auto;
@@ -123,7 +123,7 @@ body {
 /* Botão "Conheça nossa história" com a Seta */
 /* Botão "Conheça nossa história" */
 .btn-fake {
-    color: #fff;
+    color: #ede7e1;
     font-size: 1.2rem;
     font-weight: 300;
     text-transform: none; 

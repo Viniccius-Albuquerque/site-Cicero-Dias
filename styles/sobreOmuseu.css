@@ -100,7 +100,7 @@ html, body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 
-    color: white;
+    color: #ede7e1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,7 +130,7 @@ html, body {
     flex-shrink: 0; 
 }
 .sidebar-footer p {
-    color: #ffffff;
+    color: #ede7e1;
     font-size: 0.8rem;
     line-height: 1.4;
     font-weight: 300;
@@ -138,7 +138,7 @@ html, body {
 }
 
 .sidebar-footer strong {
-    color: #ffffff;
+    color: #ede7e1;
     font-weight: 700;
 }
 
