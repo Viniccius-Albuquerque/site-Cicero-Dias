@@ -555,7 +555,7 @@ section.arco-bg-section p,
 .grid-baronatos {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Cria exatamente 3 colunas iguais */
-    gap: 20px;                             /* Espaçamento de 20px entre os botões */
+    gap: 2px;                             /* Espaçamento de 20px entre os botões */
     padding: 20px;                         /* Espaçamento interno do container */
     max-width: 100%;                       /* Garante que não passe da tela */
     box-sizing: border-box;
@@ -2110,7 +2110,7 @@ p, span, li, article, section {
 
 .autor-texto {
     color: #ede7e1;
-    font-size: 14px;
+    font-size: 15px;
     text-align: right;
     white-space: nowrap; /* não deixa quebrar */
 }
