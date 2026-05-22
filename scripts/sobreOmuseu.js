@@ -1766,47 +1766,31 @@ const topicsData = {
                     <div class="slider-track">
 
                         <div class="slide active">
-                            <img src="../images/carrosselOmuseu/Ativo 3.png" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 18.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/carrosselOmuseu/Ativo 4.png" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 19.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/carrosselOmuseu/Ativo 5.png" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 20.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/carrosselOmuseu/Ativo 6.png" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 21.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/carrosselOmuseu/Ativo 7.png" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 22.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/carrosselOmuseu/Ativo 8.png" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 23.png" alt="">
                         </div>
 
                         <div class="slide">
-                            <img src="../images/carrosselOmuseu/Ativo 9.png" alt="">
-                        </div>
-
-                        <div class="slide">
-                            <img src="../images/carrosselOmuseu/Ativo 10.png" alt="">
-                        </div>
-
-                        <div class="slide">
-                            <img src="../images/carrosselOmuseu/Ativo 11.png" alt="">
-                        </div>
-
-                        <div class="slide">
-                            <img src="../images/carrosselOmuseu/Ativo 12.png" alt="">
-                        </div>
-
-                        <div class="slide">
-                            <img src="../images/carrosselOmuseu/Ativo 13.png" alt="">
+                            <img src="../images/carrosselOmuseu/Ativo 24.png" alt="">
                         </div>
 
                     </div>
@@ -1819,10 +1803,6 @@ const topicsData = {
 
                 <div class="acessibilidade-dots">
                     <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
