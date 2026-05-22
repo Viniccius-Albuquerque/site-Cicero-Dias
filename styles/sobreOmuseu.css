@@ -2108,6 +2108,17 @@ p, span, li, article, section {
     width: auto; /* MUITO IMPORTANTE */
 }
 
+.junto{
+    display: flex;
+    align-items: center;      /* Alinha o meio do texto com o meio do QR code horizontalmente */
+    gap: 250px;                /* Define o espaço de separação entre o texto e o QR code */
+    margin-bottom: 20px;  
+}
+
+.junto h1{
+    margin-bottom: 0 !important; 
+}
+
 .autor-texto {
     color: #ede7e1;
     font-size: 15px;

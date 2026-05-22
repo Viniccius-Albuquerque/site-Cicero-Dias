@@ -1200,10 +1200,12 @@ const topicsData = {
 
         content: `
             <section id="Barao">
-                <h1 class="page-title" style="color: #ede7e1 !important;">Baronatos</h1>
+                <div class="junto">
+                    <h1 class="page-title" style="color: #ede7e1 !important;">Baronatos</h1>
 
-                <div class="autor-texto">
-                    Professor Dr. Arthur Danillo Castelo Branco de Souza
+                    <div class="autor-texto">
+                        Professor Dr. Arthur Danillo Castelo Branco de Souza
+                    </div>
                 </div>
                 
                 <div class="grid-baronatos">
