@@ -985,6 +985,65 @@ section.arco-bg-section p,
     gap: 5%;
 
     position: relative;
+    text-align: left;
+}
+
+.linha-tempo{
+    margin-top: 50px;
+}
+
+/* 1. Garante que a caixas dos itens voltem a respeitar o tamanho correto (120px) */
+.cicero-timeline .timeline-item {
+    width: 120px !important;
+    flex: 0 0 auto !important;
+    position: relative;
+    z-index: 2;
+    text-align: left !important; /* Força o alinhamento à esquerda */
+}
+
+/* 2. Corrige a linha vermelha horizontal para ocupar o espaço correto */
+.cicero-timeline .timeline-line {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 5%;
+    position: relative;
+    text-align: left !important;
+    width: 100% !important; /* A linha em si ocupa toda a largura */
+}
+
+/* 3. Impede que a bolinha (point) seja esmagada ou esticada para 100% */
+.cicero-timeline .point {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50%;
+    background: #d92c2c;
+    margin: 12px 0;
+    transform: translateY(-11px);
+}
+
+/* 4. Quebra a regra de centralização dos parágrafos e força o alinhamento à esquerda */
+.cicero-timeline .timeline-item .text-tempo,
+.cicero-timeline .timeline-item .text-tempo p {
+    font-size: 10px;
+    text-align: left !important;    /* Força o texto interno à esquerda */
+    width: auto !important;         /* Remove o 100% que quebrava o layout */
+    margin: 0 !important;
+}
+
+/* 5. Alinha o ano também à esquerda */
+.cicero-timeline .year {
+    text-align: left !important;
+    display: block;
+    width: auto !important;
+}
+
+/* Opcional: Se você quiser que o título "Linha do Tempo" e a descrição continuem centralizados */
+.cicero-timeline h2,
+.cicero-timeline .timeline-description {
+    text-align: center !important;
+    width: 100% !important;
 }
 
 .timeline-line::before {
@@ -1007,7 +1066,12 @@ section.arco-bg-section p,
     flex: 0 0 auto;
     position: relative;
     z-index: 2;
-    text-align: left !important; /* Garante que os textos dentro do item alinhem à esquerda */
+    text-align: left !important;
+}
+
+.text-tempo{
+    font-size: 10px;
+    text-align: left;
 }
 
 .year {

@@ -359,19 +359,22 @@ const topicsData = {
                         Ver Acervo
                     </a>
 
+                </div>                
+
+                <div class="linha-tempo">
+                    <h2>Linha do Tempo</h2>
+                    
+                    <p class="timeline-description">
+                        <br>A trajetória artística de Cícero Dias é marcada pelo modernismo, 
+                        pela poesia visual e pela fusão entre memória, imaginação e vanguarda. 
+                        Sua obra construiu uma conexão singular entre o imaginário nordestino e 
+                        os movimentos da arte internacional do século XX.
+                    </p>
                 </div>
 
                 <!-- LINHA DO TEMPO -->
                 <div class="cicero-timeline">
 
-                    <h2>Linha do Tempo</h2>
-
-                    <p class="timeline-description">
-                        A trajetória artística de Cícero Dias é marcada pelo modernismo, 
-                        pela poesia visual e pela fusão entre memória, imaginação e vanguarda. 
-                        Sua obra construiu uma conexão singular entre o imaginário nordestino e 
-                        os movimentos da arte internacional do século XX.
-                    </p>
 
                     <div class="timeline-line">
 
