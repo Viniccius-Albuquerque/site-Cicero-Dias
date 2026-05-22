@@ -206,6 +206,12 @@ html, body {
     margin-top: 10px;
 }
 
+.subtopic-item.active {
+    color: #d63030 !important;      /* Usa o vermelho padrão do seu totem */
+    font-weight: bold !important;   /* Opcional: deixa em negrito para destacar mais */
+    transition: color 0.3s ease;    /* Transição suave ao mudar de cor */
+}
+
 .subtopics.open {
     display: flex;
 }
@@ -934,11 +940,9 @@ section.arco-bg-section p,
     min-width: 240px;
 }
 
-.mini-icon {
-    width: 34px;
-    height: 34px;
-
-    border: 1px solid #d92c2c;
+.mini-icon img{
+    width: 43px;
+    height: 33px;
 }
 
 .cicero-divider {
@@ -1174,39 +1178,23 @@ section.arco-bg-section p,
 }
 
 .btn-ver-acervo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    position: relative !important;
+    z-index: 9999 !important;       /* Joga o botão para o topo de todas as camadas */
+    pointer-events: auto !important; /* Garante que o elemento aceite cliques */
+    display: inline-block;
+}
 
-    padding: 14px 30px;
-
-    color: #4a4a4a;
-
-    border: 2px solid #9f2d2d;
-
-    border-radius: 999px;
-
-    text-decoration: none;
-
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.4px;
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        border 0.25s ease,
-        color 0.25s ease;
+.btn-ver-acervo img{
+    height: 27px;
+    width: 118px;
+    pointer-events: none !important;
 }
 
 .btn-ver-acervo:hover {
-    background: #9f2d2d;
-
     transform: translateY(-2px);
 }
 
 .btn-ver-acervo::after {
-    content: " ↗";
 
     margin-left: 6px;
 

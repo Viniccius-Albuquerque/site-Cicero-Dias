@@ -339,7 +339,7 @@ const topicsData = {
                 <div class="cicero-info-bar">
 
                     <div class="cicero-info-left">
-                        <div class="mini-icon"></div>
+                        <div class="mini-icon"><img src="../images/IMG.png" alt=""></div>
 
                         <div>
                             <strong id="info-titulo">PORTO DE ITAPARICA</strong>
@@ -356,14 +356,14 @@ const topicsData = {
                     </div>
 
                     <a href="#" class="btn-ver-acervo" data-target="acervoCompleto">
-                        Ver Acervo
+                        <img src="../images/LUPA.png" alt="">
                     </a>
 
                 </div>                
 
                 <div class="linha-tempo">
                     <h2>Linha do Tempo</h2>
-                    
+
                     <p class="timeline-description">
                         <br>A trajetória artística de Cícero Dias é marcada pelo modernismo, 
                         pela poesia visual e pela fusão entre memória, imaginação e vanguarda. 
@@ -899,7 +899,7 @@ const topicsData = {
                     de Cícero Dias no Brasil)
                 </p>
 
-                <div class="galeria-acervo">
+                <div class="galeria-acervo" id="acervoCompleto">
 
                     <div class="obra-card">
                         <div class="obra-img-wrapper">
@@ -2239,18 +2239,33 @@ document.querySelectorAll('.nav-item').forEach(button => {
 
 // CLIQUE NOS SUBTÓPICOS
 document.addEventListener('click', (e) => {
+    
+    // Verifica se o clique foi em um subtópico
     if (e.target.classList.contains('subtopic-item')) {
         const targetId = e.target.getAttribute('data-target');
         const element = document.getElementById(targetId);
         const container = document.querySelector('.content-scroll');
 
-        if (element && container) {
-            // Calcula a posição do elemento em relação ao container de scroll
-            const topPos = element.offsetTop;
+        // LÓGICA DA COR: Gerencia a classe 'active' na barra lateral
+        // 1. Remove a classe 'active' de todos os subtópicos para nenhum outro ficar vermelho
+        document.querySelectorAll('.subtopic-item').forEach(item => {
+            item.classList.remove('active');
+        });
+        
+        // 2. Adiciona a classe 'active' apenas no subtópico que foi clicado
+        e.target.classList.add('active');
 
-            // Faz o scroll apenas do container interno
+        // LÓGICA DO SCROLL: Faz o rolar de forma precisa
+        if (element && container) {
+            // Calcula a posição real do elemento relativo ao topo visível do container
+            const containerTop = container.getBoundingClientRect().top;
+            const elementTop = element.getBoundingClientRect().top;
+            
+            // Soma o scroll atual para obter o destino exato
+            const targetPosition = elementTop - containerTop + container.scrollTop;
+
             container.scrollTo({
-                top: topPos,
+                top: targetPosition,
                 behavior: 'smooth'
             });
         }
@@ -2263,7 +2278,7 @@ loadTopic('sobreMuseu');
 let tempoInatividade;
 
 // tempo em milissegundos (1 minuto = 60000)
-//const TEMPO_LIMITE = 30000;
+const TEMPO_LIMITE = 30000;
 
 function resetarTimer() {
     clearTimeout(tempoInatividade);
@@ -2550,24 +2565,37 @@ resetarTimer();
 
 // BOTÃO VER ACERVO
 document.addEventListener('click', (e) => {
+    
+    // DETETIVE 1: Mostra no console exatamente qual elemento físico você acabou de tocar
+    console.log("Elemento clicado fisicamente:", e.target);
 
     const btnAcervo = e.target.closest('.btn-ver-acervo');
 
     if (btnAcervo) {
         e.preventDefault();
+        
+        // DETETIVE 2: Confirma se o JavaScript conseguiu validar o botão
+        console.log("Sucesso! O clique chegou no botão .btn-ver-acervo");
 
         const targetId = btnAcervo.getAttribute('data-target');
-
         const element = document.getElementById(targetId);
         const container = document.querySelector('.content-scroll');
 
+        // DETETIVE 3: Verifica se o destino e o container scrollável existem no momento
+        console.log("Buscando ID de destino:", targetId, "-> Encontrado?:", element ? "SIM" : "NÃO");
+        console.log("Buscando container (.content-scroll) -> Encontrado?:", container ? "SIM" : "NÃO");
+
         if (element && container) {
+            const containerTop = container.getBoundingClientRect().top;
+            const elementTop = element.getBoundingClientRect().top;
+            const targetPosition = elementTop - containerTop + container.scrollTop;
+
+            console.log("Executando scroll para a posição calculada:", targetPosition);
 
             container.scrollTo({
-                top: element.offsetTop,
+                top: targetPosition,
                 behavior: 'smooth'
             });
-
         }
     }
 });
