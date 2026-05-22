@@ -206,6 +206,12 @@ html, body {
     margin-top: 10px;
 }
 
+.subtopic-item.active {
+    color: #d63030 !important;      /* Usa o vermelho padrão do seu totem */
+    font-weight: bold !important;   /* Opcional: deixa em negrito para destacar mais */
+    transition: color 0.3s ease;    /* Transição suave ao mudar de cor */
+}
+
 .subtopics.open {
     display: flex;
 }
@@ -464,7 +470,7 @@ section.dark-theme p {
 /* Seção com Imagem de Fundo Expansiva e Arco */
 section.arco-bg-section {
     position: relative;
-    width: calc(100% + 10%);
+    width: 110%;
     margin-left: -5%;
     padding: 120px 10%;
     text-align: left;
@@ -472,6 +478,7 @@ section.arco-bg-section {
     background-image: url('../images/BANNER_4_TOPONIMOS.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     /* Formato de Arco Gigante */
 
     color: #ffffff;
@@ -933,11 +940,9 @@ section.arco-bg-section p,
     min-width: 240px;
 }
 
-.mini-icon {
-    width: 34px;
-    height: 34px;
-
-    border: 1px solid #d92c2c;
+.mini-icon img{
+    width: 43px;
+    height: 33px;
 }
 
 .cicero-divider {
@@ -984,6 +989,65 @@ section.arco-bg-section p,
     gap: 5%;
 
     position: relative;
+    text-align: left;
+}
+
+.linha-tempo{
+    margin-top: 50px;
+}
+
+/* 1. Garante que a caixas dos itens voltem a respeitar o tamanho correto (120px) */
+.cicero-timeline .timeline-item {
+    width: 120px !important;
+    flex: 0 0 auto !important;
+    position: relative;
+    z-index: 2;
+    text-align: left !important; /* Força o alinhamento à esquerda */
+}
+
+/* 2. Corrige a linha vermelha horizontal para ocupar o espaço correto */
+.cicero-timeline .timeline-line {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    gap: 5%;
+    position: relative;
+    text-align: left !important;
+    width: 100% !important; /* A linha em si ocupa toda a largura */
+}
+
+/* 3. Impede que a bolinha (point) seja esmagada ou esticada para 100% */
+.cicero-timeline .point {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50%;
+    background: #d92c2c;
+    margin: 12px 0;
+    transform: translateY(-11px);
+}
+
+/* 4. Quebra a regra de centralização dos parágrafos e força o alinhamento à esquerda */
+.cicero-timeline .timeline-item .text-tempo,
+.cicero-timeline .timeline-item .text-tempo p {
+    font-size: 10px;
+    text-align: left !important;    /* Força o texto interno à esquerda */
+    width: auto !important;         /* Remove o 100% que quebrava o layout */
+    margin: 0 !important;
+}
+
+/* 5. Alinha o ano também à esquerda */
+.cicero-timeline .year {
+    text-align: left !important;
+    display: block;
+    width: auto !important;
+}
+
+/* Opcional: Se você quiser que o título "Linha do Tempo" e a descrição continuem centralizados */
+.cicero-timeline h2,
+.cicero-timeline .timeline-description {
+    text-align: center !important;
+    width: 100% !important;
 }
 
 .timeline-line::before {
@@ -1006,7 +1070,12 @@ section.arco-bg-section p,
     flex: 0 0 auto;
     position: relative;
     z-index: 2;
-    text-align: left !important; /* Garante que os textos dentro do item alinhem à esquerda */
+    text-align: left !important;
+}
+
+.text-tempo{
+    font-size: 10px;
+    text-align: left;
 }
 
 .year {
@@ -1109,39 +1178,23 @@ section.arco-bg-section p,
 }
 
 .btn-ver-acervo {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    position: relative !important;
+    z-index: 9999 !important;       /* Joga o botão para o topo de todas as camadas */
+    pointer-events: auto !important; /* Garante que o elemento aceite cliques */
+    display: inline-block;
+}
 
-    padding: 14px 30px;
-
-    color: #4a4a4a;
-
-    border: 2px solid #9f2d2d;
-
-    border-radius: 999px;
-
-    text-decoration: none;
-
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 0.4px;
-
-    transition:
-        transform 0.25s ease,
-        background 0.25s ease,
-        border 0.25s ease,
-        color 0.25s ease;
+.btn-ver-acervo img{
+    height: 27px;
+    width: 118px;
+    pointer-events: none !important;
 }
 
 .btn-ver-acervo:hover {
-    background: #9f2d2d;
-
     transform: translateY(-2px);
 }
 
 .btn-ver-acervo::after {
-    content: " ↗";
 
     margin-left: 6px;
 
@@ -2069,10 +2122,29 @@ p, span, li, article, section {
 /* Container que vai abraçar o QR Code e cuidar do alinhamento */
 .qr-container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: right; /* Centraliza horizontalmente */
     align-items: center;     /* Centraliza verticalmente (caso o container tenha altura) */
     width: 100%;             /* Ocupa toda a largura disponível */
     padding: 20px 0;         /* Margem interna para dar respiro em cima e embaixo */
+}
+
+.header-com-qr {
+    display: flex;
+    align-items: center;      /* Alinha o meio do texto com o meio do QR code horizontalmente */
+    gap: 20px;                /* Define o espaço de separação entre o texto e o QR code */
+    margin-bottom: 20px;      /* Mantém o espaçamento padrão que você tinha para o conteúdo de baixo */
+}
+
+/* Garante que o h2 não empurre o QR code para baixo com margens antigas */
+.header-com-qr h2 {
+    margin-bottom: 0 !important; 
+}
+
+/* Opcional: Garante um tamanho controlado para o QR code ao lado do título */
+.header-com-qr .qr-code {
+    height: 150px;             /* Ajuste o tamanho (altura) para combinar com a proporção do seu título */
+    width: auto;
+    display: block;
 }
 
 /* Estilização da imagem do QR Code */

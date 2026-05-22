@@ -117,61 +117,62 @@ const topicsData = {
             </section>
 
             <section id="evolucaoMarco" class="arco-bg-section">
-                <h2>Evolução Administrativa e Marco Legal</h2>
+                <div class="header-com-qr">
+                    <h2>Evolução Administrativa e Marco Legal</h2>
+
+                    <div class="qr-container">
+                        <img src="../images/imagensQR/Evolução Administrativa e Marco Legal__1.png" alt="QR Code" class="qr-code">
+                    </div>
+                </div>
                 
                 <p>
-                    O desenvolvimento administrativo de Escada é marcado por uma sequência de
-                    "marcos legais" que demonstram o crescimento da sua importância regional.
-                    Tudo começa a mudar oficialmente na segunda metade do século VXIII:
+                    O desenvolvimento administrativo de Escada é marcado por uma sequência de "marcos legais" que demonstram o crescimento da sua importância regional. Tudo começa a mudar oficialmente na segunda metade do século VXIII:
                 </p>
 
                 <div class="timeline-entry">
                     <strong>1757 – Elevação à Povoação:</strong>
-                    <p>este é o primeiro grande passo administrativo, quando o antigo aldeamento ganha o status oficial de povoação.</p>
+                    <p>
+                        este é o primeiro grande passo administrativo, quando o antigo aldeamento ganha o status oficial de povoação.
+                    </p>
                 </div>
 
                 <div class="timeline-entry">
-                    <strong>1773 – Expulsão dos Indígenas:</strong>
-                    <p>Um marco político significativo e drástico nesse processo foi a expulsão dos povos originários do território.</p>
+                    <strong>1773 – Expulsão dos Povos Indígenas:</strong>
+                    <p>
+                        um marco político significativo e drástico nesse processo foi a expulsão dos povos originários do território.
+                    </p>
                 </div>
 
                 <div class="timeline-entry">
                     <strong>1786 – Categoria de Freguesia:</strong>
                     <p>
-                    Escada sobe mais um degrau administrativo ao ser elevada à categoria de
-                    freguesia, o que veio acompanhado da fundação da Paróquia de Nossa Senhora da Apresentação da
-                    Escada.
+                        Escada sobe mais um degrau administrativo ao ser elevada à categoria de freguesia, o que veio acompanhado da fundação da Paróquia de Nossa Senhora da Apresentação da Escada.
                     </p>
                 </div>
 
-                <p><em>Com o passar dos anos no século XIX, a estrutura urbana e institucional se consolidou de forma definitiva.</em></p>
+                <p class="timeline-interlude"><em>Com o passar dos anos no século XIX, a estrutura urbana e institucional se consolidou de forma definitiva</em></p>
 
                 <div class="timeline-entry">
-                    <strong>1854 – De Freguesia à Vila - Elevação à Categoria de Cidade:</strong>
-                    <p>O ápice da evolução administrativa ocorreu em 1873, quando Escada é oficialmente reconhecida como cidade.</p>
+                    <strong>1854 – De Freguesia à Vila:</strong>
+                    <p>
+                        Escada sobe mais um degrau administrativo ao ser elevada à categoria de freguesia, o que veio acompanhado da fundação da Paróquia de Nossa Senhora da Apresentação da Escada.
+                    </p>
                 </div>
 
                 <div class="timeline-entry">
-                    <strong>1873 – Elevação à Categoria de Cidade:</strong>
-                    <p>O ápice da evolução administrativa ocorreu em 1873, quando Escada é oficialmente reconhecida como cidade.</p>
+                    <strong>1886 – Categoria de 1873 – Elevação à Categoria de Cidade:</strong>
+                    <p>
+                        O ápice da evolução administrativa ocorreu em 1873, quando Escada é oficialmente reconhecida como cidade.
+                    </p>
                 </div>
 
                 <p>
-                    Para selar esse processo de consolidação urbana, institucional e religiosa, o
-                    Templo Matriz de Nossa Senhora da Apresentação da Escada foi inaugurado
-                   <br> em 28 de junho de 1874. Esta construção tornou-se o grande símbolo da
-                    estruturação de Escada como um centro político, social e religioso na região.
+                    Para selar esse processo de consolidação urbana, institucional e religiosa, o Templo Matriz de Nossa Senhora da Apresentação da Escada foi inaugurado em 28 de junho de 1874. Esta construção tornou-se o grande símbolo da estruturação de Escada como um centro político, social e religioso na região.
                 </p>
 
                 <p>
-                    Todo esse percurso legal, que começou com a atuação dos primeiros párocos e
-                    vigários, como Francisco Cavalcanti de Albuquerque Lacerda em 1786,
-                    transformou o antigo aldeamento no próspero município que hoje celebramos.
+                    Todo esse percurso legal, que começou com a atuação dos primeiros párocos e vigários, como Francisco Cavalcanti de Albuquerque Lacerda em 1786, transformou o antigo aldeamento no próspero município que hoje celebramos.
                 </p>
-
-                <div class="qr-container">
-                    <img src="../images/imagensQR/Evolução Administrativa e Marco Legal__1.png" alt="QR Code" class="qr-code">
-                </div>
             </section>
 
             <section id="evolucao">
@@ -338,7 +339,7 @@ const topicsData = {
                 <div class="cicero-info-bar">
 
                     <div class="cicero-info-left">
-                        <div class="mini-icon"></div>
+                        <div class="mini-icon"><img src="../images/IMG.png" alt=""></div>
 
                         <div>
                             <strong id="info-titulo">PORTO DE ITAPARICA</strong>
@@ -355,22 +356,25 @@ const topicsData = {
                     </div>
 
                     <a href="#" class="btn-ver-acervo" data-target="acervoCompleto">
-                        Ver Acervo
+                        <img src="../images/LUPA.png" alt="">
                     </a>
 
+                </div>                
+
+                <div class="linha-tempo">
+                    <h2>Linha do Tempo</h2>
+
+                    <p class="timeline-description">
+                        <br>A trajetória artística de Cícero Dias é marcada pelo modernismo, 
+                        pela poesia visual e pela fusão entre memória, imaginação e vanguarda. 
+                        Sua obra construiu uma conexão singular entre o imaginário nordestino e 
+                        os movimentos da arte internacional do século XX.
+                    </p>
                 </div>
 
                 <!-- LINHA DO TEMPO -->
                 <div class="cicero-timeline">
 
-                    <h2>Linha do Tempo</h2>
-
-                    <p class="timeline-description">
-                        A trajetória artística de Cícero Dias é marcada pelo modernismo, 
-                        pela poesia visual e pela fusão entre memória, imaginação e vanguarda. 
-                        Sua obra construiu uma conexão singular entre o imaginário nordestino e 
-                        os movimentos da arte internacional do século XX.
-                    </p>
 
                     <div class="timeline-line">
 
@@ -895,7 +899,7 @@ const topicsData = {
                     de Cícero Dias no Brasil)
                 </p>
 
-                <div class="galeria-acervo">
+                <div class="galeria-acervo" id="acervoCompleto">
 
                     <div class="obra-card">
                         <div class="obra-img-wrapper">
@@ -2235,18 +2239,33 @@ document.querySelectorAll('.nav-item').forEach(button => {
 
 // CLIQUE NOS SUBTÓPICOS
 document.addEventListener('click', (e) => {
+    
+    // Verifica se o clique foi em um subtópico
     if (e.target.classList.contains('subtopic-item')) {
         const targetId = e.target.getAttribute('data-target');
         const element = document.getElementById(targetId);
         const container = document.querySelector('.content-scroll');
 
-        if (element && container) {
-            // Calcula a posição do elemento em relação ao container de scroll
-            const topPos = element.offsetTop;
+        // LÓGICA DA COR: Gerencia a classe 'active' na barra lateral
+        // 1. Remove a classe 'active' de todos os subtópicos para nenhum outro ficar vermelho
+        document.querySelectorAll('.subtopic-item').forEach(item => {
+            item.classList.remove('active');
+        });
+        
+        // 2. Adiciona a classe 'active' apenas no subtópico que foi clicado
+        e.target.classList.add('active');
 
-            // Faz o scroll apenas do container interno
+        // LÓGICA DO SCROLL: Faz o rolar de forma precisa
+        if (element && container) {
+            // Calcula a posição real do elemento relativo ao topo visível do container
+            const containerTop = container.getBoundingClientRect().top;
+            const elementTop = element.getBoundingClientRect().top;
+            
+            // Soma o scroll atual para obter o destino exato
+            const targetPosition = elementTop - containerTop + container.scrollTop;
+
             container.scrollTo({
-                top: topPos,
+                top: targetPosition,
                 behavior: 'smooth'
             });
         }
@@ -2259,7 +2278,7 @@ loadTopic('sobreMuseu');
 let tempoInatividade;
 
 // tempo em milissegundos (1 minuto = 60000)
-//const TEMPO_LIMITE = 30000;
+const TEMPO_LIMITE = 30000;
 
 function resetarTimer() {
     clearTimeout(tempoInatividade);
@@ -2592,24 +2611,37 @@ resetarTimer();
 
 // BOTÃO VER ACERVO
 document.addEventListener('click', (e) => {
+    
+    // DETETIVE 1: Mostra no console exatamente qual elemento físico você acabou de tocar
+    console.log("Elemento clicado fisicamente:", e.target);
 
     const btnAcervo = e.target.closest('.btn-ver-acervo');
 
     if (btnAcervo) {
         e.preventDefault();
+        
+        // DETETIVE 2: Confirma se o JavaScript conseguiu validar o botão
+        console.log("Sucesso! O clique chegou no botão .btn-ver-acervo");
 
         const targetId = btnAcervo.getAttribute('data-target');
-
         const element = document.getElementById(targetId);
         const container = document.querySelector('.content-scroll');
 
+        // DETETIVE 3: Verifica se o destino e o container scrollável existem no momento
+        console.log("Buscando ID de destino:", targetId, "-> Encontrado?:", element ? "SIM" : "NÃO");
+        console.log("Buscando container (.content-scroll) -> Encontrado?:", container ? "SIM" : "NÃO");
+
         if (element && container) {
+            const containerTop = container.getBoundingClientRect().top;
+            const elementTop = element.getBoundingClientRect().top;
+            const targetPosition = elementTop - containerTop + container.scrollTop;
+
+            console.log("Executando scroll para a posição calculada:", targetPosition);
 
             container.scrollTo({
-                top: element.offsetTop,
+                top: targetPosition,
                 behavior: 'smooth'
             });
-
         }
     }
 });
