@@ -1203,9 +1203,16 @@ const topicsData = {
                 <h1 class="page-title" style="color: #ede7e1 !important;">Baronatos</h1>
 
                 
+<<<<<<< HEAD
+            <div class="autor-texto">
+
+                Professor Dr. Arthur Danillo Castelo Branco de Souza
+            </div>
+=======
                 <div class="autor-texto">
                     Professor Dr. Arthur Danillo Castelo Branco de Souza
                 </div>
+>>>>>>> 1a00023935f538819e78327fbeb8ea05e148558a
 
                 
                 <div class="grid-baronatos">
@@ -2465,7 +2472,7 @@ Contribuições para Escada Foi ele o grande estruturador do poderio de Escada n
         bio: `<b>Resumo Biográfico</b>: Nascido em 1827, recebeu o título em 1880. Casou-se com sua prima, a irmã da Baronesa de Jundiá. Faleceu em 1901, no Recife. Pertencia à poderosa família Pontual, que dominou cerca de 17 engenhos na região de Escada.<br>
         
         <b>Poder Político e Econômico</b>: Senhor absoluto do Engenho Cabeça de Negro, atuou como vereador em Escada e Coronel da Guarda Nacional. Essa sobreposição de poder agrário, militar e político tornava-o intocável.<br>
-        
+        <br>
         <b>Contribuições para Escada</b>: Transformou sua principal propriedade na Usina Cabeça de Negro em 1888. A usina contava com uma via férrea particular de 20 quilômetros interligada à estação de Frexeiras, reconfigurando a logística da região.<br>
         
         <br>
@@ -2484,7 +2491,7 @@ Contribuições para Escada Foi ele o grande estruturador do poderio de Escada n
 <br>
 <b>Contribuições para Escada</b>: No interior do município, a Baronesa exercia o papel de matriarca do Engenho Cabeça de Negro, uma das propriedades mais ricas e estruturadas de Escada. A capela do engenho, que serviu como seu local de sepultamento, era um centro da sociabilidade e das práticas religiosas ditadas pela aristocracia. O capital que a sua família agregou ao casamento foi fundamental para manter o prestígio da casa-grande e subsidiar a influência política de seu marido na região.<br>
 <br>
-<b>A Associação com a Escravidão e Apagamento Indígena</b>: A riqueza que sustentou o título de nobreza de Francisca da Anunciação operava em duas frentes distintas da economia escravista. Por um lado, a fortuna de sua família materna, construída a partir do porto do Recife por um armador de navios durante o século XIX, insere-se no contexto de uma economia portuária intimamente ligada ao comércio de bens produzidos por cativos e à infraestrutura marítima da época. Por outro lado, ao fixar-se em Escada, a Baronesa passou a usufruir e administrar o luxo de uma casa-grande integralmente mantida pelo trabalho escravizado de africanos e afro-brasileiros. Tendo falecido em 1895, viveu a transição da abolição já garantindo que a base de privilégios de sua família permanecesse inabalável.
+<b>A Associação com a Escravidão e Apagamento Indígena</b>: A riqueza que sustentou o título de nobreza de Francisca da Anunciação operava em duas frentes distintas da economia escravista. Por um lado, a fortuna de sua família materna, construída a partir do porto do Recife por um armador de navios durante o século XIX, insere-se no contexto de uma economia portuária intimamente ligada ao comércio de bens produzidos por cativos e à infraestrutura marítima da época. Por outro lado, ao fixar-se em Escada, a Baronesa passou a usufruir e administrar o luxo de uma casa-grande integralmente mantida pelo trabalho escravizado de africanos e afro-brasileiros. Tendo falecido em 1895, viveu a transição da abolição já garantindo que a base de privilégios de sua família permanecesse inabalável.<br>
 `},
 
     baraoDeUtinga: {
