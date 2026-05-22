@@ -117,7 +117,13 @@ const topicsData = {
             </section>
 
             <section id="evolucaoMarco" class="arco-bg-section">
-                <h2>Evolução Administrativa e Marco Legal</h2>
+                <div class="header-com-qr">
+                    <h2>Evolução Administrativa e Marco Legal</h2>
+
+                    <div class="qr-container">
+                        <img src="../images/imagensQR/Evolução Administrativa e Marco Legal__1.png" alt="QR Code" class="qr-code">
+                    </div>
+                </div>
                 
                 <p>
                     O desenvolvimento administrativo de Escada é marcado por uma sequência de
@@ -168,10 +174,6 @@ const topicsData = {
                     vigários, como Francisco Cavalcanti de Albuquerque Lacerda em 1786,
                     transformou o antigo aldeamento no próspero município que hoje celebramos.
                 </p>
-
-                <div class="qr-container">
-                    <img src="../images/imagensQR/Evolução Administrativa e Marco Legal__1.png" alt="QR Code" class="qr-code">
-                </div>
             </section>
 
             <section id="evolucao">

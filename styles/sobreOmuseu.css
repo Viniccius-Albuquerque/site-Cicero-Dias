@@ -2069,10 +2069,29 @@ p, span, li, article, section {
 /* Container que vai abraçar o QR Code e cuidar do alinhamento */
 .qr-container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: right; /* Centraliza horizontalmente */
     align-items: center;     /* Centraliza verticalmente (caso o container tenha altura) */
     width: 100%;             /* Ocupa toda a largura disponível */
     padding: 20px 0;         /* Margem interna para dar respiro em cima e embaixo */
+}
+
+.header-com-qr {
+    display: flex;
+    align-items: center;      /* Alinha o meio do texto com o meio do QR code horizontalmente */
+    gap: 20px;                /* Define o espaço de separação entre o texto e o QR code */
+    margin-bottom: 20px;      /* Mantém o espaçamento padrão que você tinha para o conteúdo de baixo */
+}
+
+/* Garante que o h2 não empurre o QR code para baixo com margens antigas */
+.header-com-qr h2 {
+    margin-bottom: 0 !important; 
+}
+
+/* Opcional: Garante um tamanho controlado para o QR code ao lado do título */
+.header-com-qr .qr-code {
+    height: 150px;             /* Ajuste o tamanho (altura) para combinar com a proporção do seu título */
+    width: auto;
+    display: block;
 }
 
 /* Estilização da imagem do QR Code */
