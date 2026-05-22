@@ -126,53 +126,52 @@ const topicsData = {
                 </div>
                 
                 <p>
-                    O desenvolvimento administrativo de Escada é marcado por uma sequência de
-                    "marcos legais" que demonstram o crescimento da sua importância regional.
-                    Tudo começa a mudar oficialmente na segunda metade do século VXIII:
+                    O desenvolvimento administrativo de Escada é marcado por uma sequência de "marcos legais" que demonstram o crescimento da sua importância regional. Tudo começa a mudar oficialmente na segunda metade do século VXIII:
                 </p>
 
                 <div class="timeline-entry">
                     <strong>1757 – Elevação à Povoação:</strong>
-                    <p>este é o primeiro grande passo administrativo, quando o antigo aldeamento ganha o status oficial de povoação.</p>
+                    <p>
+                        este é o primeiro grande passo administrativo, quando o antigo aldeamento ganha o status oficial de povoação.
+                    </p>
                 </div>
 
                 <div class="timeline-entry">
-                    <strong>1773 – Expulsão dos Indígenas:</strong>
-                    <p>Um marco político significativo e drástico nesse processo foi a expulsão dos povos originários do território.</p>
+                    <strong>1773 – Expulsão dos Povos Indígenas:</strong>
+                    <p>
+                        um marco político significativo e drástico nesse processo foi a expulsão dos povos originários do território.
+                    </p>
                 </div>
 
                 <div class="timeline-entry">
                     <strong>1786 – Categoria de Freguesia:</strong>
                     <p>
-                    Escada sobe mais um degrau administrativo ao ser elevada à categoria de
-                    freguesia, o que veio acompanhado da fundação da Paróquia de Nossa Senhora da Apresentação da
-                    Escada.
+                        Escada sobe mais um degrau administrativo ao ser elevada à categoria de freguesia, o que veio acompanhado da fundação da Paróquia de Nossa Senhora da Apresentação da Escada.
                     </p>
                 </div>
 
-                <p><em>Com o passar dos anos no século XIX, a estrutura urbana e institucional se consolidou de forma definitiva.</em></p>
+                <p class="timeline-interlude"><em>Com o passar dos anos no século XIX, a estrutura urbana e institucional se consolidou de forma definitiva</em></p>
 
                 <div class="timeline-entry">
-                    <strong>1854 – De Freguesia à Vila - Elevação à Categoria de Cidade:</strong>
-                    <p>O ápice da evolução administrativa ocorreu em 1873, quando Escada é oficialmente reconhecida como cidade.</p>
+                    <strong>1854 – De Freguesia à Vila:</strong>
+                    <p>
+                        Escada sobe mais um degrau administrativo ao ser elevada à categoria de freguesia, o que veio acompanhado da fundação da Paróquia de Nossa Senhora da Apresentação da Escada.
+                    </p>
                 </div>
 
                 <div class="timeline-entry">
-                    <strong>1873 – Elevação à Categoria de Cidade:</strong>
-                    <p>O ápice da evolução administrativa ocorreu em 1873, quando Escada é oficialmente reconhecida como cidade.</p>
+                    <strong>1886 – Categoria de 1873 – Elevação à Categoria de Cidade:</strong>
+                    <p>
+                        O ápice da evolução administrativa ocorreu em 1873, quando Escada é oficialmente reconhecida como cidade.
+                    </p>
                 </div>
 
                 <p>
-                    Para selar esse processo de consolidação urbana, institucional e religiosa, o
-                    Templo Matriz de Nossa Senhora da Apresentação da Escada foi inaugurado
-                   <br> em 28 de junho de 1874. Esta construção tornou-se o grande símbolo da
-                    estruturação de Escada como um centro político, social e religioso na região.
+                    Para selar esse processo de consolidação urbana, institucional e religiosa, o Templo Matriz de Nossa Senhora da Apresentação da Escada foi inaugurado em 28 de junho de 1874. Esta construção tornou-se o grande símbolo da estruturação de Escada como um centro político, social e religioso na região.
                 </p>
 
                 <p>
-                    Todo esse percurso legal, que começou com a atuação dos primeiros párocos e
-                    vigários, como Francisco Cavalcanti de Albuquerque Lacerda em 1786,
-                    transformou o antigo aldeamento no próspero município que hoje celebramos.
+                    Todo esse percurso legal, que começou com a atuação dos primeiros párocos e vigários, como Francisco Cavalcanti de Albuquerque Lacerda em 1786, transformou o antigo aldeamento no próspero município que hoje celebramos.
                 </p>
             </section>
 

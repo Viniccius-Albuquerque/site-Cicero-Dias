@@ -464,7 +464,7 @@ section.dark-theme p {
 /* Seção com Imagem de Fundo Expansiva e Arco */
 section.arco-bg-section {
     position: relative;
-    width: calc(100% + 10%);
+    width: 110%;
     margin-left: -5%;
     padding: 120px 10%;
     text-align: left;
@@ -472,6 +472,7 @@ section.arco-bg-section {
     background-image: url('../images/BANNER_4_TOPONIMOS.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     /* Formato de Arco Gigante */
 
     color: #ffffff;
