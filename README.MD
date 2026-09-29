@@ -46,8 +46,8 @@ O sistema reúne informações sobre a trajetória de Cícero Dias, a história 
 
 ## Equipe de desenvolvimento
 
-- **Vinicius Albuquerque**
-- **Alisson Manoel Candido da Silva**
+- **Vinicius Albuquerque** - https://github.com/Viniccius-Albuquerque
+- **Alisson Manoel Candido da Silva** - https://github.com/AlissonAMC
 
 ## Status do projeto
 
